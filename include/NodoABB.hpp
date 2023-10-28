@@ -55,3 +55,110 @@ public:
 };
 
 #endif
+
+template<typename T, bool menor(T, T), bool igual(T, T)>
+NodoABB<T, menor, igual>::NodoABB(T dato) {
+    this -> dato = dato;
+    padre = nullptr;
+    hijo_izquierdo = nullptr;
+    hijo_derecho = nullptr;
+}
+
+
+template<typename T, bool menor(T, T), bool igual(T, T)>
+void NodoABB<T, menor, igual>::alta(T dato_insertar) {
+    if (menor(dato_insertar, dato)) {
+        if (hijo_izquierdo == nullptr) {
+            hijo_izquierdo = new NodoABB(dato_insertar);
+            hijo_izquierdo->padre = this;
+        } else {
+            hijo_izquierdo->alta(dato_insertar);
+        }
+    } else if (menor(dato, dato_insertar)) {
+        if (hijo_derecho == nullptr) {
+            hijo_derecho = new NodoABB(dato_insertar);
+            hijo_derecho->padre = this;
+        } else {
+            hijo_derecho->alta(dato_insertar);
+        }
+    }
+}
+
+template<typename T, bool menor(T, T), bool igual(T, T)>
+bool NodoABB<T, menor, igual>::consulta(T dato_consultar) {
+    if (igual(dato_consultar, dato)) {
+        return true; // Dato encontrado en este nodo.
+    } else if (menor(dato_consultar, dato) && hijo_izquierdo != nullptr) {
+        return hijo_izquierdo->consulta(dato_consultar);
+    } else if (hijo_derecho != nullptr) {
+        return hijo_derecho->consulta(dato_consultar);
+    }
+    return false; // Dato no encontrado en el subárbol.
+}
+
+template<typename T, bool menor(T, T), bool igual(T, T)>
+void NodoABB<T, menor, igual>::inorder(std::vector<T>& datos) {
+    if (hijo_izquierdo != nullptr) {
+        hijo_izquierdo->inorder(datos);
+    }
+    datos.push_back(dato);
+    if (hijo_derecho != nullptr) {
+        hijo_derecho->inorder(datos);
+    }
+}
+
+template<typename T, bool menor(T, T), bool igual(T, T)>
+void NodoABB<T, menor, igual>::preorder(std::vector<T>& datos) {
+    datos.push_back(dato);
+    if (hijo_izquierdo != nullptr) {
+        hijo_izquierdo->preorder(datos);
+    }
+    if (hijo_derecho != nullptr) {
+        hijo_derecho->preorder(datos);
+    }
+}
+
+template<typename T, bool menor(T, T), bool igual(T, T)>
+void NodoABB<T, menor, igual>::postorder(std::vector<T>& datos) {
+    if (hijo_izquierdo != nullptr) {
+        hijo_izquierdo->postorder(datos);
+    }
+    if (hijo_derecho != nullptr) {
+        hijo_derecho->postorder(datos);
+    }
+    datos.push_back(dato);
+}
+
+template<typename T, bool menor(T, T), bool igual(T, T)>
+void NodoABB<T, menor, igual>::ancho(std::queue<NodoABB<T, menor, igual>*>& nodos, std::vector<T>& datos) {
+    if (nodos.empty()) {
+        return;
+    }
+    NodoABB<T, menor, igual>* nodo_actual = nodos.front();
+    nodos.pop();
+    datos.push_back(nodo_actual->dato);
+    if (nodo_actual->hijo_izquierdo != nullptr) {
+        nodos.push(nodo_actual->hijo_izquierdo);
+    }
+    if (nodo_actual->hijo_derecho != nullptr) {
+        nodos.push(nodo_actual->hijo_derecho);
+    }
+}
+
+template<typename T, bool menor(T, T), bool igual(T, T)>
+void NodoABB<T, menor, igual>::ejecutar(void metodo(T)) {
+    metodo(dato);
+    if (hijo_izquierdo != nullptr) {
+        hijo_izquierdo->ejecutar(metodo);
+    }
+    if (hijo_derecho != nullptr) {
+        hijo_derecho->ejecutar(metodo);
+    }
+}
+
+template<typename T, bool menor(T, T), bool igual(T, T)>
+NodoABB<T, menor, igual>::~NodoABB() {
+    delete hijo_izquierdo;
+    delete hijo_derecho;
+    // No es necesario eliminar el padre, ya que no es el propietario del padre.
+}

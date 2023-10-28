@@ -71,3 +71,148 @@ public:
 };
 
 #endif
+
+
+template<typename T, bool menor(T, T), bool igual(T, T)>
+ABB<T, menor, igual>::ABB() {
+    raiz = nullptr;
+    cantidad_datos = 0;
+}
+
+//template<typename T, bool menor(T, T), bool igual(T, T)>
+//void ABB<T, menor, igual>::alta(T dato) {
+//    if (raiz == nullptr) {
+//        raiz = new NodoABB<T, menor, igual>(dato);
+//    } else {
+//        raiz->alta(dato);
+//    }
+//    cantidad_datos++;
+//}
+
+template<typename T, bool menor(T, T), bool igual(T, T)>
+void ABB<T, menor, igual>::alta(T dato) {
+    if (!consulta(dato)) {
+        if (raiz == nullptr) {
+            raiz = new NodoABB<T, menor, igual>(dato);
+        } else {
+            raiz->alta(dato);
+        }
+        cantidad_datos++;
+    } else{
+        throw ABB_exception();
+    }
+}
+
+
+template<typename T, bool menor(T, T), bool igual(T, T)>
+bool ABB<T, menor, igual>::consulta(T dato) {
+    if (raiz != nullptr) {
+        return raiz->consulta(dato);
+    }
+    return false;
+}
+
+template<typename T, bool menor(T, T), bool igual(T, T)>
+std::vector<T> ABB<T, menor, igual>::inorder() {
+    std::vector<T> datos;
+    if (raiz != nullptr) {
+        raiz->inorder(datos);
+    }
+    return datos;
+}
+
+template<typename T, bool menor(T, T), bool igual(T, T)>
+std::vector<T> ABB<T, menor, igual>::preorder() {
+    std::vector<T> datos;
+    if (raiz != nullptr) {
+        raiz->preorder(datos);
+    }
+    return datos;
+}
+
+template<typename T, bool menor(T, T), bool igual(T, T)>
+std::vector<T> ABB<T, menor, igual>::postorder() {
+    std::vector<T> datos;
+    if (raiz != nullptr) {
+        raiz->postorder(datos);
+    }
+    return datos;
+}
+
+//template<typename T, bool menor(T, T), bool igual(T, T)>
+//std::vector<T> ABB<T, menor, igual>::ancho() {
+//    std::vector<T> datos;
+//    if (raiz != nullptr) {
+//        std::queue<NodoABB<T, menor, igual>*> nodos;
+//        nodos.push(raiz);
+//        raiz->ancho(nodos, datos);
+//    }
+//    return datos;
+//}
+//template<typename T, bool menor(T, T), bool igual(T, T)>
+//std::vector<T> ABB<T, menor, igual>::ancho() {
+//    std::vector<T> datos;
+//    if (raiz == nullptr) {
+//        return datos; // El árbol está vacío, retorna un vector vacío.
+//    }
+//
+//    std::queue<NodoABB<T, menor, igual>*> nodos;
+//    nodos.push(raiz);
+//
+//    while (!nodos.empty()) {
+//        NodoABB<T, menor, igual>* nodo_actual = nodos.front();
+//        nodos.pop();
+//        datos.push_back(nodo_actual->dato);
+//
+//        if (nodo_actual->hijo_izquierdo != nullptr) {
+//            nodos.push(nodo_actual->hijo_izquierdo);
+//        }
+//        if (nodo_actual->hijo_derecho != nullptr) {
+//            nodos.push(nodo_actual->hijo_derecho);
+//        }
+//    }
+//
+//    return datos;
+//}
+template<typename T, bool menor(T, T), bool igual(T, T)>
+std::vector<T> ABB<T, menor, igual>::ancho() {
+    std::vector<T> datos;
+    if (raiz == nullptr) {
+        return datos; // El árbol está vacío, retorna un vector vacío.
+    }
+
+    std::queue<NodoABB<T, menor, igual>*> nodos;
+    nodos.push(raiz);
+
+    while (!nodos.empty()) {
+        NodoABB<T, menor, igual>* nodo_actual = nodos.front();
+        nodos.pop();
+        nodo_actual->ancho(nodos, datos);  // Utiliza el método ancho de NodoABB.
+
+        // No necesitas verificar hijos aquí, ya que el método ancho de NodoABB maneja la adición de los hijos al frente de la cola.
+    }
+
+    return datos;
+}
+
+template<typename T, bool menor(T, T), bool igual(T, T)>
+void ABB<T, menor, igual>::ejecutar(void metodo(T)) {
+    if (raiz != nullptr) {
+        raiz->ejecutar(metodo);
+    }
+}
+
+template<typename T, bool menor(T, T), bool igual(T, T)>
+std::size_t ABB<T, menor, igual>::tamanio() {
+    return cantidad_datos;
+}
+
+template<typename T, bool menor(T, T), bool igual(T, T)>
+bool ABB<T, menor, igual>::vacio() {
+    return cantidad_datos == 0;
+}
+
+template<typename T, bool menor(T, T), bool igual(T, T)>
+ABB<T, menor, igual>::~ABB() {
+    delete raiz;
+}
