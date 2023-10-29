@@ -1,3 +1,3 @@
-ToolSet: Ubuntu 22.04.3 LTS (remote)Options: 
+ToolSet: 1.0 (local)Options: 
 
-Options:
+Options:-DCMAKE_MAKE_PROGRAM=/home/parallels/Downloads/clion-2023.2.2/bin/ninja/linux/x64/ninja

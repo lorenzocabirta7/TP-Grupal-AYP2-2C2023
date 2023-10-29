@@ -1,1 +1,0 @@
-/usr/bin/c++ -Wall -Werror -Wconversion -g CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Placa.cpp.o CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/bGVjdG9y/bGVjdG9y.cpp.o CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/bGVjdG9y/ZGVjb2Rl.cpp.o CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/main.cpp.o -o ../main 
