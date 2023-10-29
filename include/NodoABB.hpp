@@ -132,24 +132,18 @@ void NodoABB<T, menor, igual>::postorder(std::vector<T>& datos) {
 template<typename T, bool menor(T, T), bool igual(T, T)>
 void NodoABB<T, menor, igual>::ancho(std::queue<NodoABB<T, menor, igual>*>& nodos, std::vector<T>& datos) {
     if (nodos.empty()) {
-         //datos.insert(datos.begin(),nodos.front()->dato); esto esta re mal xq lo estoy haciendo cuando nodos 
         return;
     }
     NodoABB<T, menor, igual>* nodo_actual = nodos.front();
     nodos.pop();
-    datos.push_back(nodo_actual->dato);// eso hace que se añada dos veces los hijos
+    datos.push_back(nodo_actual->dato);
     if (nodo_actual->hijo_izquierdo != nullptr) {
         nodos.push(nodo_actual->hijo_izquierdo);
-        //nodos.pop();
-        //datos.push_back(nodo_actual->hijo_izquierdo->dato);
     }
     if (nodo_actual->hijo_derecho != nullptr) {
         nodos.push(nodo_actual->hijo_derecho);
-        //nodos.pop(); con esos nodos.pop() obtenemos esto Actual: { 10, 7, 13 }, which has 3 elements
-        //datos.push_back(nodo_actual->hijo_derecho->dato);
     }
-    //ahi guarde tres elementos, la 
-    ancho(nodos,datos); // asi como esta ahora tengo Actual: { 7, 13, 3, 11, 16 }, which has 5 elements falta la raiz, pero s
+    ancho(nodos,datos); 
 }
 
 template<typename T, bool menor(T, T), bool igual(T, T)>
