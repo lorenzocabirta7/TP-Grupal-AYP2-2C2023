@@ -139,25 +139,29 @@ std::vector<T> ABB<T, menor, igual>::postorder() {
     return datos;
 }
 
-//template<typename T, bool menor(T, T), bool igual(T, T)>
-//std::vector<T> ABB<T, menor, igual>::ancho() {
-//    std::vector<T> datos;
-//    if (raiz != nullptr) {
-//        std::queue<NodoABB<T, menor, igual>*> nodos;
-//        nodos.push(raiz);
-//        raiz->ancho(nodos, datos);
-//    }
-//    return datos;
-//}
-//template<typename T, bool menor(T, T), bool igual(T, T)>
-//std::vector<T> ABB<T, menor, igual>::ancho() {
-//    std::vector<T> datos;
-//    if (raiz == nullptr) {
-//        return datos; // El árbol está vacío, retorna un vector vacío.
-//    }
-//
-//    std::queue<NodoABB<T, menor, igual>*> nodos;
-//    nodos.push(raiz);
+template<typename T, bool menor(T, T), bool igual(T, T)>
+std::vector<T> ABB<T, menor, igual>::ancho() {
+    std::vector<T> datos;
+   if (raiz != nullptr) {
+       std::queue<NodoABB<T, menor, igual>*> nodos;
+       nodos.push(raiz);
+       //datos.push_back(raiz); esto esta mal, porque termino guardando memoria, tengo que de alguna maner  guardar la raiz
+        //datos.push_back(raiz->dato); lo ideal seria guardarlo asi y estaria todo bien peeero, dato es un atributo privado
+        raiz->ancho(nodos, datos);
+    }
+    return datos;
+}
+/*
+template<typename T, bool menor(T, T), bool igual(T, T)>
+std::vector<T> ABB<T, menor, igual>::ancho() {
+   std::vector<T> datos;
+   if (raiz == nullptr) {
+       return datos; // El árbol está vacío, retorna un vector vacío.
+   }
+
+    std::queue<NodoABB<T, menor, igual>*> nodos;
+  nodos.push(raiz);
+}*/
 //
 //    while (!nodos.empty()) {
 //        NodoABB<T, menor, igual>* nodo_actual = nodos.front();
@@ -174,6 +178,7 @@ std::vector<T> ABB<T, menor, igual>::postorder() {
 //
 //    return datos;
 //}
+/*
 template<typename T, bool menor(T, T), bool igual(T, T)>
 std::vector<T> ABB<T, menor, igual>::ancho() {
     std::vector<T> datos;
@@ -187,14 +192,14 @@ std::vector<T> ABB<T, menor, igual>::ancho() {
     while (!nodos.empty()) {
         NodoABB<T, menor, igual>* nodo_actual = nodos.front();
         nodos.pop();
-        nodo_actual->ancho(nodos, datos);  // Utiliza el método ancho de NodoABB.
+        nodo_actual->ancho(nodos, datos);  
 
-        // No necesitas verificar hijos aquí, ya que el método ancho de NodoABB maneja la adición de los hijos al frente de la cola.
+        
     }
 
     return datos;
 }
-
+*/
 template<typename T, bool menor(T, T), bool igual(T, T)>
 void ABB<T, menor, igual>::ejecutar(void metodo(T)) {
     if (raiz != nullptr) {

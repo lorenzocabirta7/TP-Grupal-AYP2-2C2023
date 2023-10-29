@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/tests/gtest_lib
+# Install script for directory: /mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/tests/gtest_lib
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,7 +44,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/tests/cmake-build-debug/gtest_lib/googlemock/cmake_install.cmake")
+  include("/mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/tests/cmake-build-debug/gtest_lib/googlemock/cmake_install.cmake")
 
 endif()
 
