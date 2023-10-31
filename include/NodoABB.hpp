@@ -14,9 +14,11 @@ private:
     NodoABB<T, menor, igual> *hijo_izquierdo;
     NodoABB<T, menor, igual> *hijo_derecho;
 
-    // PRE: No somos la raiz
+    // PRE: -
     // POST: Reordena los punteros
     void reemplazar_nodos(NodoABB *nodo, T dato_bajar);
+
+
 
 public:
     // Constructor.
@@ -156,6 +158,8 @@ NodoABB<T, menor, igual> *NodoABB<T, menor, igual>::baja(T dato_bajar)
     }
     return this;
 }
+
+
 template <typename T, bool menor(T, T), bool igual(T, T)>
 bool NodoABB<T, menor, igual>::consulta(T dato_consultar)
 {

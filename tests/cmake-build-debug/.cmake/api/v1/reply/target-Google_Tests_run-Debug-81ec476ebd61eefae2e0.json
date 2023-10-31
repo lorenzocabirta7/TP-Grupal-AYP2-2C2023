@@ -62,25 +62,25 @@
 			[
 				{
 					"backtrace" : 3,
-					"path" : "/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/../include"
+					"path" : "/home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/../include"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/gtest_lib/googlemock/include"
+					"path" : "/home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/gtest_lib/googlemock/include"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/gtest_lib/googlemock"
+					"path" : "/home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/gtest_lib/googlemock"
 				},
 				{
 					"backtrace" : 2,
 					"isSystem" : true,
-					"path" : "/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/gtest_lib/googletest/include"
+					"path" : "/home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/gtest_lib/googletest/include"
 				},
 				{
 					"backtrace" : 2,
 					"isSystem" : true,
-					"path" : "/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/gtest_lib/googletest"
+					"path" : "/home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/gtest_lib/googletest"
 				}
 			],
 			"language" : "CXX",

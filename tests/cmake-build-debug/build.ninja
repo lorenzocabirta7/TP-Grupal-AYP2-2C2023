@@ -39,7 +39,7 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /home/parallels/Desktop/Parallels$ Shared$ Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/cmake-build-debug/
+cmake_ninja_workdir = /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/cmake-build-debug/
 # =============================================================================
 # Object build statements for EXECUTABLE target Google_Tests_run
 
@@ -49,12 +49,14 @@ cmake_ninja_workdir = /home/parallels/Desktop/Parallels$ Shared$ Folders/Home/De
 
 build cmake_object_order_depends_target_Google_Tests_run: phony || cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
 
-build CMakeFiles/Google_Tests_run.dir/ABB_tests.cpp.o: CXX_COMPILER__Google_Tests_run_unscanned_Debug /home/parallels/Desktop/Parallels$ Shared$ Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/ABB_tests.cpp || cmake_object_order_depends_target_Google_Tests_run
+build CMakeFiles/Google_Tests_run.dir/ABB_tests.cpp.o: CXX_COMPILER__Google_Tests_run_unscanned_Debug /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/ABB_tests.cpp || cmake_object_order_depends_target_Google_Tests_run
   DEP_FILE = CMakeFiles/Google_Tests_run.dir/ABB_tests.cpp.o.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -I"/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/../include" -I"/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/gtest_lib/googlemock/include" -I"/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/gtest_lib/googlemock" -isystem "/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/gtest_lib/googletest/include" -isystem "/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/gtest_lib/googletest"
+  INCLUDES = -I/home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/../include -I/home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/gtest_lib/googlemock/include -I/home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/gtest_lib/googlemock -isystem /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/gtest_lib/googletest/include -isystem /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/gtest_lib/googletest
   OBJECT_DIR = CMakeFiles/Google_Tests_run.dir
   OBJECT_FILE_DIR = CMakeFiles/Google_Tests_run.dir
+  TARGET_COMPILE_PDB = CMakeFiles/Google_Tests_run.dir/
+  TARGET_PDB = Google_Tests_run.pdb
 
 
 # =============================================================================
@@ -70,15 +72,16 @@ build Google_Tests_run: CXX_EXECUTABLE_LINKER__Google_Tests_run_Debug CMakeFiles
   OBJECT_DIR = CMakeFiles/Google_Tests_run.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = CMakeFiles/Google_Tests_run.dir/
   TARGET_FILE = Google_Tests_run
-  TARGET_PDB = Google_Tests_run.dbg
+  TARGET_PDB = Google_Tests_run.pdb
 
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd "/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/cmake-build-debug" && /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/cmake-build-debug && /snap/clion/250/bin/cmake/linux/x64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -89,7 +92,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd "/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/cmake-build-debug" && /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S"/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests" -B"/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/cmake-build-debug"
+  COMMAND = cd /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/cmake-build-debug && /snap/clion/250/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S/home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests -B/home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -107,7 +110,7 @@ build list_install_components: phony
 # Utility command for install
 
 build CMakeFiles/install.util: CUSTOM_COMMAND all
-  COMMAND = cd "/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/cmake-build-debug" && /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/bin/cmake -P cmake_install.cmake
+  COMMAND = cd /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/cmake-build-debug && /snap/clion/250/bin/cmake/linux/x64/bin/cmake -P cmake_install.cmake
   DESC = Install the project...
   pool = console
   restat = 1
@@ -119,7 +122,7 @@ build install: phony CMakeFiles/install.util
 # Utility command for install/local
 
 build CMakeFiles/install/local.util: CUSTOM_COMMAND all
-  COMMAND = cd "/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/cmake-build-debug" && /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  COMMAND = cd /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/cmake-build-debug && /snap/clion/250/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -131,7 +134,7 @@ build install/local: phony CMakeFiles/install/local.util
 # Utility command for install/strip
 
 build CMakeFiles/install/strip.util: CUSTOM_COMMAND all
-  COMMAND = cd "/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/cmake-build-debug" && /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  COMMAND = cd /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/cmake-build-debug && /snap/clion/250/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -140,7 +143,7 @@ build install/strip: phony CMakeFiles/install/strip.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/CMakeLists.txt
+# /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/CMakeLists.txt
 # =============================================================================
 
 
@@ -148,7 +151,7 @@ build install/strip: phony CMakeFiles/install/strip.util
 # Utility command for edit_cache
 
 build gtest_lib/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd "/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/cmake-build-debug/gtest_lib" && /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/cmake-build-debug/gtest_lib && /snap/clion/250/bin/cmake/linux/x64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -159,7 +162,7 @@ build gtest_lib/edit_cache: phony gtest_lib/CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build gtest_lib/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd "/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/cmake-build-debug/gtest_lib" && /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S"/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests" -B"/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/cmake-build-debug"
+  COMMAND = cd /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/cmake-build-debug/gtest_lib && /snap/clion/250/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S/home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests -B/home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -177,7 +180,7 @@ build gtest_lib/list_install_components: phony
 # Utility command for install
 
 build gtest_lib/CMakeFiles/install.util: CUSTOM_COMMAND gtest_lib/all
-  COMMAND = cd "/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/cmake-build-debug/gtest_lib" && /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/bin/cmake -P cmake_install.cmake
+  COMMAND = cd /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/cmake-build-debug/gtest_lib && /snap/clion/250/bin/cmake/linux/x64/bin/cmake -P cmake_install.cmake
   DESC = Install the project...
   pool = console
   restat = 1
@@ -189,7 +192,7 @@ build gtest_lib/install: phony gtest_lib/CMakeFiles/install.util
 # Utility command for install/local
 
 build gtest_lib/CMakeFiles/install/local.util: CUSTOM_COMMAND gtest_lib/all
-  COMMAND = cd "/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/cmake-build-debug/gtest_lib" && /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  COMMAND = cd /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/cmake-build-debug/gtest_lib && /snap/clion/250/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -201,7 +204,7 @@ build gtest_lib/install/local: phony gtest_lib/CMakeFiles/install/local.util
 # Utility command for install/strip
 
 build gtest_lib/CMakeFiles/install/strip.util: CUSTOM_COMMAND gtest_lib/all
-  COMMAND = cd "/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/cmake-build-debug/gtest_lib" && /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  COMMAND = cd /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/cmake-build-debug/gtest_lib && /snap/clion/250/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -210,7 +213,7 @@ build gtest_lib/install/strip: phony gtest_lib/CMakeFiles/install/strip.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/gtest_lib/CMakeLists.txt
+# /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/gtest_lib/CMakeLists.txt
 # =============================================================================
 
 # =============================================================================
@@ -222,12 +225,14 @@ build gtest_lib/install/strip: phony gtest_lib/CMakeFiles/install/strip.util
 
 build cmake_object_order_depends_target_gmock: phony || cmake_object_order_depends_target_gtest
 
-build gtest_lib/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o: CXX_COMPILER__gmock_unscanned_Debug /home/parallels/Desktop/Parallels$ Shared$ Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/gtest_lib/googlemock/src/gmock-all.cc || cmake_object_order_depends_target_gmock
+build gtest_lib/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o: CXX_COMPILER__gmock_unscanned_Debug /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/gtest_lib/googlemock/src/gmock-all.cc || cmake_object_order_depends_target_gmock
   DEP_FILE = gtest_lib/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o.d
   FLAGS = -g -fdiagnostics-color=always -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers
-  INCLUDES = -I"/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/gtest_lib/googlemock/include" -I"/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/gtest_lib/googlemock" -isystem "/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/gtest_lib/googletest/include" -isystem "/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/gtest_lib/googletest"
+  INCLUDES = -I/home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/gtest_lib/googlemock/include -I/home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/gtest_lib/googlemock -isystem /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/gtest_lib/googletest/include -isystem /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/gtest_lib/googletest
   OBJECT_DIR = gtest_lib/googlemock/CMakeFiles/gmock.dir
   OBJECT_FILE_DIR = gtest_lib/googlemock/CMakeFiles/gmock.dir/src
+  TARGET_COMPILE_PDB = lib/libgmockpdb_debug_postfix-NOTFOUND.pdb
+  TARGET_PDB = bin/libgmockpdb_debug_postfix-NOTFOUND.pdb
 
 
 # =============================================================================
@@ -242,8 +247,9 @@ build lib/libgmock.a: CXX_STATIC_LIBRARY_LINKER__gmock_Debug gtest_lib/googlemoc
   OBJECT_DIR = gtest_lib/googlemock/CMakeFiles/gmock.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = lib/libgmockpdb_debug_postfix-NOTFOUND.pdb
   TARGET_FILE = lib/libgmock.a
-  TARGET_PDB = gmock.a.dbg
+  TARGET_PDB = bin/libgmockpdb_debug_postfix-NOTFOUND.pdb
 
 # =============================================================================
 # Object build statements for STATIC_LIBRARY target gmock_main
@@ -254,12 +260,14 @@ build lib/libgmock.a: CXX_STATIC_LIBRARY_LINKER__gmock_Debug gtest_lib/googlemoc
 
 build cmake_object_order_depends_target_gmock_main: phony || cmake_object_order_depends_target_gmock cmake_object_order_depends_target_gtest
 
-build gtest_lib/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o: CXX_COMPILER__gmock_main_unscanned_Debug /home/parallels/Desktop/Parallels$ Shared$ Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/gtest_lib/googlemock/src/gmock_main.cc || cmake_object_order_depends_target_gmock_main
+build gtest_lib/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o: CXX_COMPILER__gmock_main_unscanned_Debug /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/gtest_lib/googlemock/src/gmock_main.cc || cmake_object_order_depends_target_gmock_main
   DEP_FILE = gtest_lib/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o.d
   FLAGS = -g -fdiagnostics-color=always -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers
-  INCLUDES = -isystem "/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/gtest_lib/googlemock/include" -isystem "/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/gtest_lib/googlemock" -isystem "/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/gtest_lib/googletest/include" -isystem "/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/gtest_lib/googletest"
+  INCLUDES = -isystem /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/gtest_lib/googlemock/include -isystem /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/gtest_lib/googlemock -isystem /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/gtest_lib/googletest/include -isystem /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/gtest_lib/googletest
   OBJECT_DIR = gtest_lib/googlemock/CMakeFiles/gmock_main.dir
   OBJECT_FILE_DIR = gtest_lib/googlemock/CMakeFiles/gmock_main.dir/src
+  TARGET_COMPILE_PDB = lib/libgmock_mainpdb_debug_postfix-NOTFOUND.pdb
+  TARGET_PDB = bin/libgmock_mainpdb_debug_postfix-NOTFOUND.pdb
 
 
 # =============================================================================
@@ -274,15 +282,16 @@ build lib/libgmock_main.a: CXX_STATIC_LIBRARY_LINKER__gmock_main_Debug gtest_lib
   OBJECT_DIR = gtest_lib/googlemock/CMakeFiles/gmock_main.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = lib/libgmock_mainpdb_debug_postfix-NOTFOUND.pdb
   TARGET_FILE = lib/libgmock_main.a
-  TARGET_PDB = gmock_main.a.dbg
+  TARGET_PDB = bin/libgmock_mainpdb_debug_postfix-NOTFOUND.pdb
 
 
 #############################################
 # Utility command for edit_cache
 
 build gtest_lib/googlemock/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd "/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/cmake-build-debug/gtest_lib/googlemock" && /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/cmake-build-debug/gtest_lib/googlemock && /snap/clion/250/bin/cmake/linux/x64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -293,7 +302,7 @@ build gtest_lib/googlemock/edit_cache: phony gtest_lib/googlemock/CMakeFiles/edi
 # Utility command for rebuild_cache
 
 build gtest_lib/googlemock/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd "/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/cmake-build-debug/gtest_lib/googlemock" && /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S"/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests" -B"/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/cmake-build-debug"
+  COMMAND = cd /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/cmake-build-debug/gtest_lib/googlemock && /snap/clion/250/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S/home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests -B/home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -311,7 +320,7 @@ build gtest_lib/googlemock/list_install_components: phony
 # Utility command for install
 
 build gtest_lib/googlemock/CMakeFiles/install.util: CUSTOM_COMMAND gtest_lib/googlemock/all
-  COMMAND = cd "/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/cmake-build-debug/gtest_lib/googlemock" && /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/bin/cmake -P cmake_install.cmake
+  COMMAND = cd /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/cmake-build-debug/gtest_lib/googlemock && /snap/clion/250/bin/cmake/linux/x64/bin/cmake -P cmake_install.cmake
   DESC = Install the project...
   pool = console
   restat = 1
@@ -323,7 +332,7 @@ build gtest_lib/googlemock/install: phony gtest_lib/googlemock/CMakeFiles/instal
 # Utility command for install/local
 
 build gtest_lib/googlemock/CMakeFiles/install/local.util: CUSTOM_COMMAND gtest_lib/googlemock/all
-  COMMAND = cd "/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/cmake-build-debug/gtest_lib/googlemock" && /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  COMMAND = cd /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/cmake-build-debug/gtest_lib/googlemock && /snap/clion/250/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -335,7 +344,7 @@ build gtest_lib/googlemock/install/local: phony gtest_lib/googlemock/CMakeFiles/
 # Utility command for install/strip
 
 build gtest_lib/googlemock/CMakeFiles/install/strip.util: CUSTOM_COMMAND gtest_lib/googlemock/all
-  COMMAND = cd "/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/cmake-build-debug/gtest_lib/googlemock" && /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  COMMAND = cd /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/cmake-build-debug/gtest_lib/googlemock && /snap/clion/250/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -344,7 +353,7 @@ build gtest_lib/googlemock/install/strip: phony gtest_lib/googlemock/CMakeFiles/
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/gtest_lib/googlemock/CMakeLists.txt
+# /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/gtest_lib/googlemock/CMakeLists.txt
 # =============================================================================
 
 # =============================================================================
@@ -356,12 +365,14 @@ build gtest_lib/googlemock/install/strip: phony gtest_lib/googlemock/CMakeFiles/
 
 build cmake_object_order_depends_target_gtest: phony || gtest_lib/googletest/CMakeFiles/gtest.dir
 
-build gtest_lib/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o: CXX_COMPILER__gtest_unscanned_Debug /home/parallels/Desktop/Parallels$ Shared$ Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/gtest_lib/googletest/src/gtest-all.cc || cmake_object_order_depends_target_gtest
+build gtest_lib/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o: CXX_COMPILER__gtest_unscanned_Debug /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/gtest_lib/googletest/src/gtest-all.cc || cmake_object_order_depends_target_gtest
   DEP_FILE = gtest_lib/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o.d
   FLAGS = -g -fdiagnostics-color=always -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers
-  INCLUDES = -I"/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/gtest_lib/googletest/include" -I"/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/gtest_lib/googletest"
+  INCLUDES = -I/home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/gtest_lib/googletest/include -I/home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/gtest_lib/googletest
   OBJECT_DIR = gtest_lib/googletest/CMakeFiles/gtest.dir
   OBJECT_FILE_DIR = gtest_lib/googletest/CMakeFiles/gtest.dir/src
+  TARGET_COMPILE_PDB = lib/libgtestpdb_debug_postfix-NOTFOUND.pdb
+  TARGET_PDB = bin/libgtestpdb_debug_postfix-NOTFOUND.pdb
 
 
 # =============================================================================
@@ -376,8 +387,9 @@ build lib/libgtest.a: CXX_STATIC_LIBRARY_LINKER__gtest_Debug gtest_lib/googletes
   OBJECT_DIR = gtest_lib/googletest/CMakeFiles/gtest.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = lib/libgtestpdb_debug_postfix-NOTFOUND.pdb
   TARGET_FILE = lib/libgtest.a
-  TARGET_PDB = gtest.a.dbg
+  TARGET_PDB = bin/libgtestpdb_debug_postfix-NOTFOUND.pdb
 
 # =============================================================================
 # Object build statements for STATIC_LIBRARY target gtest_main
@@ -388,12 +400,14 @@ build lib/libgtest.a: CXX_STATIC_LIBRARY_LINKER__gtest_Debug gtest_lib/googletes
 
 build cmake_object_order_depends_target_gtest_main: phony || cmake_object_order_depends_target_gtest
 
-build gtest_lib/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o: CXX_COMPILER__gtest_main_unscanned_Debug /home/parallels/Desktop/Parallels$ Shared$ Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/gtest_lib/googletest/src/gtest_main.cc || cmake_object_order_depends_target_gtest_main
+build gtest_lib/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o: CXX_COMPILER__gtest_main_unscanned_Debug /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/gtest_lib/googletest/src/gtest_main.cc || cmake_object_order_depends_target_gtest_main
   DEP_FILE = gtest_lib/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o.d
   FLAGS = -g -fdiagnostics-color=always -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers
-  INCLUDES = -isystem "/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/gtest_lib/googletest/include" -isystem "/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/gtest_lib/googletest"
+  INCLUDES = -isystem /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/gtest_lib/googletest/include -isystem /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/gtest_lib/googletest
   OBJECT_DIR = gtest_lib/googletest/CMakeFiles/gtest_main.dir
   OBJECT_FILE_DIR = gtest_lib/googletest/CMakeFiles/gtest_main.dir/src
+  TARGET_COMPILE_PDB = lib/libgtest_mainpdb_debug_postfix-NOTFOUND.pdb
+  TARGET_PDB = bin/libgtest_mainpdb_debug_postfix-NOTFOUND.pdb
 
 
 # =============================================================================
@@ -408,15 +422,16 @@ build lib/libgtest_main.a: CXX_STATIC_LIBRARY_LINKER__gtest_main_Debug gtest_lib
   OBJECT_DIR = gtest_lib/googletest/CMakeFiles/gtest_main.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = lib/libgtest_mainpdb_debug_postfix-NOTFOUND.pdb
   TARGET_FILE = lib/libgtest_main.a
-  TARGET_PDB = gtest_main.a.dbg
+  TARGET_PDB = bin/libgtest_mainpdb_debug_postfix-NOTFOUND.pdb
 
 
 #############################################
 # Utility command for edit_cache
 
 build gtest_lib/googletest/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd "/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/cmake-build-debug/gtest_lib/googletest" && /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/cmake-build-debug/gtest_lib/googletest && /snap/clion/250/bin/cmake/linux/x64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -427,7 +442,7 @@ build gtest_lib/googletest/edit_cache: phony gtest_lib/googletest/CMakeFiles/edi
 # Utility command for rebuild_cache
 
 build gtest_lib/googletest/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd "/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/cmake-build-debug/gtest_lib/googletest" && /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S"/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests" -B"/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/cmake-build-debug"
+  COMMAND = cd /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/cmake-build-debug/gtest_lib/googletest && /snap/clion/250/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S/home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests -B/home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -445,7 +460,7 @@ build gtest_lib/googletest/list_install_components: phony
 # Utility command for install
 
 build gtest_lib/googletest/CMakeFiles/install.util: CUSTOM_COMMAND gtest_lib/googletest/all
-  COMMAND = cd "/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/cmake-build-debug/gtest_lib/googletest" && /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/bin/cmake -P cmake_install.cmake
+  COMMAND = cd /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/cmake-build-debug/gtest_lib/googletest && /snap/clion/250/bin/cmake/linux/x64/bin/cmake -P cmake_install.cmake
   DESC = Install the project...
   pool = console
   restat = 1
@@ -457,7 +472,7 @@ build gtest_lib/googletest/install: phony gtest_lib/googletest/CMakeFiles/instal
 # Utility command for install/local
 
 build gtest_lib/googletest/CMakeFiles/install/local.util: CUSTOM_COMMAND gtest_lib/googletest/all
-  COMMAND = cd "/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/cmake-build-debug/gtest_lib/googletest" && /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  COMMAND = cd /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/cmake-build-debug/gtest_lib/googletest && /snap/clion/250/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -469,7 +484,7 @@ build gtest_lib/googletest/install/local: phony gtest_lib/googletest/CMakeFiles/
 # Utility command for install/strip
 
 build gtest_lib/googletest/CMakeFiles/install/strip.util: CUSTOM_COMMAND gtest_lib/googletest/all
-  COMMAND = cd "/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/cmake-build-debug/gtest_lib/googletest" && /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  COMMAND = cd /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/cmake-build-debug/gtest_lib/googletest && /snap/clion/250/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -501,28 +516,28 @@ build libgtest_main.a: phony lib/libgtest_main.a
 # =============================================================================
 
 #############################################
-# Folder: /home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/cmake-build-debug
+# Folder: /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/cmake-build-debug
 
 build all: phony Google_Tests_run gtest_lib/all
 
 # =============================================================================
 
 #############################################
-# Folder: /home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/cmake-build-debug/gtest_lib
+# Folder: /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/cmake-build-debug/gtest_lib
 
 build gtest_lib/all: phony gtest_lib/googlemock/all
 
 # =============================================================================
 
 #############################################
-# Folder: /home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/cmake-build-debug/gtest_lib/googlemock
+# Folder: /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/cmake-build-debug/gtest_lib/googlemock
 
 build gtest_lib/googlemock/all: phony lib/libgmock.a lib/libgmock_main.a gtest_lib/googletest/all
 
 # =============================================================================
 
 #############################################
-# Folder: /home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/cmake-build-debug/gtest_lib/googletest
+# Folder: /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/cmake-build-debug/gtest_lib/googletest
 
 build gtest_lib/googletest/all: phony lib/libgtest.a lib/libgtest_main.a
 
@@ -533,14 +548,14 @@ build gtest_lib/googletest/all: phony lib/libgtest.a lib/libgtest_main.a
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /home/parallels/Desktop/Parallels$ Shared$ Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/CMakeLists.txt /home/parallels/Desktop/Parallels$ Shared$ Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/gtest_lib/CMakeLists.txt /home/parallels/Desktop/Parallels$ Shared$ Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/gtest_lib/googlemock/CMakeLists.txt /home/parallels/Desktop/Parallels$ Shared$ Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/gtest_lib/googlemock/cmake/gmock.pc.in /home/parallels/Desktop/Parallels$ Shared$ Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/gtest_lib/googlemock/cmake/gmock_main.pc.in /home/parallels/Desktop/Parallels$ Shared$ Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/gtest_lib/googletest/CMakeLists.txt /home/parallels/Desktop/Parallels$ Shared$ Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/gtest_lib/googletest/cmake/Config.cmake.in /home/parallels/Desktop/Parallels$ Shared$ Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/gtest_lib/googletest/cmake/gtest.pc.in /home/parallels/Desktop/Parallels$ Shared$ Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/gtest_lib/googletest/cmake/gtest_main.pc.in /home/parallels/Desktop/Parallels$ Shared$ Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/gtest_lib/googletest/cmake/internal_utils.cmake /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeDependentOption.cmake /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakePackageConfigHelpers.cmake /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/CheckCSourceCompiles.cmake /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/CheckIncludeFile.cmake /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/CheckLibraryExists.cmake /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/FindPackageMessage.cmake /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/FindPython/Support.cmake /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/FindPython3.cmake /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/FindThreads.cmake /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/GNUInstallDirs.cmake /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/Platform/Linux-GNU-C.cmake /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/Platform/Linux-GNU-CXX.cmake /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/Platform/Linux-GNU.cmake /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/Platform/Linux.cmake /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/Platform/UnixPaths.cmake /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/CMakeLists.txt /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/gtest_lib/CMakeLists.txt /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/gtest_lib/googlemock/CMakeLists.txt /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/gtest_lib/googlemock/cmake/gmock.pc.in /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/gtest_lib/googlemock/cmake/gmock_main.pc.in /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/gtest_lib/googletest/CMakeLists.txt /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/gtest_lib/googletest/cmake/Config.cmake.in /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/gtest_lib/googletest/cmake/gtest.pc.in /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/gtest_lib/googletest/cmake/gtest_main.pc.in /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/gtest_lib/googletest/cmake/internal_utils.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeCCompiler.cmake.in /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeCCompilerABI.c /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeCXXCompiler.cmake.in /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeCompilerIdDetection.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeDependentOption.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeDetermineCompileFeatures.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeDetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeDetermineSystem.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeFindBinUtils.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakePackageConfigHelpers.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeParseImplicitIncludeInfo.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeParseImplicitLinkInfo.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeParseLibraryArchitecture.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeSystem.cmake.in /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeTestCompilerCommon.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CheckCSourceCompiles.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CheckIncludeFile.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CheckLibraryExists.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/ADSP-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/ARMCC-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/ARMClang-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/AppleClang-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/Borland-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/Clang-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/Cray-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/GHS-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/GNU-C-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/GNU-FindBinUtils.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/HP-C-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/IAR-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/Intel-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/LCC-C-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/MSVC-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/NVHPC-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/PGI-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/PathScale-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/SCO-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/TI-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/Tasking-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/Watcom-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/XL-C-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/zOS-C-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/FindPackageMessage.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/FindPython/Support.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/FindPython3.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/FindThreads.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/GNUInstallDirs.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Internal/FeatureTesting.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Platform/Linux-Determine-CXX.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Platform/Linux-GNU-C.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Platform/Linux-GNU-CXX.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Platform/Linux-GNU.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Platform/Linux.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Platform/UnixPaths.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /home/parallels/Desktop/Parallels$ Shared$ Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/CMakeLists.txt /home/parallels/Desktop/Parallels$ Shared$ Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/gtest_lib/CMakeLists.txt /home/parallels/Desktop/Parallels$ Shared$ Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/gtest_lib/googlemock/CMakeLists.txt /home/parallels/Desktop/Parallels$ Shared$ Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/gtest_lib/googlemock/cmake/gmock.pc.in /home/parallels/Desktop/Parallels$ Shared$ Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/gtest_lib/googlemock/cmake/gmock_main.pc.in /home/parallels/Desktop/Parallels$ Shared$ Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/gtest_lib/googletest/CMakeLists.txt /home/parallels/Desktop/Parallels$ Shared$ Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/gtest_lib/googletest/cmake/Config.cmake.in /home/parallels/Desktop/Parallels$ Shared$ Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/gtest_lib/googletest/cmake/gtest.pc.in /home/parallels/Desktop/Parallels$ Shared$ Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/gtest_lib/googletest/cmake/gtest_main.pc.in /home/parallels/Desktop/Parallels$ Shared$ Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/gtest_lib/googletest/cmake/internal_utils.cmake /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeDependentOption.cmake /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakePackageConfigHelpers.cmake /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/CheckCSourceCompiles.cmake /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/CheckIncludeFile.cmake /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/CheckLibraryExists.cmake /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/FindPackageMessage.cmake /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/FindPython/Support.cmake /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/FindPython3.cmake /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/FindThreads.cmake /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/GNUInstallDirs.cmake /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/Platform/Linux-GNU-C.cmake /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/Platform/Linux-GNU-CXX.cmake /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/Platform/Linux-GNU.cmake /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/Platform/Linux.cmake /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/Platform/UnixPaths.cmake /home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake: phony
+build /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/CMakeLists.txt /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/gtest_lib/CMakeLists.txt /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/gtest_lib/googlemock/CMakeLists.txt /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/gtest_lib/googlemock/cmake/gmock.pc.in /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/gtest_lib/googlemock/cmake/gmock_main.pc.in /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/gtest_lib/googletest/CMakeLists.txt /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/gtest_lib/googletest/cmake/Config.cmake.in /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/gtest_lib/googletest/cmake/gtest.pc.in /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/gtest_lib/googletest/cmake/gtest_main.pc.in /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/tests/gtest_lib/googletest/cmake/internal_utils.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeCCompiler.cmake.in /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeCCompilerABI.c /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeCXXCompiler.cmake.in /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeCompilerIdDetection.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeDependentOption.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeDetermineCompileFeatures.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeDetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeDetermineSystem.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeFindBinUtils.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakePackageConfigHelpers.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeParseImplicitIncludeInfo.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeParseImplicitLinkInfo.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeParseLibraryArchitecture.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeSystem.cmake.in /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeTestCompilerCommon.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CheckCSourceCompiles.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CheckIncludeFile.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CheckLibraryExists.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/ADSP-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/ARMCC-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/ARMClang-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/AppleClang-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/Borland-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/Clang-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/Cray-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/GHS-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/GNU-C-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/GNU-FindBinUtils.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/HP-C-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/IAR-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/Intel-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/LCC-C-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/MSVC-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/NVHPC-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/PGI-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/PathScale-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/SCO-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/TI-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/Tasking-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/Watcom-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/XL-C-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/zOS-C-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/FindPackageMessage.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/FindPython/Support.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/FindPython3.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/FindThreads.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/GNUInstallDirs.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Internal/FeatureTesting.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Platform/Linux-Determine-CXX.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Platform/Linux-GNU-C.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Platform/Linux-GNU-CXX.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Platform/Linux-GNU.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Platform/Linux.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Platform/UnixPaths.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake: phony
 
 
 #############################################
