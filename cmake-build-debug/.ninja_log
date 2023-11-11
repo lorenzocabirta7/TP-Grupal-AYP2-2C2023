@@ -1,49 +1,5 @@
 # ninja log v5
 11	3961	1698594025000000000	CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Placa.cpp.o	af4a5fc39b79cc37
-14	158	1698595258000000000	CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/main.cpp.o	6f44bb2c6c53e0dc
-162	2029	1698595260000000000	CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/bGVjdG9y/bGVjdG9y.cpp.o	28ba3ac7c8a94701
-2037	3379	1698595261000000000	CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/bGVjdG9y/ZGVjb2Rl.cpp.o	24fe21ee2730813
-3381	3724	1698595275000000000	/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/main	848e2c46e3a6bcff
-5	579	1698595275000000000	CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/main.cpp.o	6f44bb2c6c53e0dc
-587	2592	1698595277000000000	CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/bGVjdG9y/bGVjdG9y.cpp.o	28ba3ac7c8a94701
-2593	4163	1698595279000000000	CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/bGVjdG9y/ZGVjb2Rl.cpp.o	24fe21ee2730813
-4164	4672	1698595293000000000	/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/main	848e2c46e3a6bcff
-6	935	1698595358000000000	CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/main.cpp.o	6f44bb2c6c53e0dc
-939	2369	1698595359000000000	CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/bGVjdG9y/bGVjdG9y.cpp.o	28ba3ac7c8a94701
-2370	3492	1698595360000000000	CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/bGVjdG9y/ZGVjb2Rl.cpp.o	24fe21ee2730813
-3493	3753	1698595374000000000	/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/main	848e2c46e3a6bcff
-6	1282	1698595403000000000	CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/main.cpp.o	6f44bb2c6c53e0dc
-1287	3230	1698595405000000000	CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/bGVjdG9y/bGVjdG9y.cpp.o	28ba3ac7c8a94701
-3230	4338	1698595406000000000	CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/bGVjdG9y/ZGVjb2Rl.cpp.o	24fe21ee2730813
-4339	4650	1698595420000000000	/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/main	848e2c46e3a6bcff
-7	1243	1698596551000000000	CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/main.cpp.o	6f44bb2c6c53e0dc
-1248	3444	1698596554000000000	CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/bGVjdG9y/bGVjdG9y.cpp.o	28ba3ac7c8a94701
-3446	4944	1698596555000000000	CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/bGVjdG9y/ZGVjb2Rl.cpp.o	24fe21ee2730813
-4945	5181	1698596555000000000	/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/main	848e2c46e3a6bcff
-96	2998	1698596676000000000	CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/main.cpp.o	6f44bb2c6c53e0dc
 3002	9090	1698596682000000000	CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/bGVjdG9y/bGVjdG9y.cpp.o	28ba3ac7c8a94701
-9097	10489	1698596684000000000	/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/main	848e2c46e3a6bcff
-15	2175	1698597617000000000	CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/main.cpp.o	6f44bb2c6c53e0dc
-2179	2572	1698599875000000000	/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/main	848e2c46e3a6bcff
-8	2636	1698597686000000000	CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/main.cpp.o	6f44bb2c6c53e0dc
-2640	3001	1698599943000000000	/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/main	848e2c46e3a6bcff
-20	1805	1698597704000000000	CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/main.cpp.o	6f44bb2c6c53e0dc
-1809	2102	1698599962000000000	/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/main	848e2c46e3a6bcff
-10	1926	1698597723000000000	CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/main.cpp.o	6f44bb2c6c53e0dc
-1937	2504	1698599980000000000	/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/main	848e2c46e3a6bcff
-15	1968	1698597748000000000	CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/main.cpp.o	6f44bb2c6c53e0dc
-1971	2240	1698600006000000000	/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/main	848e2c46e3a6bcff
-24	4922	1698597946000000000	CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/main.cpp.o	6f44bb2c6c53e0dc
-4926	5991	1698600205000000000	/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/main	848e2c46e3a6bcff
-10	2363	1698597975000000000	CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/main.cpp.o	6f44bb2c6c53e0dc
-2366	2646	1698600233000000000	/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/main	848e2c46e3a6bcff
-13	2345	1698598181000000000	CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/main.cpp.o	6f44bb2c6c53e0dc
-2349	3573	1698600532000000000	/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/main	848e2c46e3a6bcff
-9	1342	1698598237000000000	CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/main.cpp.o	6f44bb2c6c53e0dc
-1346	1671	1698600587000000000	/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/main	848e2c46e3a6bcff
-6	1884	1698598345000000000	CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/main.cpp.o	6f44bb2c6c53e0dc
-1888	2224	1698600696000000000	/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/main	848e2c46e3a6bcff
-12	2464	1698598369000000000	CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/main.cpp.o	6f44bb2c6c53e0dc
-2467	2759	1698600719000000000	/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/main	848e2c46e3a6bcff
+3446	4944	1698596555000000000	CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/bGVjdG9y/ZGVjb2Rl.cpp.o	24fe21ee2730813
 18	1807	1698598462000000000	CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/main.cpp.o	6f44bb2c6c53e0dc
-1809	2116	1698600812000000000	/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/main	848e2c46e3a6bcff

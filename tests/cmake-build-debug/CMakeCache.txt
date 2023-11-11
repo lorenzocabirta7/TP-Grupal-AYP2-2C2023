@@ -536,6 +536,8 @@ _Python3_EXECUTABLE:INTERNAL=/usr/bin/python3.11
 //Python3 Properties
 _Python3_INTERPRETER_PROPERTIES:INTERNAL=Python;3;11;4;64;;cpython-311-x86_64-linux-gnu;abi3;/usr/lib/python3.11;/usr/lib/python3.11;/usr/lib/python3/dist-packages;/usr/lib/python3/dist-packages
 _Python3_INTERPRETER_SIGNATURE:INTERNAL=c5ea8e56613f13ab5e55239a52af8d00
+//Interpreter reason failure
+_Python3_Interpreter_REASON_FAILURE:INTERNAL=
 //NumPy reason failure
 _Python3_NumPy_REASON_FAILURE:INTERNAL=
 cmake_package_name:INTERNAL=GTest

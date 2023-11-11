@@ -201,6 +201,126 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/build.make CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/Arma.o: src/Arma.cpp.o
+.PHONY : src/Arma.o
+
+# target to build an object file
+src/Arma.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/build.make CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Arma.cpp.o
+.PHONY : src/Arma.cpp.o
+
+src/Arma.i: src/Arma.cpp.i
+.PHONY : src/Arma.i
+
+# target to preprocess a source file
+src/Arma.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/build.make CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Arma.cpp.i
+.PHONY : src/Arma.cpp.i
+
+src/Arma.s: src/Arma.cpp.s
+.PHONY : src/Arma.s
+
+# target to generate assembly for a file
+src/Arma.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/build.make CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Arma.cpp.s
+.PHONY : src/Arma.cpp.s
+
+src/Dijkstra.o: src/Dijkstra.cpp.o
+.PHONY : src/Dijkstra.o
+
+# target to build an object file
+src/Dijkstra.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/build.make CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Dijkstra.cpp.o
+.PHONY : src/Dijkstra.cpp.o
+
+src/Dijkstra.i: src/Dijkstra.cpp.i
+.PHONY : src/Dijkstra.i
+
+# target to preprocess a source file
+src/Dijkstra.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/build.make CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Dijkstra.cpp.i
+.PHONY : src/Dijkstra.cpp.i
+
+src/Dijkstra.s: src/Dijkstra.cpp.s
+.PHONY : src/Dijkstra.s
+
+# target to generate assembly for a file
+src/Dijkstra.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/build.make CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Dijkstra.cpp.s
+.PHONY : src/Dijkstra.cpp.s
+
+src/Floyd.o: src/Floyd.cpp.o
+.PHONY : src/Floyd.o
+
+# target to build an object file
+src/Floyd.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/build.make CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Floyd.cpp.o
+.PHONY : src/Floyd.cpp.o
+
+src/Floyd.i: src/Floyd.cpp.i
+.PHONY : src/Floyd.i
+
+# target to preprocess a source file
+src/Floyd.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/build.make CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Floyd.cpp.i
+.PHONY : src/Floyd.cpp.i
+
+src/Floyd.s: src/Floyd.cpp.s
+.PHONY : src/Floyd.s
+
+# target to generate assembly for a file
+src/Floyd.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/build.make CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Floyd.cpp.s
+.PHONY : src/Floyd.cpp.s
+
+src/Grafo.o: src/Grafo.cpp.o
+.PHONY : src/Grafo.o
+
+# target to build an object file
+src/Grafo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/build.make CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Grafo.cpp.o
+.PHONY : src/Grafo.cpp.o
+
+src/Grafo.i: src/Grafo.cpp.i
+.PHONY : src/Grafo.i
+
+# target to preprocess a source file
+src/Grafo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/build.make CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Grafo.cpp.i
+.PHONY : src/Grafo.cpp.i
+
+src/Grafo.s: src/Grafo.cpp.s
+.PHONY : src/Grafo.s
+
+# target to generate assembly for a file
+src/Grafo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/build.make CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Grafo.cpp.s
+.PHONY : src/Grafo.cpp.s
+
+src/Matriz.o: src/Matriz.cpp.o
+.PHONY : src/Matriz.o
+
+# target to build an object file
+src/Matriz.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/build.make CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Matriz.cpp.o
+.PHONY : src/Matriz.cpp.o
+
+src/Matriz.i: src/Matriz.cpp.i
+.PHONY : src/Matriz.i
+
+# target to preprocess a source file
+src/Matriz.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/build.make CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Matriz.cpp.i
+.PHONY : src/Matriz.cpp.i
+
+src/Matriz.s: src/Matriz.cpp.s
+.PHONY : src/Matriz.s
+
+# target to generate assembly for a file
+src/Matriz.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/build.make CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Matriz.cpp.s
+.PHONY : src/Matriz.cpp.s
+
 src/Placa.o: src/Placa.cpp.o
 .PHONY : src/Placa.o
 
@@ -243,6 +363,21 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/Arma.o"
+	@echo "... src/Arma.i"
+	@echo "... src/Arma.s"
+	@echo "... src/Dijkstra.o"
+	@echo "... src/Dijkstra.i"
+	@echo "... src/Dijkstra.s"
+	@echo "... src/Floyd.o"
+	@echo "... src/Floyd.i"
+	@echo "... src/Floyd.s"
+	@echo "... src/Grafo.o"
+	@echo "... src/Grafo.i"
+	@echo "... src/Grafo.s"
+	@echo "... src/Matriz.o"
+	@echo "... src/Matriz.i"
+	@echo "... src/Matriz.s"
 	@echo "... src/Placa.o"
 	@echo "... src/Placa.i"
 	@echo "... src/Placa.s"
