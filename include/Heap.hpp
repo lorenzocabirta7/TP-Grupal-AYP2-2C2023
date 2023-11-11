@@ -70,7 +70,6 @@ public:
     ~Heap();
 };
 
-
 template<typename T, bool comp(T, T)>
 Heap<T, comp>::Heap(){
     this -> datos = datos;
@@ -111,7 +110,6 @@ void Heap<T, comp>::downheap(size_t& index_movido){
         downheap(index_movido);
     }
 }
-
 
 template<typename T, bool comp(T, T)>
 void Heap<T, comp>::alta(T dato){

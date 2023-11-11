@@ -14,6 +14,7 @@ include_directories(src)
 include_directories(bGVjdG9y)
 
 add_executable(ayp2_plantilla_tp_grupal_2c2023
+        src/Inventario.cpp
         src/Placa.cpp
         src/Arma.cpp
         src/Grafo.cpp
