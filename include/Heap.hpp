@@ -128,9 +128,9 @@ T Heap<T, comp>::baja(){
         throw Heap_exception();
     }
     T raiz = datos[0];
-    swap(datos[0], datos[tamanio() - 1]);
-    datos.pop_back();
     size_t index_a_borrar = 0;
+    datos[0] =  datos[tamanio() - 1];
+    datos.pop_back();
     downheap(index_a_borrar);
     return raiz;
 }

@@ -103,6 +103,24 @@
 		<Unit filename="/mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/main.cpp">
 			<Option target="ayp2_plantilla_tp_grupal_2c2023"/>
 		</Unit>
+		<Unit filename="/mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/src/Arma.cpp">
+			<Option target="ayp2_plantilla_tp_grupal_2c2023"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/src/Dijkstra.cpp">
+			<Option target="ayp2_plantilla_tp_grupal_2c2023"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/src/Floyd.cpp">
+			<Option target="ayp2_plantilla_tp_grupal_2c2023"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/src/Grafo.cpp">
+			<Option target="ayp2_plantilla_tp_grupal_2c2023"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/src/Inventario.cpp">
+			<Option target="ayp2_plantilla_tp_grupal_2c2023"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/src/Matriz.cpp">
+			<Option target="ayp2_plantilla_tp_grupal_2c2023"/>
+		</Unit>
 		<Unit filename="/mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/src/Placa.cpp">
 			<Option target="ayp2_plantilla_tp_grupal_2c2023"/>
 		</Unit>
