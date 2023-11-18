@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/tests/gtest_lib/googlemock
+# Install script for directory: /mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/tests/gtest_lib/googlemock
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -43,28 +43,28 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xgmockx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/tests/gtest_lib/googlemock/include/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/tests/gtest_lib/googlemock/include/")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xgmockx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/tests/cmake-build-debug/lib/libgmock.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/tests/cmake-build-debug/lib/libgmock.a")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xgmockx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/tests/cmake-build-debug/lib/libgmock_main.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/tests/cmake-build-debug/lib/libgmock_main.a")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xgmockx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/tests/cmake-build-debug/gtest_lib/googletest/generated/gmock.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/tests/cmake-build-debug/gtest_lib/googletest/generated/gmock.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xgmockx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/tests/cmake-build-debug/gtest_lib/googletest/generated/gmock_main.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/tests/cmake-build-debug/gtest_lib/googletest/generated/gmock_main.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/tests/cmake-build-debug/gtest_lib/googletest/cmake_install.cmake")
+  include("/mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/tests/cmake-build-debug/gtest_lib/googletest/cmake_install.cmake")
 
 endif()
 

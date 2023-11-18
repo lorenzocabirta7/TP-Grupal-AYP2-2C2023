@@ -44,7 +44,11 @@ void Dijkstra::actualizar_distancia(size_t vertice) {
 std::vector<size_t> Dijkstra::obtener_camino(size_t origen, size_t destino) {
     std::vector<size_t> camino;
 
-    // TODO: Escribir el código necesario, haciendo uso de los métodos existentes.
+    vertices_visitados[origen]=true;
+    distancia[origen]=0;
+    size_t vertice_actual=origen;
+   
+
 
     return camino;
 }
@@ -55,6 +59,7 @@ Dijkstra::calcular_camino_minimo(Matriz adyacencia, size_t vertices, size_t orig
     matriz_adyacencia = adyacencia;
     cantidad_vertices = vertices;
     inicializar_arreglos(origen);
+
 
     // TODO: Escribir el código necesario, haciendo uso de los métodos existentes.
 
