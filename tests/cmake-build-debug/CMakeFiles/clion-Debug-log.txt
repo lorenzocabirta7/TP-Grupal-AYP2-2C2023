@@ -1,4 +1,4 @@
-C:\WINDOWS\system32\wsl.exe --distribution Ubuntu --exec /bin/bash -c "export CMAKE_COLOR_DIAGNOSTICS=ON && export CLION_IDE=TRUE && export JETBRAINS_IDE=TRUE && cd /mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/tests/cmake-build-debug && /usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G 'CodeBlocks - Unix Makefiles' -S /mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/tests -B /mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/tests/cmake-build-debug"
+/home/parallels/Downloads/clion-2023.2.2/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=gmake -G "CodeBlocks - Unix Makefiles" -S "/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests" -B "/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/cmake-build-debug"
 -- The C compiler identification is GNU 11.4.0
 -- The CXX compiler identification is GNU 11.4.0
 -- Detecting C compiler ABI info
@@ -12,11 +12,9 @@ C:\WINDOWS\system32\wsl.exe --distribution Ubuntu --exec /bin/bash -c "export CM
 -- Detecting CXX compile features
 -- Detecting CXX compile features - done
 -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
--- Looking for pthread.h
--- Looking for pthread.h - found
 -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
 -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
 -- Found Threads: TRUE  
--- Configuring done
--- Generating done
--- Build files have been written to: /mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/tests/cmake-build-debug
+-- Configuring done (15.4s)
+-- Generating done (3.1s)
+-- Build files have been written to: /home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/tests/cmake-build-debug
