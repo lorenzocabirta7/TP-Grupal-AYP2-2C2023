@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/include -I/mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/src -I/mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/bGVjdG9y
+CXX_INCLUDES = -I/mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/include -I/mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/src -I/mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/bGVjdG9y
 
 CXX_FLAGS = -Wall -Werror -Wconversion -g -Wall -Werror -Wconversion
 

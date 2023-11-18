@@ -1,7 +1,7 @@
 CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Arma.cpp.o: \
- /mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/src/Arma.cpp \
+ /mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/src/Arma.cpp \
  /usr/include/stdc-predef.h \
- /mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/include/Arma.hpp \
+ /mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/include/Arma.hpp \
  /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

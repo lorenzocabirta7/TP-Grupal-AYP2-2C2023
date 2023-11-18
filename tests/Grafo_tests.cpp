@@ -26,12 +26,12 @@ protected:
 
 TEST_F(Grafo_tests, camino_minimo) {
     generar_grafo();
-    /*
+
     grafo.usar_floyd();
     resultado = grafo.obtener_camino_minimo(0, 6);
     ASSERT_THAT(resultado.first, testing::ElementsAre(0, 2, 5, 6));
     ASSERT_EQ(resultado.second, 29);
-*/
+
     grafo.usar_dijkstra();
     resultado = grafo.obtener_camino_minimo(0, 6);
     ASSERT_THAT(resultado.first, testing::ElementsAre(0, 2, 5, 6));
