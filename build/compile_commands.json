@@ -1,6 +1,12 @@
 [
 {
   "directory": "/home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/build",
+  "command": "/usr/bin/c++  -I/home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/include -I/home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/src -I/home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/bGVjdG9y -Wall -Werror -Wconversion -g -Wall -Werror -Wconversion -o CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Inventario.cpp.o -c /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/src/Inventario.cpp",
+  "file": "/home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/src/Inventario.cpp",
+  "output": "CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Inventario.cpp.o"
+},
+{
+  "directory": "/home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/build",
   "command": "/usr/bin/c++  -I/home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/include -I/home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/src -I/home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/bGVjdG9y -Wall -Werror -Wconversion -g -Wall -Werror -Wconversion -o CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Placa.cpp.o -c /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/src/Placa.cpp",
   "file": "/home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/src/Placa.cpp",
   "output": "CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Placa.cpp.o"

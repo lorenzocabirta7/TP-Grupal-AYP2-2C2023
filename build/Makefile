@@ -48,10 +48,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/cmake/1336/bin/cmake
+CMAKE_COMMAND = /snap/cmake/1345/bin/cmake
 
 # The command to remove a file.
-RM = /snap/cmake/1336/bin/cmake -E rm -f
+RM = /snap/cmake/1345/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -78,7 +78,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	/snap/cmake/1336/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/cmake/1345/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -297,6 +297,30 @@ src/Grafo.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/build.make CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Grafo.cpp.s
 .PHONY : src/Grafo.cpp.s
 
+src/Inventario.o: src/Inventario.cpp.o
+.PHONY : src/Inventario.o
+
+# target to build an object file
+src/Inventario.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/build.make CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Inventario.cpp.o
+.PHONY : src/Inventario.cpp.o
+
+src/Inventario.i: src/Inventario.cpp.i
+.PHONY : src/Inventario.i
+
+# target to preprocess a source file
+src/Inventario.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/build.make CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Inventario.cpp.i
+.PHONY : src/Inventario.cpp.i
+
+src/Inventario.s: src/Inventario.cpp.s
+.PHONY : src/Inventario.s
+
+# target to generate assembly for a file
+src/Inventario.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/build.make CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Inventario.cpp.s
+.PHONY : src/Inventario.cpp.s
+
 src/Matriz.o: src/Matriz.cpp.o
 .PHONY : src/Matriz.o
 
@@ -375,6 +399,9 @@ help:
 	@echo "... src/Grafo.o"
 	@echo "... src/Grafo.i"
 	@echo "... src/Grafo.s"
+	@echo "... src/Inventario.o"
+	@echo "... src/Inventario.i"
+	@echo "... src/Inventario.s"
 	@echo "... src/Matriz.o"
 	@echo "... src/Matriz.i"
 	@echo "... src/Matriz.s"
