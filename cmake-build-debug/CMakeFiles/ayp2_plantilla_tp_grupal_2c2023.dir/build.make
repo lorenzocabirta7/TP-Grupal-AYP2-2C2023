@@ -167,10 +167,24 @@ CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Matriz.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Matriz.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/src/Matriz.cpp -o CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Matriz.cpp.s
 
+CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Interfaz.cpp.o: CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/flags.make
+CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Interfaz.cpp.o: ../src/Interfaz.cpp
+CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Interfaz.cpp.o: CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Interfaz.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Interfaz.cpp.o -MF CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Interfaz.cpp.o.d -o CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Interfaz.cpp.o -c /mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/src/Interfaz.cpp
+
+CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Interfaz.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Interfaz.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/src/Interfaz.cpp > CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Interfaz.cpp.i
+
+CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Interfaz.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Interfaz.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/src/Interfaz.cpp -o CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Interfaz.cpp.s
+
 CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/bGVjdG9y/bGVjdG9y.cpp.o: CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/flags.make
 CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/bGVjdG9y/bGVjdG9y.cpp.o: ../bGVjdG9y/bGVjdG9y.cpp
 CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/bGVjdG9y/bGVjdG9y.cpp.o: CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/bGVjdG9y/bGVjdG9y.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/bGVjdG9y/bGVjdG9y.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/bGVjdG9y/bGVjdG9y.cpp.o -MF CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/bGVjdG9y/bGVjdG9y.cpp.o.d -o CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/bGVjdG9y/bGVjdG9y.cpp.o -c /mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/bGVjdG9y/bGVjdG9y.cpp
 
 CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/bGVjdG9y/bGVjdG9y.cpp.i: cmake_force
@@ -184,7 +198,7 @@ CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/bGVjdG9y/bGVjdG9y.cpp.s: cmake_fo
 CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/bGVjdG9y/ZGVjb2Rl.cpp.o: CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/flags.make
 CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/bGVjdG9y/ZGVjb2Rl.cpp.o: ../bGVjdG9y/ZGVjb2Rl.cpp
 CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/bGVjdG9y/ZGVjb2Rl.cpp.o: CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/bGVjdG9y/ZGVjb2Rl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/bGVjdG9y/ZGVjb2Rl.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/bGVjdG9y/ZGVjb2Rl.cpp.o -MF CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/bGVjdG9y/ZGVjb2Rl.cpp.o.d -o CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/bGVjdG9y/ZGVjb2Rl.cpp.o -c /mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/bGVjdG9y/ZGVjb2Rl.cpp
 
 CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/bGVjdG9y/ZGVjb2Rl.cpp.i: cmake_force
@@ -198,7 +212,7 @@ CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/bGVjdG9y/ZGVjb2Rl.cpp.s: cmake_fo
 CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/main.cpp.o: CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/flags.make
 CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/main.cpp.o: ../main.cpp
 CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/main.cpp.o: CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/main.cpp.o -MF CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/main.cpp.o.d -o CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/main.cpp.o -c /mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/main.cpp
 
 CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/main.cpp.i: cmake_force
@@ -218,6 +232,7 @@ ayp2_plantilla_tp_grupal_2c2023_OBJECTS = \
 "CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Floyd.cpp.o" \
 "CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Dijkstra.cpp.o" \
 "CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Matriz.cpp.o" \
+"CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Interfaz.cpp.o" \
 "CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/bGVjdG9y/bGVjdG9y.cpp.o" \
 "CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/bGVjdG9y/ZGVjb2Rl.cpp.o" \
 "CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/main.cpp.o"
@@ -232,12 +247,13 @@ ayp2_plantilla_tp_grupal_2c2023_EXTERNAL_OBJECTS =
 ../main: CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Floyd.cpp.o
 ../main: CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Dijkstra.cpp.o
 ../main: CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Matriz.cpp.o
+../main: CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Interfaz.cpp.o
 ../main: CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/bGVjdG9y/bGVjdG9y.cpp.o
 ../main: CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/bGVjdG9y/ZGVjb2Rl.cpp.o
 ../main: CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/main.cpp.o
 ../main: CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/build.make
 ../main: CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable ../main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable ../main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

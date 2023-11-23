@@ -6,6 +6,7 @@
 */
 #include "include/Inventario.hpp"
 #include <iostream>
+#include "Interfaz.hpp"
 using namespace std;
 
 int main()
@@ -25,14 +26,18 @@ int main()
     archivo.close();
     */
    
-    Inventario inventario;
-    inventario.alta(new Arma("Espada", 10));
-    inventario.alta(new Arma("Hacha", 20));
-    inventario.alta(new Arma("Arco", 30));
-    inventario.alta(new Arma("Ballesta", 40));
-    Arma* arma = inventario.baja();
-    cout << *arma << endl;
-    inventario.consulta();
+    // Inventario inventario;
+    // inventario.alta(new Arma("Espada", 10));
+    // inventario.alta(new Arma("Hacha", 20));
+    // inventario.alta(new Arma("Arco", 30));
+    // inventario.alta(new Arma("Ballesta", 40));
+    // Arma* arma = inventario.baja();
+    // cout << *arma << endl;
+    // inventario.consulta();
+
+    Interfaz interfaz;
+    interfaz.inicializar_tablero();
+    interfaz.imprimir_tablero();
     
     return 0;
 }

@@ -7,6 +7,8 @@
 #include "Placa.hpp"
 #include "Arma.hpp"
 #include <time.h>
+#include "Matriz.hpp"
+
 
 const size_t COSTO_MOVIMIENTO = 10;
 const char ARRIBA = 'W';
@@ -31,7 +33,7 @@ const char DESTINO = 'D';
 class Interfaz
 {
 private:
-    char** tablero;
+    Matriz tablero;
     Grafo* grafo;
     size_t niveles_completados = 1;
     size_t puntaje = 0;
@@ -84,11 +86,11 @@ private:
 
     //Pre:
     //Post: Devuelve true si el tipo es valido.
-    bool tipo_valido(string tipo);
+    bool tipo_valido(std::string tipo);
 
     //Pre: El tipo debe ser valido.
     //Post: Genera un ID/Potencia aleatorio según el tipo.
-    size_t generar_numero_aleatorio(string tipo);
+    size_t generar_numero_aleatorio(std::string tipo);
 
     //Pre:
     //Post: Devuelve 0 si se esta jugando, 1 si el jugador gano y 2 si perdio.
@@ -122,8 +124,10 @@ public:
     //Pre:
     //Post: Se imprime el puntaje.
     void mostrar_puntaje();
+    
 
-    ~Interfaz();
+    
+   // ~Interfaz();
 };
 
 

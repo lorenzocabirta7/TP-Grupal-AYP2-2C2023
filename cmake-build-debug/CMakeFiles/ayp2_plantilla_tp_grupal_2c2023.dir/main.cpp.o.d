@@ -155,4 +155,15 @@ CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/main.cpp.o: \
  /usr/include/c++/11/bits/locale_facets.tcc \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
- /usr/include/c++/11/bits/istream.tcc
+ /usr/include/c++/11/bits/istream.tcc \
+ /mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/include/Interfaz.hpp \
+ /mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/include/Grafo.hpp \
+ /mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/include/CaminoMinimo.hpp \
+ /mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/include/Matriz.hpp \
+ /mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/include/ABB.hpp \
+ /mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/include/NodoABB.hpp \
+ /usr/include/c++/11/queue /usr/include/c++/11/deque \
+ /usr/include/c++/11/bits/stl_deque.h /usr/include/c++/11/bits/deque.tcc \
+ /usr/include/c++/11/bits/stl_heap.h /usr/include/c++/11/bits/stl_queue.h \
+ /usr/include/c++/11/bits/uses_allocator.h \
+ /mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/include/Placa.hpp

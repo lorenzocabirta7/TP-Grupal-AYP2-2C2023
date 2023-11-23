@@ -115,6 +115,9 @@
 		<Unit filename="/mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/src/Grafo.cpp">
 			<Option target="ayp2_plantilla_tp_grupal_2c2023"/>
 		</Unit>
+		<Unit filename="/mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/src/Interfaz.cpp">
+			<Option target="ayp2_plantilla_tp_grupal_2c2023"/>
+		</Unit>
 		<Unit filename="/mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/src/Inventario.cpp">
 			<Option target="ayp2_plantilla_tp_grupal_2c2023"/>
 		</Unit>

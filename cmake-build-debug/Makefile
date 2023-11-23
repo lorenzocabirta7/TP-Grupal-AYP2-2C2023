@@ -297,6 +297,30 @@ src/Grafo.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/build.make CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Grafo.cpp.s
 .PHONY : src/Grafo.cpp.s
 
+src/Interfaz.o: src/Interfaz.cpp.o
+.PHONY : src/Interfaz.o
+
+# target to build an object file
+src/Interfaz.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/build.make CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Interfaz.cpp.o
+.PHONY : src/Interfaz.cpp.o
+
+src/Interfaz.i: src/Interfaz.cpp.i
+.PHONY : src/Interfaz.i
+
+# target to preprocess a source file
+src/Interfaz.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/build.make CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Interfaz.cpp.i
+.PHONY : src/Interfaz.cpp.i
+
+src/Interfaz.s: src/Interfaz.cpp.s
+.PHONY : src/Interfaz.s
+
+# target to generate assembly for a file
+src/Interfaz.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/build.make CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Interfaz.cpp.s
+.PHONY : src/Interfaz.cpp.s
+
 src/Inventario.o: src/Inventario.cpp.o
 .PHONY : src/Inventario.o
 
@@ -399,6 +423,9 @@ help:
 	@echo "... src/Grafo.o"
 	@echo "... src/Grafo.i"
 	@echo "... src/Grafo.s"
+	@echo "... src/Interfaz.o"
+	@echo "... src/Interfaz.i"
+	@echo "... src/Interfaz.s"
 	@echo "... src/Inventario.o"
 	@echo "... src/Inventario.i"
 	@echo "... src/Inventario.s"
