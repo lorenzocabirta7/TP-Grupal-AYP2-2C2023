@@ -7,7 +7,7 @@
 #include "Placa.hpp"
 #include "Arma.hpp"
 #include <time.h>
-#include "Matriz.hpp"
+#include <vector>
 
 
 const size_t COSTO_MOVIMIENTO = 10;
@@ -33,7 +33,7 @@ const char DESTINO = 'D';
 class Interfaz
 {
 private:
-    Matriz tablero;
+    std::vector<std::vector<char>> tablero;
     Grafo* grafo;
     size_t niveles_completados = 1;
     size_t puntaje = 0;
@@ -97,6 +97,9 @@ private:
     size_t estado_juego();
 
 public:
+
+    Interfaz();
+
     //Pre:
     //Post: Inicializa el tablero con todos sus elementos cargados.
     void inicializar_tablero();
@@ -124,9 +127,7 @@ public:
     //Pre:
     //Post: Se imprime el puntaje.
     void mostrar_puntaje();
-    
 
-    
    // ~Interfaz();
 };
 

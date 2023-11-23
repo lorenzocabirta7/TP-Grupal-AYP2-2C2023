@@ -34,7 +34,7 @@ int main()
     // Arma* arma = inventario.baja();
     // cout << *arma << endl;
     // inventario.consulta();
-
+    srand((unsigned)time(NULL));
     Interfaz interfaz;
     interfaz.inicializar_tablero();
     interfaz.imprimir_tablero();

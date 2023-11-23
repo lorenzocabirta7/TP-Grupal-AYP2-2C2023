@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "ayp2_plantilla_tp_grupal_2c2023::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ayp2_plantilla_tp_grupal_2c2023-Debug-d82661b8cc58ecd504e2.json",
+					"jsonFile" : "target-ayp2_plantilla_tp_grupal_2c2023-Debug-d6aa8dc0a0c7985d6d5a.json",
 					"name" : "ayp2_plantilla_tp_grupal_2c2023",
 					"projectIndex" : 0
 				}
@@ -49,12 +49,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/cmake-build-debug",
-		"source" : "/mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023"
+		"build" : "/home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/cmake-build-debug",
+		"source" : "/home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023"
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 3
+		"minor" : 5
 	}
 }

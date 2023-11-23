@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "/mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/main"
+			"path" : "/home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/main"
 		}
 	],
 	"backtrace" : 1,
@@ -61,7 +61,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-Wall -Werror -Wconversion -g"
+					"fragment" : "-Wall -Werror -Wconversion -g -fdiagnostics-color=always"
 				},
 				{
 					"backtrace" : 2,
@@ -80,15 +80,15 @@
 			[
 				{
 					"backtrace" : 3,
-					"path" : "/mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/include"
+					"path" : "/home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/include"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "/mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/src"
+					"path" : "/home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/src"
 				},
 				{
 					"backtrace" : 5,
-					"path" : "/mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/bGVjdG9y"
+					"path" : "/home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/bGVjdG9y"
 				}
 			],
 			"language" : "CXX",
