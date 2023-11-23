@@ -22,6 +22,34 @@ void Interfaz::inicializar_paredes(size_t tipo_layout) {
     }
 }
 
+//OTRA FORMA DE HACERLO
+/* asginar_pared_layout_1(i,j)
+{
+    if ((i != 1 && j != 3)  (i != 2 && j != 7)    (i != 3 && j != 1)  (i != 4 && j != 5)  (i != 5 && j != 3)  (i == 8 && j == 3))
+    {
+        tablero[i][j] = PARED;
+    }
+}
+
+
+for(int i = 0; i < 8; i++) {
+    for(int j = 0; j < 8; j++) {
+
+
+        if(tipo_layout == 1)
+        {
+            if (j % 2 != 0)
+            {
+                asignar_pared_layout_1(i,j);
+            }
+        }
+        else
+        {
+            if (i % 2 != 0  i == 8)
+            {
+                asignar_pared_layout_2(i,j);
+            }
+        }*/
 
 void Interfaz::inicializar_personajes() {
     size_t fila = 0;
