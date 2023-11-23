@@ -165,6 +165,7 @@ std::vector<T> ABB<T, menor, igual>::ancho()
     }
     return datos;
 }
+
 template <typename T, bool menor(T, T), bool igual(T, T)>
 void ABB<T, menor, igual>::ejecutar(void metodo(T))
 {

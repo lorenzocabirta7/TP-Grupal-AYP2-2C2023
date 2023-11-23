@@ -21,6 +21,7 @@ add_executable(ayp2_plantilla_tp_grupal_2c2023
         src/Floyd.cpp
         src/Dijkstra.cpp
         src/Matriz.cpp
+        src/Interfaz.cpp
         bGVjdG9y/bGVjdG9y.cpp
         bGVjdG9y/ZGVjb2Rl.cpp
         main.cpp

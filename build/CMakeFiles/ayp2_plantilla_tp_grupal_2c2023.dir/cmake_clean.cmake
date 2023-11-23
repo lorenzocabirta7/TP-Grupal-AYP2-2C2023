@@ -15,6 +15,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Floyd.cpp.o.d"
   "CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Grafo.cpp.o"
   "CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Grafo.cpp.o.d"
+  "CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Interfaz.cpp.o"
+  "CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Interfaz.cpp.o.d"
   "CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Inventario.cpp.o"
   "CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Inventario.cpp.o.d"
   "CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Matriz.cpp.o"
