@@ -19,10 +19,15 @@ void Inventario::consulta()
     std::cout << armas.primero() << std::endl;
 }
 
+bool Inventario::vacio()
+{
+    return armas.vacio();
+}
+
 Inventario::~Inventario()
 {
-    while (!armas.vacio()){
+    while (!armas.vacio())
+    {
         delete baja();
     }
-
 }

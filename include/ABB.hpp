@@ -69,6 +69,10 @@ public:
     // El operador = (asignación) está deshabilitado.
     void operator=(const ABB &abb) = delete;
 
+    // Pre: -
+    // Post: Devuelve la altura del árbol.
+    size_t calcular_altura();
+
     // Destructor.
     ~ABB();
 };
@@ -185,6 +189,16 @@ template <typename T, bool menor(T, T), bool igual(T, T)>
 bool ABB<T, menor, igual>::vacio()
 {
     return cantidad_datos == 0;
+}
+
+template <typename T, bool menor(T, T), bool igual(T, T)>
+inline size_t ABB<T, menor, igual>::calcular_altura()
+{
+    if (raiz != nullptr)
+    {
+        return raiz->calcular_altura();
+    }
+    return 0;
 }
 
 template <typename T, bool menor(T, T), bool igual(T, T)>

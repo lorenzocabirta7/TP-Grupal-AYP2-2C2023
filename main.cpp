@@ -25,7 +25,7 @@ int main()
 
     archivo.close();
     */
-   
+
     // Inventario inventario;
     // inventario.alta(new Arma("Espada", 10));
     // inventario.alta(new Arma("Hacha", 20));
@@ -38,6 +38,6 @@ int main()
     Interfaz interfaz;
     interfaz.inicializar_tablero();
     interfaz.imprimir_tablero();
-    
+
     return 0;
 }

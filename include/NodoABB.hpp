@@ -18,7 +18,9 @@ private:
     // POST: Reordena los punteros
     void reemplazar_nodos(NodoABB *nodo, T dato_bajar);
 
-
+    // PRE: -
+    // POST: Devuelve el mayor entre a y b.
+    size_t obtener_maximo(size_t a, size_t b);
 
 public:
     // Constructor.
@@ -57,6 +59,10 @@ public:
     // Pre: -
     // Post: Ejecuta el método/función en el subárbol.
     void ejecutar(void metodo(T));
+
+    // Pre: -
+    // Post: Devuelve la altura del arbol.
+    size_t calcular_altura();
 
     // Destructor.
     ~NodoABB();
@@ -159,7 +165,6 @@ NodoABB<T, menor, igual> *NodoABB<T, menor, igual>::baja(T dato_bajar)
     return this;
 }
 
-
 template <typename T, bool menor(T, T), bool igual(T, T)>
 bool NodoABB<T, menor, igual>::consulta(T dato_consultar)
 {
@@ -253,6 +258,33 @@ void NodoABB<T, menor, igual>::ejecutar(void metodo(T))
     {
         hijo_derecho->ejecutar(metodo);
     }
+}
+
+template <typename T, bool menor(T, T), bool igual(T, T)>
+size_t NodoABB<T, menor, igual>::obtener_maximo(size_t a, size_t b)
+{
+    if (a > b)
+    {
+        return a;
+    }
+    return b;
+}
+
+template <typename T, bool menor(T, T), bool igual(T, T)>
+size_t NodoABB<T, menor, igual>::calcular_altura()
+{
+    size_t altura_izquierda = 0;
+    size_t altura_derecha = 0;
+
+    if (hijo_izquierdo != nullptr)
+    {
+        altura_izquierda = hijo_izquierdo->calcular_altura();
+    }
+    if (hijo_derecho != nullptr)
+    {
+        altura_derecha = hijo_derecho->calcular_altura();
+    }
+    return 1 + obtener_maximo(altura_izquierda, altura_derecha);
 }
 
 template <typename T, bool menor(T, T), bool igual(T, T)>
