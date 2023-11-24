@@ -1,7 +1,6 @@
 #ifndef __PERSONAJE_H_
 #define __PERSONAJE_H_
 
-
 #include <iostream>
 #include "Grafo.hpp"
 #include "ABB.hpp"
@@ -9,9 +8,10 @@
 #include "Arma.hpp"
 #include "Inventario.hpp"
 #include "Interfaz.hpp"
+#include <string>
 
-const string ID = "ID";
-const string POTENCIA = "Potencia";
+const std::string ID = "ID";
+const std::string POTENCIA = "Potencia";
 const size_t ID_PLACA_MINIMO = 100;
 const size_t ID_PLACA_MAXIMO = 666;
 const size_t POTENCIA_ARMA_MINIMO = 10;
@@ -20,12 +20,13 @@ const char ARRIBA = 'W';
 const char ABAJO = 'S';
 const char IZQUIERDA = 'A';
 const char DERECHA = 'D';
-
-
-class Personaje {
-    private:
+const size_t MOVER_PERSONAJE = 1;
+class Personaje
+{
+private:
     Inventario *inventario;
-
+    bool tiene_arma = false;
+    bool arma_equipada = false;
 
     // Pre:
     // Post: Se equipa el arma mas fuerte.
@@ -43,7 +44,7 @@ class Personaje {
     // Post: Genera un arma.
     Arma *generar_arma();
 
-        // Pre:
+    // Pre:
     // Post: Devuelve true si el tipo es valido.
     bool tipo_valido(std::string tipo);
 
@@ -53,36 +54,33 @@ class Personaje {
 
     // Pre:
     // Post: Devuelve la posicion en la que esta ubicado James
-    std::vector<size_t> obtener_posicion_james();
+    std::vector<size_t> obtener_posicion_james(Interfaz &interfaz);
 
     // Pre: Debe tener un arma equipada.
     // Post: Elimina el arma del inventario y la desequipa.
     void romper_arma();
 
-
     // Pre: El movimiento debe ser valido.
     // Post: Realiza el movimiento elegido.
-    void realizar_movimiento(char movimiento);
+    void realizar_movimiento(char movimiento, Interfaz &interfaz);
 
     // Pre:
     // Post: Devuelve true si el movimiento es valido.
     bool movimiento_es_valido(char movimiento);
 
+    bool casilla_valida(int fila, int columna, Interfaz &interfaz);
+
     // Pre:
     // Post: Equipa, desequipa o da de baja el arma segun corresponda.
     void interaccion_armas();
 
-
-    public:    
+public:
+    Personaje(Inventario *inventario);
     Personaje();
 
     // Pre:
     // Post: Se realiza un movimiento o se interactua con un arma segin corresponda.
-    void interaccion_personaje(size_t opcion);
+    void interaccion_personaje(size_t opcion, Interfaz &interfaz);
 };
 
-
-
-
-
-#endif 
+#endif

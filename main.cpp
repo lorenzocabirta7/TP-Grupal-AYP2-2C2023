@@ -8,7 +8,7 @@
 #include <iostream>
 #include "Interfaz.hpp"
 using namespace std;
-
+#include "Menu.hpp"
 int main()
 {
     /*
@@ -26,7 +26,7 @@ int main()
     archivo.close();
     */
 
-    // Inventario inventario;
+    Inventario inventario;
     // inventario.alta(new Arma("Espada", 10));
     // inventario.alta(new Arma("Hacha", 20));
     // inventario.alta(new Arma("Arco", 30));
@@ -36,8 +36,11 @@ int main()
     // inventario.consulta();
     srand((unsigned)time(NULL));
     Interfaz interfaz;
-    interfaz.inicializar_tablero();
-    interfaz.imprimir_tablero();
+    Personaje Personaje(&inventario);
+
+    // ** ver probabilidad del 20% del arma
+    // ** ver probabilidad del 50% de Pyramid Head cada uno
+    // ** ver grafo
 
     return 0;
 }

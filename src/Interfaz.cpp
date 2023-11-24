@@ -34,7 +34,7 @@ void Interfaz::inicializar_paredes(size_t tipo_layout)
     {
         size_t x = coordenada[0];
         size_t y = coordenada[1];
-        modificar_tablero(x,y,PARED);
+        actualizar_tablero(x, y, PARED);
     }
 }
 
@@ -45,13 +45,13 @@ void Interfaz::inicializar_tablero(size_t tipo_layout)
 
         for (size_t columna = 0; columna < CANTIDAD_COLUMNAS; columna++)
         {
-            modificar_tablero(fila,columna,ESPACIO_LIBRE);
+            actualizar_tablero(fila, columna, ESPACIO_LIBRE);
         }
     }
 
     inicializar_paredes(tipo_layout);
-    modificar_tablero(FILA_ORIGEN,COLUMNA_ORIGEN,ORIGEN);
-    modificar_tablero(FILA_DESTINO,COLUMNA_DESTINO,DESTINO);
+    actualizar_tablero(FILA_ORIGEN, COLUMNA_ORIGEN, ORIGEN);
+    actualizar_tablero(FILA_DESTINO, COLUMNA_DESTINO, DESTINO);
     inicializar_personajes();
 }
 
@@ -59,8 +59,8 @@ void Interfaz::inicializar_personajes()
 {
     size_t fila = 0;
     size_t columna = 0;
-    modificar_tablero(FILA_ORIGEN,COLUMNA_ORIGEN,JAMES);
-   
+    actualizar_tablero(FILA_ORIGEN, COLUMNA_ORIGEN, JAMES);
+
     for (size_t i = 0; i < 2; i++)
     {
         while (!posicion_valida(fila, columna))
@@ -68,7 +68,7 @@ void Interfaz::inicializar_personajes()
             fila = generar_coordenada_aleatoria();
             columna = generar_coordenada_aleatoria();
         }
-        modificar_tablero(fila,columna,PYRAMID_HEAD);
+        actualizar_tablero(fila, columna, PYRAMID_HEAD);
     }
 }
 
@@ -117,7 +117,7 @@ size_t Interfaz::elegir_layout(size_t altura_arbol)
 
 // ** MOVIMIENTOS **
 
-
+/*
 Placa *Interfaz::generar_placa()
 {
     int id;
@@ -137,6 +137,7 @@ Placa *Interfaz::generar_placa()
     arbol_placas.alta(&nueva_placa);
     return &nueva_placa;
 }
+*/
 
 size_t Interfaz::estado_juego()
 {
@@ -153,7 +154,7 @@ size_t Interfaz::estado_juego()
     return 0;
 }
 
-
+/*
 void Interfaz::interaccion_grafo(size_t opcion)
 {
     if (opcion == MOSTRAR_MEJOR_RECORRIDO)
@@ -165,28 +166,19 @@ void Interfaz::interaccion_grafo(size_t opcion)
         recorrer_mejor_camino();
     }
 }
+*/
 
-void Interfaz::modificar_tablero(size_t fila, size_t columna,char personaje){
-
-    tablero[fila][columna]=personaje;
+void Interfaz::actualizar_tablero(size_t fila, size_t columna, char personaje)
+{
+    tablero[fila][columna] = personaje;
 }
 
-
-bool Interfaz::esta_personaje(size_t filas, size_t columnas, char personaje){
-    return tablero[fila][columna] == personaje;
+bool Interfaz::esta_ocupado(size_t fila, size_t columna, char objeto)
+{
+    return tablero[fila][columna] == objeto;
 }
 
-int distancia_manhattan(int fila1, int fila2, int columna1, int columna2){
-    bool 
-    int coordenada_en_x, coordenada_en_y,resultado;
-    coordenada_en_x = (fila1- fila2);
-    coordenada_en_y = (columna1 - columna2);
-
-    if(coordenada_en_x < 0){
-        coordenada_en_x = MODULO;
-    }
-    if(coordenada_en_y < 0){
-        coordenada_en_y= MODULO;
-    }
-    resultado = coordenada_en_x + coordenada_en_y;
+bool Interfaz::hay_pared(size_t filas, size_t columnas)
+{
+    return tablero[filas][columnas] == PARED;
 }

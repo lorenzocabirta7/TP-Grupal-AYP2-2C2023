@@ -11,15 +11,11 @@
 #include <vector>
 #include <string>
 
-
-
-
 const char ESPACIO_LIBRE = '-';
 
 const size_t CANTIDAD_FILAS = 9;
 const size_t CANTIDAD_COLUMNAS = 9;
 const size_t COSTO_MOVIMIENTO = 10;
-
 
 const char PARED = '#';
 const char PYRAMID_HEAD = 'P';
@@ -36,12 +32,10 @@ class Interfaz
 private:
     std::vector<std::vector<char>> tablero;
     Grafo *grafo;
-    
+
     ABB<Placa *, Placa::menor, Placa::igual> arbol_placas;
     size_t niveles_completados = 1;
     size_t puntaje = 0;
-    bool tiene_arma = false;
-    bool arma_equipada = false;
 
     // Pre:
     // Post: Genera una coordenada aleatoria.
@@ -59,18 +53,13 @@ private:
     // Post: Asigna posiciones a las paredes segun el tipo de layout.
     void inicializar_paredes(size_t tipo_layout);
 
-   
     // Pre:
     // Post: Devuelve el layout correspondiente.
     size_t elegir_layout(size_t altura_arbol);
 
-
-
     // Pre:
     // Post: Genera una placa.
     Placa *generar_placa();
-
-
 
     // Pre:
     // Post: Muestra el recorrido con menor coste.
@@ -98,27 +87,24 @@ public:
     // Pre:
     // Post: Devuelve 0 si se esta jugando, 1 si el jugador gano y 2 si perdio.
     size_t estado_juego();
-    
 
     // Pre:
     // Post: Se muestra el mejor camino o se lo recorre segun corresponda.
     void interaccion_grafo(size_t opcion);
 
-
-
+    // Pre:
+    // Post: Se modifica el tablero en la posicion pasada por parametro
     void actualizar_tablero(size_t filas, size_t columnas, char personaje);
 
-    bool esta_personaje(size_t filas, size_t columnas, char personaje);
+    // Pre:
+    // Post: Devuelve true si el personaje esta en la posicion pasada por parametro
+    bool esta_ocupado(size_t filas, size_t columnas, char objeto);
 
-    int distancia_manhattan()
-
-
+    // Pre:
+    // Post: Devuelve true si hay una pared en la posicion pasada por parametro
+    bool hay_pared(size_t filas, size_t columnas);
 
     // ~Interfaz();
-
-
-
-
 };
 
 #endif

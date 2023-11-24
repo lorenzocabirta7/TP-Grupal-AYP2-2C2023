@@ -1,11 +1,17 @@
 #include "Personaje.hpp"
 
+using namespace std;
 
-Personaje::Persoanje(Inventario inventario){
-    this->inventario =inventario;
+Personaje::Personaje(Inventario *inventario)
+{
+    this->inventario = inventario;
 }
 
-bool Persoanje::movimiento_es_valido(char movimiento)
+Personaje::Personaje()
+{
+}
+
+bool Personaje::movimiento_es_valido(char movimiento)
 {
     if (movimiento != ABAJO || movimiento != ARRIBA || movimiento != DERECHA || movimiento != IZQUIERDA)
     {
@@ -15,7 +21,7 @@ bool Persoanje::movimiento_es_valido(char movimiento)
     return true;
 }
 
-char Persoanje::pedir_movimiento()
+char Personaje::pedir_movimiento()
 {
     char movimiento;
     do
@@ -93,7 +99,7 @@ Arma *Personaje::generar_arma()
     inventario->alta(nueva_arma);
 }
 
-std::vector<size_t> Interfaz::obtener_posicion_james(Interfaz interfaz)
+vector<size_t> Personaje::obtener_posicion_james(Interfaz &interfaz)
 {
     int fila = -1;
     int columna = -1;
@@ -102,7 +108,7 @@ std::vector<size_t> Interfaz::obtener_posicion_james(Interfaz interfaz)
     {
         fila++;
         columna++;
-        if (interfaz.esta_personaje(fila,columna,JAMES))
+        if (interfaz.esta_ocupado(fila, columna, JAMES))
         {
             encontrado = true;
         }
@@ -116,31 +122,59 @@ std::vector<size_t> Interfaz::obtener_posicion_james(Interfaz interfaz)
     return posicion;
 }
 
-void Interfaz::realizar_movimiento(char movimiento,Interfaz interfaz)
+bool Personaje::casilla_valida(int fila, int columna, Interfaz &interfaz)
 {
-    vector<size_t> posicion_james = obtener_posicion_james();
-    size_t fila_james = posicion_james[0];
-    size_t columna_james = posicion_james[1];
+    if (interfaz.esta_ocupado(size_t(fila), size_t(columna), PARED))
+    {
+        cout << "No se puede realizar el movimiento porque hay una pared." << endl;
+        return false;
+    }
+    if (fila < 0 || columna > 8 || fila > 8 || columna < 0)
+    {
+        cout << "No se puede realizar el movimiento porque se sale del tablero." << endl;
+        return false;
+    }
+    return true;
+}
+
+void Personaje::realizar_movimiento(char movimiento, Interfaz &interfaz)
+{
+    vector<size_t> posicion_james = obtener_posicion_james(interfaz);
+
+    int fila_james = static_cast<int>(posicion_james[0]);
+    int columna_james = static_cast<int>(posicion_james[1]);
 
     if (movimiento == ABAJO)
     {
-        fila_james++;
-        interfaz.actualizar_tablero(fila_james,columna_james,JAMES);
+        if (casilla_valida(fila_james + 1, columna_james, interfaz))
+        {
+            fila_james++;
+            interfaz.actualizar_tablero(fila_james, columna_james, JAMES);
+        }
     }
     else if (movimiento == ARRIBA)
     {
-        fila_james--;
-        interfaz.actualizar_tablero(fila_james,columna_james,JAMES);
+        if (casilla_valida(fila_james - 1, columna_james, interfaz))
+        {
+            fila_james--;
+            interfaz.actualizar_tablero(fila_james, columna_james, JAMES);
+        }
     }
     else if (movimiento == DERECHA)
     {
-        columna_james++;
-        interfaz.actualizar_tablero(fila_james,columna_james,JAMES);
+        if (casilla_valida(fila_james, columna_james + 1, interfaz))
+        {
+            columna_james++;
+            interfaz.actualizar_tablero(fila_james, columna_james, JAMES);
+        }
     }
     else if (movimiento == IZQUIERDA)
     {
-        columna_james--;
-        interfaz.actualizar_tablero(fila_james,columna_james,JAMES);
+        if (casilla_valida(fila_james, columna_james - 1, interfaz))
+        {
+            columna_james--;
+            interfaz.actualizar_tablero(fila_james, columna_james, JAMES);
+        }
     }
     else
     {
@@ -149,7 +183,7 @@ void Interfaz::realizar_movimiento(char movimiento,Interfaz interfaz)
     }
 }
 
-void Interfaz::interaccion_armas()
+void Personaje::interaccion_armas()
 {
     if (arma_equipada)
     {
@@ -161,13 +195,13 @@ void Interfaz::interaccion_armas()
     }
 }
 
-void Interfaz::interaccion_personaje(size_t opcion)
+void Personaje::interaccion_personaje(size_t opcion, Interfaz &interfaz)
 {
     if (opcion == MOVER_PERSONAJE)
     {
         char movimiento = pedir_movimiento();
-        realizar_movimiento(movimiento);
-        imprimir_tablero();
+        realizar_movimiento(movimiento, interfaz);
+        interfaz.imprimir_tablero();
     }
     else
     {

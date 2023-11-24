@@ -1,15 +1,11 @@
 #include "Menu.hpp"
+using namespace std;
 
-Menu::Menu(Interfaz interfaz, Personaje personaje){
-    this->interfaz=interfaz;
-    this->personaje=personaje;
-}
-
-
-void::Menu flujo_juego( ){
+void Menu::flujo_juego()
+{
     size_t opcion;
     // mostrar opciones
-    while (estado_juego() == 0)
+    while (interfaz.estado_juego() == 0)
     {
         cout << "Ingrese una opcion: ";
         cin >> opcion;
@@ -18,11 +14,12 @@ void::Menu flujo_juego( ){
         {
         case MOVER_PERSONAJE:
         case MANEJO_ARMAS:
-            personaje.interaccion_personaje(opcion);
+            personaje.interaccion_personaje(opcion, interfaz);
+
             break;
         case MOSTRAR_MEJOR_RECORRIDO:
         case RECORRER_MEJOR_CAMINO:
-            interaccion_grafo(opcion);// no sabemos en que clase enchufa grafo :(
+            // interaccion_grafo(opcion); // no sabemos en que clase enchufa grafo :(
             break;
         case MOSTRAR_PUNTAJE:
             interfaz.mostrar_puntaje();
@@ -32,10 +29,10 @@ void::Menu flujo_juego( ){
             break;
         }
     }
-    if (estado_juego() == 1)
+    if (interfaz.estado_juego() == 1)
     {
         cout << "Ganaste!" << endl;
-        mostrar_puntaje();
+        interfaz.mostrar_puntaje();
     }
     else
     {

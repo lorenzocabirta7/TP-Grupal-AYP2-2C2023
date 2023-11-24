@@ -2,6 +2,8 @@
   "files.associations": {
     "__config": "cpp",
     "iostream": "cpp",
-    "vector": "cpp"
-  }
+    "vector": "cpp",
+    "string": "cpp"
+  },
+  "editor.inlineSuggest.showToolbar": "onHover"
 }
