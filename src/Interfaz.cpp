@@ -4,7 +4,7 @@ using namespace std;
 
 Interfaz::Interfaz()
 {
-    tablero = std::vector<std::vector<char>>(9, std::vector<char>(9, '*'));
+    tablero = std::vector<std::vector<char>>(CANTIDAD_FILAS, std::vector<char>(CANTIDAD_COLUMNAS, ESPACIO_LIBRE));
 }
 
 // ** INICIALIZACION **
@@ -34,7 +34,7 @@ void Interfaz::inicializar_paredes(size_t tipo_layout)
     {
         size_t x = coordenada[0];
         size_t y = coordenada[1];
-        tablero[x][y] = PARED;
+        modificar_tablero(x,y,PARED);
     }
 }
 
@@ -45,13 +45,13 @@ void Interfaz::inicializar_tablero(size_t tipo_layout)
 
         for (size_t columna = 0; columna < CANTIDAD_COLUMNAS; columna++)
         {
-            tablero[fila][columna] = '-';
+            modificar_tablero(fila,columna,ESPACIO_LIBRE);
         }
     }
 
     inicializar_paredes(tipo_layout);
-    tablero[FILA_ORIGEN][COLUMNA_ORIGEN] = ORIGEN;
-    tablero[FILA_DESTINO][COLUMNA_DESTINO] = DESTINO;
+    modificar_tablero(FILA_ORIGEN,COLUMNA_ORIGEN,ORIGEN);
+    modificar_tablero(FILA_DESTINO,COLUMNA_DESTINO,DESTINO);
     inicializar_personajes();
 }
 
@@ -59,8 +59,8 @@ void Interfaz::inicializar_personajes()
 {
     size_t fila = 0;
     size_t columna = 0;
-    tablero[FILA_ORIGEN][COLUMNA_ORIGEN] = JAMES;
-
+    modificar_tablero(FILA_ORIGEN,COLUMNA_ORIGEN,JAMES);
+   
     for (size_t i = 0; i < 2; i++)
     {
         while (!posicion_valida(fila, columna))
@@ -68,7 +68,7 @@ void Interfaz::inicializar_personajes()
             fila = generar_coordenada_aleatoria();
             columna = generar_coordenada_aleatoria();
         }
-        tablero[fila][columna] = PYRAMID_HEAD;
+        modificar_tablero(fila,columna,PYRAMID_HEAD);
     }
 }
 
@@ -117,93 +117,6 @@ size_t Interfaz::elegir_layout(size_t altura_arbol)
 
 // ** MOVIMIENTOS **
 
-bool Interfaz::movimiento_es_valido(char movimiento)
-{
-    if (movimiento != ABAJO || movimiento != ARRIBA || movimiento != DERECHA || movimiento != IZQUIERDA)
-    {
-        cout << "El movimento ingresado no es valido." << endl;
-        return false;
-    }
-    return true;
-}
-
-char Interfaz::pedir_movimiento()
-{
-    char movimiento;
-    do
-    {
-        cout << "Ingrese un movimiento: ";
-        cin >> movimiento;
-        cout << endl;
-    } while (!movimiento_es_valido(movimiento));
-
-    return movimiento;
-}
-
-void Interfaz::romper_arma()
-{
-    desequipar_arma();
-    Arma *arma_borrar = inventario->baja();
-    delete arma_borrar;
-}
-
-void Interfaz::equipar_arma()
-{
-    if (!inventario->vacio())
-    {
-        arma_equipada = true;
-        cout << "Se ha equipado el arma: ";
-        inventario->consulta();
-    }
-    else
-    {
-        cout << "No hay armas en el inventario." << endl;
-    }
-}
-
-void Interfaz::desequipar_arma()
-{
-    arma_equipada = false;
-    cout << "Se ha desequipado el arma." << endl;
-}
-
-bool Interfaz::tipo_valido(string tipo)
-{
-    return (tipo == ID || tipo == POTENCIA);
-}
-
-int Interfaz::generar_numero_aleatorio(string tipo)
-{
-    if (!tipo_valido(tipo))
-    {
-        cout << "El tipo ingresado no es valido." << endl;
-        return -1;
-    }
-    int numero_aleatorio = 0;
-    if (tipo == "ID")
-    {
-        numero_aleatorio = rand() % (1 + ID_PLACA_MAXIMO - ID_PLACA_MINIMO) + ID_PLACA_MINIMO;
-    }
-    else
-    {
-        numero_aleatorio = rand() % (1 + POTENCIA_ARMA_MAXIMO - POTENCIA_ARMA_MINIMO) + POTENCIA_ARMA_MINIMO;
-    }
-
-    return numero_aleatorio;
-}
-
-Arma *Interfaz::generar_arma()
-{
-    int potencia;
-    do
-    {
-        potencia = generar_numero_aleatorio(POTENCIA);
-    } while (potencia == -1);
-
-    size_t potencia_valida = size_t(potencia);
-    Arma *nueva_arma = new Arma("nueva_arma", potencia_valida);
-    inventario->alta(nueva_arma);
-}
 
 Placa *Interfaz::generar_placa()
 {
@@ -240,87 +153,6 @@ size_t Interfaz::estado_juego()
     return 0;
 }
 
-std::vector<size_t> Interfaz::obtener_posicion_james()
-{
-    int fila = -1;
-    int columna = -1;
-    bool encontrado = false;
-    do
-    {
-        fila++;
-        columna++;
-        if (tablero[fila][columna] == JAMES)
-        {
-            encontrado = true;
-        }
-
-    } while (fila < CANTIDAD_FILAS && columna < CANTIDAD_COLUMNAS && !encontrado);
-
-    size_t fila_james = size_t(fila);
-    size_t columna_james = size_t(columna);
-    vector<size_t> posicion = {fila_james, columna_james};
-
-    return posicion;
-}
-
-void Interfaz::realizar_movimiento(char movimiento)
-{
-    vector<size_t> posicion_james = obtener_posicion_james();
-    size_t fila_james = posicion_james[0];
-    size_t columna_james = posicion_james[1];
-
-    if (movimiento == ABAJO)
-    {
-        fila_james++;
-        tablero[fila_james][columna_james] = JAMES;
-    }
-    else if (movimiento == ARRIBA)
-    {
-        fila_james--;
-        tablero[fila_james][columna_james] = JAMES;
-    }
-    else if (movimiento == DERECHA)
-    {
-        columna_james++;
-        tablero[fila_james][columna_james] = JAMES;
-    }
-    else if (movimiento == IZQUIERDA)
-    {
-        columna_james--;
-        tablero[fila_james][columna_james] = JAMES;
-    }
-    else
-    {
-        cout << "El movimiento ingresado no es valido." << endl;
-        cout << "Los movimientos validos son: " << DERECHA << ", " << IZQUIERDA << ", " << ARRIBA << ", " << ABAJO << endl;
-    }
-}
-
-void Interfaz::interaccion_armas()
-{
-    if (arma_equipada)
-    {
-        desequipar_arma();
-    }
-    else
-    {
-        equipar_arma();
-    }
-}
-
-void Interfaz::interaccion_personaje(size_t opcion)
-{
-    if (opcion == MOVER_PERSONAJE)
-    {
-        char movimiento = pedir_movimiento();
-        realizar_movimiento(movimiento);
-        imprimir_tablero();
-    }
-    else
-    {
-        interaccion_armas();
-    }
-}
 
 void Interfaz::interaccion_grafo(size_t opcion)
 {
@@ -334,40 +166,27 @@ void Interfaz::interaccion_grafo(size_t opcion)
     }
 }
 
-void Interfaz::flujo_juego()
-{
-    size_t opcion;
-    // mostrar opciones
-    while (estado_juego() == 0)
-    {
-        cout << "Ingrese una opcion: ";
-        cin >> opcion;
-        cout << endl;
-        switch (opcion)
-        {
-        case MOVER_PERSONAJE:
-        case MANEJO_ARMAS:
-            interaccion_personaje(opcion);
-            break;
-        case MOSTRAR_MEJOR_RECORRIDO:
-        case RECORRER_MEJOR_CAMINO:
-            interaccion_grafo(opcion);
-            break;
-        case MOSTRAR_PUNTAJE:
-            mostrar_puntaje();
-            break;
-        default:
-            cout << "La opcion ingresada no es valida." << endl;
-            break;
-        }
+void Interfaz::modificar_tablero(size_t fila, size_t columna,char personaje){
+
+    tablero[fila][columna]=personaje;
+}
+
+
+bool Interfaz::esta_personaje(size_t filas, size_t columnas, char personaje){
+    return tablero[fila][columna] == personaje;
+}
+
+int distancia_manhattan(int fila1, int fila2, int columna1, int columna2){
+    bool 
+    int coordenada_en_x, coordenada_en_y,resultado;
+    coordenada_en_x = (fila1- fila2);
+    coordenada_en_y = (columna1 - columna2);
+
+    if(coordenada_en_x < 0){
+        coordenada_en_x = MODULO;
     }
-    if (estado_juego() == 1)
-    {
-        cout << "Ganaste!" << endl;
-        mostrar_puntaje();
+    if(coordenada_en_y < 0){
+        coordenada_en_y= MODULO;
     }
-    else
-    {
-        cout << "Perdiste!" << endl;
-    }
+    resultado = coordenada_en_x + coordenada_en_y;
 }

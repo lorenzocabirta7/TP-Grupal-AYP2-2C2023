@@ -1,5 +1,6 @@
 #include "Heap.hpp"
 #include "Arma.hpp"
+
 class Inventario
 {
 private:
