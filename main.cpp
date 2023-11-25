@@ -37,7 +37,7 @@ int main()
     // Arma* arma = inventario.baja();
     // cout << *arma << endl;
     // inventario.consulta();
-    srand((unsigned)time(NULL));
+    //srand((unsigned)time(NULL));
 //    Interfaz interfaz;
 //    Personaje Personaje(&inventario);
 

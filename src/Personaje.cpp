@@ -76,11 +76,11 @@ int Personaje::generar_numero_aleatorio(string tipo)
     int numero_aleatorio = 0;
     if (tipo == "ID")
     {
-        numero_aleatorio = rand() % (1 + ID_PLACA_MAXIMO - ID_PLACA_MINIMO) + ID_PLACA_MINIMO;
+        numero_aleatorio = (rand()) % (1 + ID_PLACA_MAXIMO - ID_PLACA_MINIMO) + ID_PLACA_MINIMO;
     }
     else
     {
-        numero_aleatorio = rand() % (1 + POTENCIA_ARMA_MAXIMO - POTENCIA_ARMA_MINIMO) + POTENCIA_ARMA_MINIMO;
+        numero_aleatorio = (rand()) % (1 + POTENCIA_ARMA_MAXIMO - POTENCIA_ARMA_MINIMO) + POTENCIA_ARMA_MINIMO;
     }
 
     return numero_aleatorio;
@@ -97,6 +97,8 @@ Arma *Personaje::generar_arma()
     size_t potencia_valida = size_t(potencia);
     Arma *nueva_arma = new Arma("nueva_arma", potencia_valida);
     inventario->alta(nueva_arma);
+
+    return nueva_arma;
 }
 
 vector<size_t> Personaje::obtener_posicion_james(Interfaz &interfaz)
@@ -106,14 +108,14 @@ vector<size_t> Personaje::obtener_posicion_james(Interfaz &interfaz)
     bool encontrado = false;
     do
     {
-        fila++;
-        columna++;
-        if (interfaz.esta_ocupado(fila, columna, JAMES))
+        fila ++;
+        columna ++;
+        if (interfaz.esta_ocupado(static_cast<size_t>(fila), static_cast<size_t>(columna), JAMES))
         {
             encontrado = true;
         }
 
-    } while (fila < CANTIDAD_FILAS && columna < CANTIDAD_COLUMNAS && !encontrado);
+    } while (fila < static_cast<int>(CANTIDAD_FILAS) && columna < static_cast<int>(CANTIDAD_COLUMNAS) && !encontrado);
 
     size_t fila_james = size_t(fila);
     size_t columna_james = size_t(columna);
@@ -122,9 +124,9 @@ vector<size_t> Personaje::obtener_posicion_james(Interfaz &interfaz)
     return posicion;
 }
 
-bool Personaje::casilla_valida(int fila, int columna, Interfaz &interfaz)
+bool Personaje::casilla_valida(size_t fila, size_t columna, Interfaz &interfaz)
 {
-    if (interfaz.esta_ocupado(size_t(fila), size_t(columna), PARED))
+    if (interfaz.esta_ocupado(fila, columna, PARED))
     {
         cout << "No se puede realizar el movimiento porque hay una pared." << endl;
         return false;
@@ -141,8 +143,11 @@ void Personaje::realizar_movimiento(char movimiento, Interfaz &interfaz)
 {
     vector<size_t> posicion_james = obtener_posicion_james(interfaz);
 
-    int fila_james = static_cast<int>(posicion_james[0]);
-    int columna_james = static_cast<int>(posicion_james[1]);
+    //int fila_james = static_cast<int>(posicion_james[0]);
+    //int columna_james = static_cast<int>(posicion_james[1]);
+
+    size_t fila_james = posicion_james[0];
+    size_t columna_james = posicion_james[1];
 
     if (movimiento == ABAJO)
     {

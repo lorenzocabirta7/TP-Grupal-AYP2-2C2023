@@ -12,10 +12,10 @@
 
 const std::string ID = "ID";
 const std::string POTENCIA = "Potencia";
-const size_t ID_PLACA_MINIMO = 100;
-const size_t ID_PLACA_MAXIMO = 666;
-const size_t POTENCIA_ARMA_MINIMO = 10;
-const size_t POTENCIA_ARMA_MAXIMO = 100;
+const int ID_PLACA_MINIMO = 100;
+const int ID_PLACA_MAXIMO = 666;
+const int POTENCIA_ARMA_MINIMO = 10;
+const int POTENCIA_ARMA_MAXIMO = 100;
 const char ARRIBA = 'W';
 const char ABAJO = 'S';
 const char IZQUIERDA = 'A';
@@ -68,7 +68,7 @@ private:
     // Post: Devuelve true si el movimiento es valido.
     bool movimiento_es_valido(char movimiento);
 
-    bool casilla_valida(int fila, int columna, Interfaz &interfaz);
+    bool casilla_valida(size_t fila, size_t columna, Interfaz &interfaz);
 
     // Pre:
     // Post: Equipa, desequipa o da de baja el arma segun corresponda.

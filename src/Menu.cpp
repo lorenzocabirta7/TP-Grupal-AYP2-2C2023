@@ -1,41 +1,59 @@
 #include "Menu.hpp"
 using namespace std;
 
+void Menu::imprimir_opciones()
+{
+    cout << "1. Mover personaje." << endl;
+    cout << "2. Mostrar mejor recorrido." << endl;
+    cout << "3. Recorrer mejor camino." << endl;
+    cout << "4. Manejo de armas." << endl;
+    cout << "5. Mostrar puntaje." << endl;
+    cout << "6. Salir." << endl;
+}
+
+
 void Menu::flujo_juego()
 {
-    size_t opcion;
-    // mostrar opciones
-    while (interfaz.estado_juego() == 0)
+    char opcion;
+    imprimir_opciones();
+
+    while (opcion != '6') //interfaz.estado_juego() == 0
     {
         cout << "Ingrese una opcion: ";
         cin >> opcion;
         cout << endl;
         switch (opcion)
         {
-        case MOVER_PERSONAJE:
-        case MANEJO_ARMAS:
-            personaje.interaccion_personaje(opcion, interfaz);
-
+        case '1':
+            //mover personaje
             break;
-        case MOSTRAR_MEJOR_RECORRIDO:
-        case RECORRER_MEJOR_CAMINO:
+        case '2':
+            //mostrar mejor recorrido
+            break;
+        case '3':
+            //recorrer mejor camino
+            break;
+        case '4':
             // interaccion_grafo(opcion); // no sabemos en que clase enchufa grafo :(
             break;
-        case MOSTRAR_PUNTAJE:
-            interfaz.mostrar_puntaje();
+        case '5':
+            //interfaz.mostrar_puntaje();
+            break;
+        case '6':
+            cout << "Gracias por jugar!" << endl;
             break;
         default:
             cout << "La opcion ingresada no es valida." << endl;
             break;
         }
     }
-    if (interfaz.estado_juego() == 1)
-    {
-        cout << "Ganaste!" << endl;
-        interfaz.mostrar_puntaje();
-    }
-    else
-    {
-        cout << "Perdiste!" << endl;
-    }
+//    if (interfaz.estado_juego() == 1)
+//    {
+//        cout << "Ganaste!" << endl;
+//        //interfaz.mostrar_puntaje();
+//    }
+//    else
+//    {
+//        cout << "Perdiste!" << endl;
+//    }
 }

@@ -1,4 +1,4 @@
-ycmake_minimum_required(VERSION 3.22)
+cmake_minimum_required(VERSION 3.22)
 project(ayp2_plantilla_tp_grupal_2c2023)
 
 set(CMAKE_C_STANDARD 23)
