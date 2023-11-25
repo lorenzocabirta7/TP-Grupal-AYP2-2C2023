@@ -10,6 +10,10 @@ Dijkstra::Dijkstra()
 
 void Dijkstra::inicializar_arreglos(size_t origen)
 {
+    delete[] vertices_visitados;
+    delete[] distancia;
+    delete[] recorrido;
+
     vertices_visitados = new bool[cantidad_vertices];
     distancia = new int[cantidad_vertices];
     recorrido = new size_t[cantidad_vertices];
