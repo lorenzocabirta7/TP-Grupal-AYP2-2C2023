@@ -5,7 +5,7 @@
 #include "Interfaz.hpp"
 #include "Personaje.hpp"
 
-const size_t MOVER_PERSONAJE = 1;
+//const size_t MOVER_PERSONAJE = 1;
 const size_t MOSTRAR_MEJOR_RECORRIDO = 2;
 const size_t RECORRER_MEJOR_CAMINO = 3;
 const size_t MANEJO_ARMAS = 4;

@@ -124,6 +124,12 @@
 		<Unit filename="/mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/src/Matriz.cpp">
 			<Option target="ayp2_plantilla_tp_grupal_2c2023"/>
 		</Unit>
+		<Unit filename="/mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/src/Menu.cpp">
+			<Option target="ayp2_plantilla_tp_grupal_2c2023"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/src/Personaje.cpp">
+			<Option target="ayp2_plantilla_tp_grupal_2c2023"/>
+		</Unit>
 		<Unit filename="/mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/src/Placa.cpp">
 			<Option target="ayp2_plantilla_tp_grupal_2c2023"/>
 		</Unit>

@@ -1,3 +1,6 @@
+#ifndef INVENTARIO_H
+#define INVENTARIO_H
+
 #include "Heap.hpp"
 #include "Arma.hpp"
 
@@ -25,3 +28,5 @@ public:
 
     ~Inventario();
 };
+
+#endif // INVENTARIO_H

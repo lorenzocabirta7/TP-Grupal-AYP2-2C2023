@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.22)
+ycmake_minimum_required(VERSION 3.22)
 project(ayp2_plantilla_tp_grupal_2c2023)
 
 set(CMAKE_C_STANDARD 23)
@@ -25,6 +25,8 @@ add_executable(ayp2_plantilla_tp_grupal_2c2023
         bGVjdG9y/bGVjdG9y.cpp
         bGVjdG9y/ZGVjb2Rl.cpp
         main.cpp
+        src/Menu.cpp
+        src/Personaje.cpp
 )
 
 set_target_properties(${PROJECT_NAME} PROPERTIES OUTPUT_NAME "main")

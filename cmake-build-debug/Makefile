@@ -369,6 +369,54 @@ src/Matriz.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/build.make CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Matriz.cpp.s
 .PHONY : src/Matriz.cpp.s
 
+src/Menu.o: src/Menu.cpp.o
+.PHONY : src/Menu.o
+
+# target to build an object file
+src/Menu.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/build.make CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Menu.cpp.o
+.PHONY : src/Menu.cpp.o
+
+src/Menu.i: src/Menu.cpp.i
+.PHONY : src/Menu.i
+
+# target to preprocess a source file
+src/Menu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/build.make CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Menu.cpp.i
+.PHONY : src/Menu.cpp.i
+
+src/Menu.s: src/Menu.cpp.s
+.PHONY : src/Menu.s
+
+# target to generate assembly for a file
+src/Menu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/build.make CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Menu.cpp.s
+.PHONY : src/Menu.cpp.s
+
+src/Personaje.o: src/Personaje.cpp.o
+.PHONY : src/Personaje.o
+
+# target to build an object file
+src/Personaje.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/build.make CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Personaje.cpp.o
+.PHONY : src/Personaje.cpp.o
+
+src/Personaje.i: src/Personaje.cpp.i
+.PHONY : src/Personaje.i
+
+# target to preprocess a source file
+src/Personaje.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/build.make CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Personaje.cpp.i
+.PHONY : src/Personaje.cpp.i
+
+src/Personaje.s: src/Personaje.cpp.s
+.PHONY : src/Personaje.s
+
+# target to generate assembly for a file
+src/Personaje.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/build.make CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Personaje.cpp.s
+.PHONY : src/Personaje.cpp.s
+
 src/Placa.o: src/Placa.cpp.o
 .PHONY : src/Placa.o
 
@@ -432,6 +480,12 @@ help:
 	@echo "... src/Matriz.o"
 	@echo "... src/Matriz.i"
 	@echo "... src/Matriz.s"
+	@echo "... src/Menu.o"
+	@echo "... src/Menu.i"
+	@echo "... src/Menu.s"
+	@echo "... src/Personaje.o"
+	@echo "... src/Personaje.i"
+	@echo "... src/Personaje.s"
 	@echo "... src/Placa.o"
 	@echo "... src/Placa.i"
 	@echo "... src/Placa.s"

@@ -223,6 +223,34 @@ CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/main.cpp -o CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/main.cpp.s
 
+CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Menu.cpp.o: CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/flags.make
+CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Menu.cpp.o: ../src/Menu.cpp
+CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Menu.cpp.o: CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Menu.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Menu.cpp.o -MF CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Menu.cpp.o.d -o CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Menu.cpp.o -c /mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/src/Menu.cpp
+
+CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Menu.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Menu.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/src/Menu.cpp > CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Menu.cpp.i
+
+CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Menu.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Menu.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/src/Menu.cpp -o CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Menu.cpp.s
+
+CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Personaje.cpp.o: CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/flags.make
+CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Personaje.cpp.o: ../src/Personaje.cpp
+CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Personaje.cpp.o: CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Personaje.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Personaje.cpp.o -MF CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Personaje.cpp.o.d -o CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Personaje.cpp.o -c /mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/src/Personaje.cpp
+
+CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Personaje.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Personaje.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/src/Personaje.cpp > CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Personaje.cpp.i
+
+CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Personaje.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Personaje.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/src/Personaje.cpp -o CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Personaje.cpp.s
+
 # Object files for target ayp2_plantilla_tp_grupal_2c2023
 ayp2_plantilla_tp_grupal_2c2023_OBJECTS = \
 "CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Inventario.cpp.o" \
@@ -235,7 +263,9 @@ ayp2_plantilla_tp_grupal_2c2023_OBJECTS = \
 "CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Interfaz.cpp.o" \
 "CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/bGVjdG9y/bGVjdG9y.cpp.o" \
 "CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/bGVjdG9y/ZGVjb2Rl.cpp.o" \
-"CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/main.cpp.o"
+"CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/main.cpp.o" \
+"CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Menu.cpp.o" \
+"CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Personaje.cpp.o"
 
 # External object files for target ayp2_plantilla_tp_grupal_2c2023
 ayp2_plantilla_tp_grupal_2c2023_EXTERNAL_OBJECTS =
@@ -251,9 +281,11 @@ ayp2_plantilla_tp_grupal_2c2023_EXTERNAL_OBJECTS =
 ../main: CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/bGVjdG9y/bGVjdG9y.cpp.o
 ../main: CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/bGVjdG9y/ZGVjb2Rl.cpp.o
 ../main: CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/main.cpp.o
+../main: CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Menu.cpp.o
+../main: CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Personaje.cpp.o
 ../main: CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/build.make
 ../main: CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable ../main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable ../main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

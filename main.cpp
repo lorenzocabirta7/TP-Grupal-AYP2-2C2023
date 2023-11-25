@@ -7,8 +7,11 @@
 #include "include/Inventario.hpp"
 #include <iostream>
 #include "Interfaz.hpp"
-using namespace std;
 #include "Menu.hpp"
+//#include "Personaje.hpp"
+
+using namespace std;
+
 int main()
 {
     /*
@@ -35,12 +38,16 @@ int main()
     // cout << *arma << endl;
     // inventario.consulta();
     srand((unsigned)time(NULL));
-    Interfaz interfaz;
-    Personaje Personaje(&inventario);
+//    Interfaz interfaz;
+//    Personaje Personaje(&inventario);
+
+    Menu menu;
+    menu.flujo_juego();
 
     // ** ver probabilidad del 20% del arma
     // ** ver probabilidad del 50% de Pyramid Head cada uno
     // ** ver grafo
+
 
     return 0;
 }

@@ -11,7 +11,7 @@ Interfaz::Interfaz()
 
 size_t Interfaz::generar_coordenada_aleatoria()
 {
-    return size_t(rand() % CANTIDAD_FILAS);
+    return size_t(static_cast<size_t>(rand()) % CANTIDAD_FILAS);
 }
 
 bool Interfaz::posicion_valida(size_t fila, size_t columna)
