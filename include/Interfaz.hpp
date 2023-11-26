@@ -10,6 +10,7 @@
 #include <time.h>
 #include <vector>
 #include <string>
+#include <cstdlib>
 
 const char ESPACIO_LIBRE = '-';
 
@@ -30,6 +31,9 @@ const char DESTINO = 'D';
 class Interfaz
 {
 private:
+
+    int calcular_numero_aleatorio(int largo);
+
     std::vector<std::vector<char>> tablero;
     Grafo *grafo;
 

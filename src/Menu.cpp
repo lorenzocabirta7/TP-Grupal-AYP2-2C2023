@@ -16,6 +16,7 @@ void Menu::flujo_juego()
 {
     char opcion;
     imprimir_opciones();
+    interfaz.inicializar_tablero(1);
 
     while (opcion != '6') //interfaz.estado_juego() == 0
     {
@@ -26,6 +27,8 @@ void Menu::flujo_juego()
         {
         case '1':
             //mover personaje
+            interfaz.imprimir_tablero();
+
             break;
         case '2':
             //mostrar mejor recorrido

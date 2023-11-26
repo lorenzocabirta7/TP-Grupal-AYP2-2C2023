@@ -34,18 +34,6 @@
 			"value" : "/usr/bin/ar"
 		},
 		{
-			"name" : "CMAKE_BACKWARDS_COMPATIBILITY",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "For backwards compatibility, what version of CMake commands and syntax should this version of CMake try to support."
-				}
-			],
-			"type" : "STRING",
-			"value" : "2.4"
-		},
-		{
 			"name" : "CMAKE_BUILD_TYPE",
 			"properties" : 
 			[
@@ -67,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/cmake-build-debug"
+			"value" : "/mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -139,7 +127,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "-j12"
+			"value" : "-j8"
 		},
 		{
 			"name" : "CMAKE_COLOR_MAKEFILE",
@@ -691,7 +679,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023"
+			"value" : "/mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1218,30 +1206,6 @@
 			"value" : "FALSE"
 		},
 		{
-			"name" : "EXECUTABLE_OUTPUT_PATH",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Single output directory for building all executables."
-				}
-			],
-			"type" : "PATH",
-			"value" : ""
-		},
-		{
-			"name" : "LIBRARY_OUTPUT_PATH",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Single output directory for building all libraries."
-				}
-			],
-			"type" : "PATH",
-			"value" : ""
-		},
-		{
 			"name" : "ProcessorCount_cmd_nproc",
 			"properties" : 
 			[
@@ -1283,7 +1247,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/cmake-build-debug"
+			"value" : "/mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/cmake-build-debug"
 		},
 		{
 			"name" : "ayp2_plantilla_tp_grupal_2c2023_IS_TOP_LEVEL",
@@ -1307,7 +1271,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023"
+			"value" : "/mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023"
 		}
 	],
 	"kind" : "cache",

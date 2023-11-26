@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "/mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/main"
+			"path" : "/mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/main"
 		}
 	],
 	"backtrace" : 1,
@@ -80,15 +80,15 @@
 			[
 				{
 					"backtrace" : 3,
-					"path" : "/mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/include"
+					"path" : "/mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/include"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "/mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/src"
+					"path" : "/mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/src"
 				},
 				{
 					"backtrace" : 5,
-					"path" : "/mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/bGVjdG9y"
+					"path" : "/mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/bGVjdG9y"
 				}
 			],
 			"language" : "CXX",

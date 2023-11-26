@@ -1,8 +1,8 @@
 CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/main.cpp.o: \
- /mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/main.cpp \
+ /mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/main.cpp \
  /usr/include/stdc-predef.h \
- /mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/include/Inventario.hpp \
- /mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/include/Heap.hpp \
+ /mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/include/Inventario.hpp \
+ /mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/include/Heap.hpp \
  /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -84,7 +84,7 @@ CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/main.cpp.o: \
  /usr/include/c++/11/bits/exception_ptr.h \
  /usr/include/c++/11/bits/cxxabi_init_exception.h \
  /usr/include/c++/11/typeinfo /usr/include/c++/11/bits/nested_exception.h \
- /mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/include/Arma.hpp \
+ /mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/include/Arma.hpp \
  /usr/include/c++/11/string /usr/include/c++/11/bits/stringfwd.h \
  /usr/include/c++/11/bits/char_traits.h \
  /usr/include/c++/11/bits/postypes.h /usr/include/c++/11/cwchar \
@@ -156,18 +156,18 @@ CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/main.cpp.o: \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc \
- /mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/include/Interfaz.hpp \
- /mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/include/Grafo.hpp \
- /mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/include/CaminoMinimo.hpp \
- /mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/include/Matriz.hpp \
- /mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/include/ABB.hpp \
- /mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/include/NodoABB.hpp \
+ /mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/include/Interfaz.hpp \
+ /mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/include/Grafo.hpp \
+ /mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/include/CaminoMinimo.hpp \
+ /mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/include/Matriz.hpp \
+ /mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/include/ABB.hpp \
+ /mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/include/NodoABB.hpp \
  /usr/include/c++/11/queue /usr/include/c++/11/deque \
  /usr/include/c++/11/bits/stl_deque.h /usr/include/c++/11/bits/deque.tcc \
  /usr/include/c++/11/bits/stl_heap.h /usr/include/c++/11/bits/stl_queue.h \
  /usr/include/c++/11/bits/uses_allocator.h \
- /mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/include/Placa.hpp \
- /mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/include/Inventario.hpp \
- /mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/include/Menu.hpp \
- /mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/include/Interfaz.hpp \
- /mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/include/Personaje.hpp
+ /mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/include/Placa.hpp \
+ /mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/include/Inventario.hpp \
+ /mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/include/Menu.hpp \
+ /mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/include/Interfaz.hpp \
+ /mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/include/Personaje.hpp

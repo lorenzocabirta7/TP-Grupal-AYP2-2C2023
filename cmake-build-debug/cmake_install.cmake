@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023
+# Install script for directory: /mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

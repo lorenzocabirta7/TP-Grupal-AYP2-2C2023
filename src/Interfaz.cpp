@@ -1,6 +1,14 @@
 #include "Interfaz.hpp"
 
+
+
+
 using namespace std;
+
+int Interfaz::calcular_numero_aleatorio( int largo){
+    return rand() % largo + 1;
+
+}
 
 Interfaz::Interfaz()
 {
@@ -57,17 +65,33 @@ void Interfaz::inicializar_tablero(size_t tipo_layout)
 
 void Interfaz::inicializar_personajes()
 {
-    size_t fila = 0;
-    size_t columna = 0;
-    actualizar_tablero(FILA_ORIGEN, COLUMNA_ORIGEN, JAMES);
 
-    for (size_t i = 0; i < 2; i++)
+    actualizar_tablero(FILA_ORIGEN, COLUMNA_ORIGEN, JAMES);
+    size_t cantidad_de_pyramid_head=0;
+
+
+    for(int i =0  ;i < 2; i++){
+    int dado=calcular_numero_aleatorio(2);
+    if(dado==1){
+        cantidad_de_pyramid_head++;
+    }
+    }
+    
+    for (size_t i = 0; i < cantidad_de_pyramid_head; i++)
     {
+    
+        size_t fila = 0;
+        size_t columna = 0;
+        fila = generar_coordenada_aleatoria();
+        columna = generar_coordenada_aleatoria();
         while (!posicion_valida(fila, columna))
         {
             fila = generar_coordenada_aleatoria();
             columna = generar_coordenada_aleatoria();
         }
+        
+
+            
         actualizar_tablero(fila, columna, PYRAMID_HEAD);
     }
 }
