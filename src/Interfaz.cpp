@@ -180,3 +180,8 @@ bool Interfaz::hay_pared(size_t filas, size_t columnas)
 {
     return tablero[filas][columnas] == PARED;
 }
+
+
+void Interfaz::aumentar_niveles_completados(){
+    niveles_completados++;
+}

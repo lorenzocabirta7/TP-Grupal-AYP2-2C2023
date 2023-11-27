@@ -90,7 +90,6 @@ int Personaje::generar_numero_aleatorio(string tipo)
 void Personaje::generar_arma(Interfaz &interfaz)
 {
     int potencia;
-    bool arma_generado = false;
     do
     {
         potencia = generar_numero_aleatorio(POTENCIA);
@@ -139,6 +138,7 @@ bool Personaje::nivel_terminado(Interfaz &interfaz)
         generar_placa();
         return true;
     }
+    return false;
 }
 
 bool Personaje::casilla_valida(size_t fila, size_t columna, Interfaz &interfaz)
@@ -238,7 +238,8 @@ void Personaje::generar_placa()
         id = generar_numero_aleatorio(ID);
     } while (id == -1);
 
-    size_t id_valido = size_t(id);
+    int id_valido = id;
+    
     Placa nueva_placa = Placa("nombre", "leyenda", id_valido);
 
     if (arbol_placas.consulta(&nueva_placa))
