@@ -1,13 +1,10 @@
 #include "Interfaz.hpp"
 
-
-
-
 using namespace std;
 
-int Interfaz::calcular_numero_aleatorio( int largo){
+int Interfaz::calcular_numero_aleatorio(int largo)
+{
     return rand() % largo + 1;
-
 }
 
 Interfaz::Interfaz()
@@ -67,19 +64,20 @@ void Interfaz::inicializar_personajes()
 {
 
     actualizar_tablero(FILA_ORIGEN, COLUMNA_ORIGEN, JAMES);
-    size_t cantidad_de_pyramid_head=0;
+    size_t cantidad_de_pyramid_head = 0;
 
+    for (int i = 0; i < 2; i++)
+    {
+        int dado = calcular_numero_aleatorio(2);
+        if (dado == 1)
+        {
+            cantidad_de_pyramid_head++;
+        }
+    }
 
-    for(int i =0  ;i < 2; i++){
-    int dado=calcular_numero_aleatorio(2);
-    if(dado==1){
-        cantidad_de_pyramid_head++;
-    }
-    }
-    
     for (size_t i = 0; i < cantidad_de_pyramid_head; i++)
     {
-    
+
         size_t fila = 0;
         size_t columna = 0;
         fila = generar_coordenada_aleatoria();
@@ -89,9 +87,7 @@ void Interfaz::inicializar_personajes()
             fila = generar_coordenada_aleatoria();
             columna = generar_coordenada_aleatoria();
         }
-        
 
-            
         actualizar_tablero(fila, columna, PYRAMID_HEAD);
     }
 }
@@ -140,28 +136,6 @@ size_t Interfaz::elegir_layout(size_t altura_arbol)
 }
 
 // ** MOVIMIENTOS **
-
-/*
-Placa *Interfaz::generar_placa()
-{
-    int id;
-    do
-    {
-        id = generar_numero_aleatorio(POTENCIA);
-    } while (id == -1);
-
-    size_t id_valido = size_t(id);
-    Placa nueva_placa = Placa("nombre", "leyenda", id_valido);
-
-    if (arbol_placas.consulta(&nueva_placa))
-    {
-        generar_placa();
-    }
-
-    arbol_placas.alta(&nueva_placa);
-    return &nueva_placa;
-}
-*/
 
 size_t Interfaz::estado_juego()
 {

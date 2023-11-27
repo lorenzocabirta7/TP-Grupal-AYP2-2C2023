@@ -31,13 +31,8 @@ const char DESTINO = 'D';
 class Interfaz
 {
 private:
-
-    int calcular_numero_aleatorio(int largo);
-
     std::vector<std::vector<char>> tablero;
     Grafo *grafo;
-
-    ABB<Placa *, Placa::menor, Placa::igual> arbol_placas;
     size_t niveles_completados = 1;
     size_t puntaje = 0;
 
@@ -62,10 +57,6 @@ private:
     size_t elegir_layout(size_t altura_arbol);
 
     // Pre:
-    // Post: Genera una placa.
-    Placa *generar_placa();
-
-    // Pre:
     // Post: Muestra el recorrido con menor coste.
     void mostrar_mejor_recorrido();
 
@@ -75,6 +66,8 @@ private:
 
 public:
     Interfaz();
+
+    int calcular_numero_aleatorio(int largo);
 
     // Pre:
     // Post: Inicializa el tablero con todos sus elementos cargados.
@@ -107,6 +100,10 @@ public:
     // Pre:
     // Post: Devuelve true si hay una pared en la posicion pasada por parametro
     bool hay_pared(size_t filas, size_t columnas);
+
+    // Pre:
+    // post: aumenta la cantidad de niveles completados
+    void aumentar_niveles_completados();
 
     // ~Interfaz();
 };

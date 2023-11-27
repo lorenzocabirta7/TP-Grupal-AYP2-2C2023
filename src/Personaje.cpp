@@ -73,8 +73,9 @@ int Personaje::generar_numero_aleatorio(string tipo)
         cout << "El tipo ingresado no es valido." << endl;
         return -1;
     }
+
     int numero_aleatorio = 0;
-    if (tipo == "ID")
+    if (tipo == ID)
     {
         numero_aleatorio = (rand()) % (1 + ID_PLACA_MAXIMO - ID_PLACA_MINIMO) + ID_PLACA_MINIMO;
     }
@@ -86,19 +87,22 @@ int Personaje::generar_numero_aleatorio(string tipo)
     return numero_aleatorio;
 }
 
-Arma *Personaje::generar_arma()
+void Personaje::generar_arma(Interfaz &interfaz)
 {
     int potencia;
+    bool arma_generado = false;
     do
     {
         potencia = generar_numero_aleatorio(POTENCIA);
     } while (potencia == -1);
 
-    size_t potencia_valida = size_t(potencia);
-    Arma *nueva_arma = new Arma("nueva_arma", potencia_valida);
-    inventario->alta(nueva_arma);
-
-    return nueva_arma;
+    int dado = interfaz.calcular_numero_aleatorio(5);
+    if (dado == 1)
+    {
+        size_t potencia_valida = size_t(potencia);
+        Arma *nueva_arma = new Arma("nueva_arma", potencia_valida);
+        inventario->alta(nueva_arma);
+    }
 }
 
 vector<size_t> Personaje::obtener_posicion_james(Interfaz &interfaz)
@@ -108,8 +112,8 @@ vector<size_t> Personaje::obtener_posicion_james(Interfaz &interfaz)
     bool encontrado = false;
     do
     {
-        fila ++;
-        columna ++;
+        fila++;
+        columna++;
         if (interfaz.esta_ocupado(static_cast<size_t>(fila), static_cast<size_t>(columna), JAMES))
         {
             encontrado = true;
@@ -122,6 +126,19 @@ vector<size_t> Personaje::obtener_posicion_james(Interfaz &interfaz)
     vector<size_t> posicion = {fila_james, columna_james};
 
     return posicion;
+}
+
+bool Personaje::nivel_terminado(Interfaz &interfaz)
+{
+    vector<size_t> coordenadas = obtener_posicion_james(interfaz);
+
+    if (coordenadas[0] == FILA_DESTINO && coordenadas[1] == COLUMNA_DESTINO)
+    {
+        interfaz.aumentar_niveles_completados();
+        generar_arma(interfaz);
+        generar_placa();
+        return true;
+    }
 }
 
 bool Personaje::casilla_valida(size_t fila, size_t columna, Interfaz &interfaz)
@@ -143,8 +160,8 @@ void Personaje::realizar_movimiento(char movimiento, Interfaz &interfaz)
 {
     vector<size_t> posicion_james = obtener_posicion_james(interfaz);
 
-    //int fila_james = static_cast<int>(posicion_james[0]);
-    //int columna_james = static_cast<int>(posicion_james[1]);
+    // int fila_james = static_cast<int>(posicion_james[0]);
+    // int columna_james = static_cast<int>(posicion_james[1]);
 
     size_t fila_james = posicion_james[0];
     size_t columna_james = posicion_james[1];
@@ -206,10 +223,28 @@ void Personaje::interaccion_personaje(size_t opcion, Interfaz &interfaz)
     {
         char movimiento = pedir_movimiento();
         realizar_movimiento(movimiento, interfaz);
-        interfaz.imprimir_tablero();
     }
     else
     {
         interaccion_armas();
     }
+}
+
+void Personaje::generar_placa()
+{
+    int id;
+    do
+    {
+        id = generar_numero_aleatorio(ID);
+    } while (id == -1);
+
+    size_t id_valido = size_t(id);
+    Placa nueva_placa = Placa("nombre", "leyenda", id_valido);
+
+    if (arbol_placas.consulta(&nueva_placa))
+    {
+        generar_placa();
+    }
+
+    arbol_placas.alta(&nueva_placa);
 }

@@ -27,6 +27,7 @@ private:
     Inventario *inventario;
     bool tiene_arma = false;
     bool arma_equipada = false;
+    ABB<Placa *, Placa::menor, Placa::igual> arbol_placas;
 
     // Pre:
     // Post: Se equipa el arma mas fuerte.
@@ -42,7 +43,7 @@ private:
 
     // Pre:
     // Post: Genera un arma.
-    Arma *generar_arma();
+    void generar_arma(Interfaz &interfaz);
 
     // Pre:
     // Post: Devuelve true si el tipo es valido.
@@ -51,10 +52,6 @@ private:
     // Pre: El tipo debe ser valido.
     // Post: Genera un ID/Potencia aleatorio según el tipo.
     int generar_numero_aleatorio(std::string tipo);
-
-    // Pre:
-    // Post: Devuelve la posicion en la que esta ubicado James
-    std::vector<size_t> obtener_posicion_james(Interfaz &interfaz);
 
     // Pre: Debe tener un arma equipada.
     // Post: Elimina el arma del inventario y la desequipa.
@@ -74,6 +71,10 @@ private:
     // Post: Equipa, desequipa o da de baja el arma segun corresponda.
     void interaccion_armas();
 
+    // Pre:
+    // Post: Genera una placa.
+    void generar_placa();
+
 public:
     Personaje(Inventario *inventario);
     Personaje();
@@ -81,6 +82,14 @@ public:
     // Pre:
     // Post: Se realiza un movimiento o se interactua con un arma segin corresponda.
     void interaccion_personaje(size_t opcion, Interfaz &interfaz);
+
+    // Pre:
+    // Post: Devuelve la posicion en la que esta ubicado James
+    std::vector<size_t> obtener_posicion_james(Interfaz &interfaz);
+
+    // Pre:
+    // Post: Devuelve true si el nivel esta terminado
+    bool nivel_terminado(Interfaz &interfaz);
 };
 
 #endif
