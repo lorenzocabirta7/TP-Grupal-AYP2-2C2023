@@ -28,8 +28,9 @@ void Menu::flujo_juego()
         {
         case '1':
             // mover personaje
-            personaje.interaccion_personaje(MOVER_PERSONAJE, interfaz);
             interfaz.imprimir_tablero(); // adentro de mover personaje
+            personaje.interaccion_personaje(MOVER_PERSONAJE, interfaz);
+
 
             if (personaje.nivel_terminado(interfaz))
             {

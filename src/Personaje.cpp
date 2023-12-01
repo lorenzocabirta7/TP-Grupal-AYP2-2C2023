@@ -13,7 +13,7 @@ Personaje::Personaje()
 
 bool Personaje::movimiento_es_valido(char movimiento)
 {
-    if (movimiento != ABAJO || movimiento != ARRIBA || movimiento != DERECHA || movimiento != IZQUIERDA)
+    if (movimiento != ABAJO && movimiento != ARRIBA && movimiento != DERECHA && movimiento != IZQUIERDA)
     {
         cout << "El movimento ingresado no es valido." << endl;
         return false;
