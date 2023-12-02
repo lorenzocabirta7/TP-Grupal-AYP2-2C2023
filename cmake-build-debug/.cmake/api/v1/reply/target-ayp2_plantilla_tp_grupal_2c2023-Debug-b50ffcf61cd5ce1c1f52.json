@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "/mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/main"
+			"path" : "/mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/main"
 		}
 	],
 	"backtrace" : 1,
@@ -80,15 +80,15 @@
 			[
 				{
 					"backtrace" : 3,
-					"path" : "/mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/include"
+					"path" : "/mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/include"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "/mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/src"
+					"path" : "/mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/src"
 				},
 				{
 					"backtrace" : 5,
-					"path" : "/mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/bGVjdG9y"
+					"path" : "/mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/bGVjdG9y"
 				}
 			],
 			"language" : "CXX",
@@ -106,7 +106,8 @@
 				9,
 				10,
 				11,
-				12
+				12,
+				13
 			]
 		}
 	],
@@ -151,7 +152,8 @@
 				9,
 				10,
 				11,
-				12
+				12,
+				13
 			]
 		}
 	],
@@ -233,6 +235,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "src/Personaje.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/Recorrido.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

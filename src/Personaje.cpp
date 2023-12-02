@@ -106,23 +106,50 @@ void Personaje::generar_arma(Interfaz &interfaz)
 
 vector<size_t> Personaje::obtener_posicion_james(Interfaz &interfaz)
 {
-    int fila = -1;
-    int columna = -1;
-    bool encontrado = false;
-    do
+//    int fila = -1;
+//    int columna = -1;
+//    bool encontrado = false;
+//    do
+//    {
+//        fila++;
+//        columna++;
+//        if (interfaz.esta_ocupado(static_cast<size_t>(fila), static_cast<size_t>(columna), JAMES))
+//        {
+//            encontrado = true;
+//        }
+//
+//    } while (fila < static_cast<int>(CANTIDAD_FILAS) && columna < static_cast<int>(CANTIDAD_COLUMNAS) && !encontrado);
+//
+//    size_t fila_james = size_t(fila);
+//    size_t columna_james = size_t(columna);
+//    vector<size_t> posicion = {fila_james, columna_james};
+
+    bool james_encontrado = false;
+    size_t fila = 0;
+    size_t columna = 0;
+
+    while (!james_encontrado && fila < CANTIDAD_FILAS)
     {
-        fila++;
-        columna++;
-        if (interfaz.esta_ocupado(static_cast<size_t>(fila), static_cast<size_t>(columna), JAMES))
+        while (!james_encontrado && columna < CANTIDAD_COLUMNAS)
         {
-            encontrado = true;
+            if (interfaz.esta_ocupado(fila, columna, JAMES))
+            {
+                james_encontrado = true;
+            }
+            else
+            {
+                columna++;
+            }
         }
+        if (!james_encontrado)
+        {
+            columna = 0;
+            fila++;
+        }
+    }
 
-    } while (fila < static_cast<int>(CANTIDAD_FILAS) && columna < static_cast<int>(CANTIDAD_COLUMNAS) && !encontrado);
+    vector<size_t> posicion = {fila, columna};
 
-    size_t fila_james = size_t(fila);
-    size_t columna_james = size_t(columna);
-    vector<size_t> posicion = {fila_james, columna_james};
 
     return posicion;
 }
@@ -170,6 +197,7 @@ void Personaje::realizar_movimiento(char movimiento, Interfaz &interfaz)
     {
         if (casilla_valida(fila_james + 1, columna_james, interfaz))
         {
+            interfaz.actualizar_tablero(fila_james, columna_james, ESPACIO_LIBRE);
             fila_james++;
             interfaz.actualizar_tablero(fila_james, columna_james, JAMES);
         }
@@ -178,6 +206,7 @@ void Personaje::realizar_movimiento(char movimiento, Interfaz &interfaz)
     {
         if (casilla_valida(fila_james - 1, columna_james, interfaz))
         {
+            interfaz.actualizar_tablero(fila_james, columna_james, ESPACIO_LIBRE);
             fila_james--;
             interfaz.actualizar_tablero(fila_james, columna_james, JAMES);
         }
@@ -186,6 +215,7 @@ void Personaje::realizar_movimiento(char movimiento, Interfaz &interfaz)
     {
         if (casilla_valida(fila_james, columna_james + 1, interfaz))
         {
+            interfaz.actualizar_tablero(fila_james, columna_james, ESPACIO_LIBRE);
             columna_james++;
             interfaz.actualizar_tablero(fila_james, columna_james, JAMES);
         }
@@ -194,6 +224,7 @@ void Personaje::realizar_movimiento(char movimiento, Interfaz &interfaz)
     {
         if (casilla_valida(fila_james, columna_james - 1, interfaz))
         {
+            interfaz.actualizar_tablero(fila_james, columna_james, ESPACIO_LIBRE);
             columna_james--;
             interfaz.actualizar_tablero(fila_james, columna_james, JAMES);
         }

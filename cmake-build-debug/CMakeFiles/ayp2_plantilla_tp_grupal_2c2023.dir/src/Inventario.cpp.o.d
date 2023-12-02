@@ -1,8 +1,8 @@
 CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Inventario.cpp.o: \
- /mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/src/Inventario.cpp \
+ /mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/src/Inventario.cpp \
  /usr/include/stdc-predef.h \
- /mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/include/Inventario.hpp \
- /mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/include/Heap.hpp \
+ /mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/include/Inventario.hpp \
+ /mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/include/Heap.hpp \
  /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -84,7 +84,7 @@ CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Inventario.cpp.o: \
  /usr/include/c++/11/bits/exception_ptr.h \
  /usr/include/c++/11/bits/cxxabi_init_exception.h \
  /usr/include/c++/11/typeinfo /usr/include/c++/11/bits/nested_exception.h \
- /mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/include/Arma.hpp \
+ /mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/include/Arma.hpp \
  /usr/include/c++/11/string /usr/include/c++/11/bits/stringfwd.h \
  /usr/include/c++/11/bits/char_traits.h \
  /usr/include/c++/11/bits/postypes.h /usr/include/c++/11/cwchar \

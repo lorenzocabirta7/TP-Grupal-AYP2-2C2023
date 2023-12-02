@@ -36,6 +36,7 @@ private:
     size_t niveles_completados = 1;
     size_t puntaje = 0;
 
+
     // Pre:
     // Post: Genera una coordenada aleatoria.
     size_t generar_coordenada_aleatoria();

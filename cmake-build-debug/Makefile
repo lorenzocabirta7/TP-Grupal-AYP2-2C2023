@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023
+CMAKE_SOURCE_DIR = /mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/cmake-build-debug
+CMAKE_BINARY_DIR = /mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/cmake-build-debug/CMakeFiles /mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/cmake-build-debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/cmake-build-debug/CMakeFiles /mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/cmake-build-debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -441,6 +441,30 @@ src/Placa.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/build.make CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Placa.cpp.s
 .PHONY : src/Placa.cpp.s
 
+src/Recorrido.o: src/Recorrido.cpp.o
+.PHONY : src/Recorrido.o
+
+# target to build an object file
+src/Recorrido.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/build.make CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Recorrido.cpp.o
+.PHONY : src/Recorrido.cpp.o
+
+src/Recorrido.i: src/Recorrido.cpp.i
+.PHONY : src/Recorrido.i
+
+# target to preprocess a source file
+src/Recorrido.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/build.make CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Recorrido.cpp.i
+.PHONY : src/Recorrido.cpp.i
+
+src/Recorrido.s: src/Recorrido.cpp.s
+.PHONY : src/Recorrido.s
+
+# target to generate assembly for a file
+src/Recorrido.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/build.make CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Recorrido.cpp.s
+.PHONY : src/Recorrido.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -489,6 +513,9 @@ help:
 	@echo "... src/Placa.o"
 	@echo "... src/Placa.i"
 	@echo "... src/Placa.s"
+	@echo "... src/Recorrido.o"
+	@echo "... src/Recorrido.i"
+	@echo "... src/Recorrido.s"
 .PHONY : help
 
 

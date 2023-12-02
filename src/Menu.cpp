@@ -38,7 +38,8 @@ void Menu::flujo_juego()
                         }
             break;
         case '2':
-            // mostrar mejor recorrido
+
+            recorrido.encontrar_camino_minimo();
             break;
         case '3':
             // recorrer mejor camino

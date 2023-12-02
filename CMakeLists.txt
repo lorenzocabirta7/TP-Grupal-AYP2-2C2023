@@ -27,6 +27,7 @@ add_executable(ayp2_plantilla_tp_grupal_2c2023
         main.cpp
         src/Menu.cpp
         src/Personaje.cpp
+        src/Recorrido.cpp
 )
 
 set_target_properties(${PROJECT_NAME} PROPERTIES OUTPUT_NAME "main")

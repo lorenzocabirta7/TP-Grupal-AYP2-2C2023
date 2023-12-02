@@ -1,7 +1,7 @@
 CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Placa.cpp.o: \
- /mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/src/Placa.cpp \
+ /mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/src/Placa.cpp \
  /usr/include/stdc-predef.h \
- /mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/include/Placa.hpp \
+ /mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/include/Placa.hpp \
  /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

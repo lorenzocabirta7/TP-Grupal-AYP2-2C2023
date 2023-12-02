@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/cmake-build-debug"
+			"value" : "/mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -127,7 +127,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "-j8"
+			"value" : "-j12"
 		},
 		{
 			"name" : "CMAKE_COLOR_MAKEFILE",
@@ -679,7 +679,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023"
+			"value" : "/mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1247,7 +1247,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/cmake-build-debug"
+			"value" : "/mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/cmake-build-debug"
 		},
 		{
 			"name" : "ayp2_plantilla_tp_grupal_2c2023_IS_TOP_LEVEL",
@@ -1271,7 +1271,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023"
+			"value" : "/mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023"
 		}
 	],
 	"kind" : "cache",

@@ -4,6 +4,8 @@
 #include <iostream>
 #include "Interfaz.hpp"
 #include "Personaje.hpp"
+#include "Recorrido.hpp"
+
 
 // const size_t MOVER_PERSONAJE = 1;
 // const size_t MOSTRAR_MEJOR_RECORRIDO = 2;
@@ -16,6 +18,8 @@ class Menu
 private:
     Interfaz interfaz;
     Personaje personaje;
+    Recorrido recorrido;
+
     ABB<Placa *, Placa::menor, Placa::igual> arbol_placas;
 
     void imprimir_opciones();

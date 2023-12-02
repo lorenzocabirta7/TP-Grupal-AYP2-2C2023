@@ -1,8 +1,8 @@
 CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/bGVjdG9y/bGVjdG9y.cpp.o: \
- /mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/bGVjdG9y/bGVjdG9y.cpp \
+ /mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/bGVjdG9y/bGVjdG9y.cpp \
  /usr/include/stdc-predef.h \
- /mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/bGVjdG9y/bGVjdG9y.hpp \
- /mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/include/ABB.hpp \
+ /mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/bGVjdG9y/bGVjdG9y.hpp \
+ /mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/include/ABB.hpp \
  /usr/include/c++/11/exception \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -24,7 +24,7 @@ CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/bGVjdG9y/bGVjdG9y.cpp.o: \
  /usr/include/c++/11/new /usr/include/c++/11/bits/move.h \
  /usr/include/c++/11/type_traits \
  /usr/include/c++/11/bits/nested_exception.h \
- /mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/include/NodoABB.hpp \
+ /mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/include/NodoABB.hpp \
  /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/c++/11/bits/functexcept.h \
  /usr/include/c++/11/bits/cpp_type_traits.h \
@@ -58,7 +58,7 @@ CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/bGVjdG9y/bGVjdG9y.cpp.o: \
  /usr/include/c++/11/backward/binders.h \
  /usr/include/c++/11/bits/stl_queue.h \
  /usr/include/c++/11/bits/uses_allocator.h \
- /mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/include/Placa.hpp \
+ /mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/include/Placa.hpp \
  /usr/include/c++/11/string /usr/include/c++/11/bits/stringfwd.h \
  /usr/include/c++/11/bits/char_traits.h \
  /usr/include/c++/11/bits/postypes.h /usr/include/c++/11/cwchar \
@@ -145,7 +145,7 @@ CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/bGVjdG9y/bGVjdG9y.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/11/bits/charconv.h \
  /usr/include/c++/11/bits/basic_string.tcc \
- /mnt/c/Users/juan/Documents/GitHub/TP-Grupal-AYP2-2C2023/bGVjdG9y/ZGVjb2Rl.hpp \
+ /mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/bGVjdG9y/ZGVjb2Rl.hpp \
  /usr/include/c++/11/algorithm /usr/include/c++/11/utility \
  /usr/include/c++/11/bits/stl_relops.h \
  /usr/include/c++/11/bits/stl_algo.h \
