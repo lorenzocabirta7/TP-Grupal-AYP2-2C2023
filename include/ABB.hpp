@@ -192,13 +192,14 @@ bool ABB<T, menor, igual>::vacio()
 }
 
 template <typename T, bool menor(T, T), bool igual(T, T)>
-inline size_t ABB<T, menor, igual>::calcular_altura()
+size_t ABB<T, menor, igual>::calcular_altura()
 {
-    if (raiz != nullptr)
+    if (raiz == nullptr)
     {
-        return raiz->calcular_altura();
+        return 0;
+//        return raiz->calcular_altura();
     }
-    return 0;
+    return raiz->calcular_altura();
 }
 
 template <typename T, bool menor(T, T), bool igual(T, T)>

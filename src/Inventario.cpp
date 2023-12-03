@@ -4,12 +4,12 @@
 Inventario::Inventario()
 {
 }
-void Inventario::alta(Arma *arma)
+void Inventario::alta(Arma arma)
 {
     armas.alta(arma);
 }
 
-Arma *Inventario::baja()
+Arma Inventario::baja()
 {
     return armas.baja();
 }
@@ -24,10 +24,4 @@ bool Inventario::vacio()
     return armas.vacio();
 }
 
-Inventario::~Inventario()
-{
-    while (!armas.vacio())
-    {
-        delete baja();
-    }
-}
+

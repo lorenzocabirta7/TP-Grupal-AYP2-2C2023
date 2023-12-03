@@ -27,7 +27,7 @@ bool Interfaz::posicion_valida(size_t fila, size_t columna)
 void Interfaz::inicializar_paredes(size_t tipo_layout)
 {
     vector<vector<size_t>> coordenadas;
-    if (tipo_layout == 1)
+    if (tipo_layout % 2 == 0)
     {
         coordenadas = {{0, 1}, {0, 3}, {0, 5}, {0, 7}, {1, 1}, {1, 5}, {1, 7}, {2, 1}, {2, 3}, {2, 5}, {3, 3}, {3, 5}, {3, 7}, {4, 1}, {4, 3}, {4, 7}, {5, 1}, {5, 5}, {5, 7}, {6, 1}, {6, 3}, {6, 5}, {6, 7}, {7, 3}, {7, 5}, {7, 7}, {8, 3}};
     }
@@ -62,8 +62,8 @@ void Interfaz::inicializar_tablero(size_t tipo_layout)
 
 void Interfaz::inicializar_personajes()
 {
-
-    actualizar_tablero(FILA_ORIGEN, COLUMNA_ORIGEN, JAMES);
+    actualizar_tablero(1, 8, JAMES);
+    //actualizar_tablero(FILA_ORIGEN, COLUMNA_ORIGEN, JAMES);
     size_t cantidad_de_pyramid_head = 0;
 
     for (int i = 0; i < 2; i++)
@@ -121,34 +121,21 @@ void Interfaz::recorrer_mejor_camino()
     // grafo -> recorrer_mejor_camino();
 }
 
-size_t Interfaz::elegir_layout(size_t altura_arbol)
-{
-    size_t tipo_layout;
-    if (altura_arbol % 2 == 0)
-    {
-        tipo_layout = 1;
-    }
-    else
-    {
-        tipo_layout = 2;
-    }
-    return tipo_layout;
-}
 
 // ** MOVIMIENTOS **
 
-size_t Interfaz::estado_juego()
+size_t Interfaz::estado_juego(bool tiene_arma)
 {
     if (niveles_completados == 5)
     {
         return 1;
     }
-    /*
-    else if(no hay camino posible)
+
+    else if(!tiene_arma)
     {
         return 2;
     }
-    */
+
     return 0;
 }
 

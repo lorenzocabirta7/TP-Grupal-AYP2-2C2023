@@ -6,7 +6,8 @@
 Recorrido::Recorrido() {
     grafo_layout1 = Grafo(54);
     grafo_layout2 = Grafo(56);
-    posicion_james = {0, 7};
+    posicion_james = {8, 0};
+    aristas_cargadas = false;
 }
 
 void Recorrido::agregar_artistas_layout1() {
@@ -46,17 +47,36 @@ size_t Recorrido::encontrar_arista_james() {
     return vertice;
 }
 
-void Recorrido::encontrar_camino_minimo() {
+void Recorrido::cargar_aristas() {
+    if (!aristas_cargadas) {
+        agregar_artistas_layout1();
+        agregar_artistas_layout2();
+        aristas_cargadas = true;
+    }
+}
+
+std::vector<std::vector<size_t>> Recorrido::encontrar_camino_minimo() {
+    cargar_aristas();
+    std::vector<std::vector<size_t>> coordenadas = COORDENADAS_LAYOUT2;
     std::pair<std::vector<size_t>, int> resultado;
     grafo_layout2.usar_dijkstra();
     resultado = grafo_layout2.obtener_camino_minimo(encontrar_arista_james(), 55);
 
+    std::vector<std::vector<size_t>> coordenadas_camino_minimo;
+
     std::cout << "Camino mínimo: ";
     for (size_t i = 0; i < resultado.first.size(); ++i) {
-        std::cout << resultado.first[i];
-        if (i != resultado.first.size() - 1) {
-            std::cout << " -> ";
-        }
+        coordenadas_camino_minimo.push_back(coordenadas[resultado.first[i]]);
     }
-    std::cout << "\nDistancia mínima: " << resultado.second << std::endl;
+    //std::cout << "\nDistancia mínima: " << resultado.second << std::endl;
+
+//    for (size_t i = 0; i < coordenadas_camino_minimo.size(); ++i) {
+//        std::cout << "Vector " << i << ": ";
+//        for (size_t j = 0; j < coordenadas_camino_minimo[i].size(); ++j) {
+//            std::cout << coordenadas_camino_minimo[i][j] << " ";
+//        }
+//        std::cout << std::endl;
+//    }
+
+    return coordenadas_camino_minimo;
 }

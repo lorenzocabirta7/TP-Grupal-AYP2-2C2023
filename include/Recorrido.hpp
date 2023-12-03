@@ -18,6 +18,8 @@ private:
 
     std::vector<size_t> posicion_james;
 
+    bool aristas_cargadas;
+
     //pre: -
     //post: agrega las aristas al grafo del layout 1
     void agregar_artistas_layout1();
@@ -30,6 +32,8 @@ private:
     //post: retorna el numero de arista donde se encuentra james basado en su posicion
     size_t encontrar_arista_james();
 
+    void cargar_aristas();
+
 public:
     //Constructor
     Recorrido();
@@ -41,7 +45,7 @@ public:
     //pre: -
     //post: Encuentra el camino minimo del grafo
     //NOTA: No funciona bien. devuelve que el peso total del recorrido es 66666(Infinito). Solucionar mas tarde
-    void encontrar_camino_minimo();
+    std::vector<std::vector<size_t>> encontrar_camino_minimo();
 
 };
 

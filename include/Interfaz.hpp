@@ -32,8 +32,7 @@ class Interfaz
 {
 private:
     std::vector<std::vector<char>> tablero;
-    Grafo *grafo;
-    size_t niveles_completados = 1;
+    size_t niveles_completados = 0;
     size_t puntaje = 0;
 
 
@@ -52,10 +51,6 @@ private:
     // Pre: El tipo de layout debe ser valido.
     // Post: Asigna posiciones a las paredes segun el tipo de layout.
     void inicializar_paredes(size_t tipo_layout);
-
-    // Pre:
-    // Post: Devuelve el layout correspondiente.
-    size_t elegir_layout(size_t altura_arbol);
 
     // Pre:
     // Post: Muestra el recorrido con menor coste.
@@ -84,7 +79,7 @@ public:
 
     // Pre:
     // Post: Devuelve 0 si se esta jugando, 1 si el jugador gano y 2 si perdio.
-    size_t estado_juego();
+    size_t estado_juego(bool tiene_arma);
 
     // Pre:
     // Post: Se muestra el mejor camino o se lo recorre segun corresponda.
@@ -107,6 +102,7 @@ public:
     void aumentar_niveles_completados();
 
     // ~Interfaz();
+
 };
 
 #endif

@@ -2,10 +2,6 @@
 
 using namespace std;
 
-Personaje::Personaje(Inventario *inventario)
-{
-    this->inventario = inventario;
-}
 
 Personaje::Personaje()
 {
@@ -34,24 +30,31 @@ char Personaje::pedir_movimiento()
     return movimiento;
 }
 
-void Personaje::romper_arma()
+void Personaje::usar_arma()
 {
+    if (!arma_equipada)
+    {
+        cout << "No hay un arma equipada." << endl;
+        return;
+    }
     desequipar_arma();
-    Arma *arma_borrar = inventario->baja();
-    delete arma_borrar;
+    Arma arma_borrar = inventario.baja();
+
 }
 
 void Personaje::equipar_arma()
 {
-    if (!inventario->vacio())
+    if (!inventario.vacio())
     {
         arma_equipada = true;
         cout << "Se ha equipado el arma: ";
-        inventario->consulta();
+        inventario.consulta();
     }
     else
     {
         cout << "No hay armas en el inventario." << endl;
+        tiene_arma = false;
+
     }
 }
 
@@ -99,8 +102,9 @@ void Personaje::generar_arma(Interfaz &interfaz)
     if (dado == 1)
     {
         size_t potencia_valida = size_t(potencia);
-        Arma *nueva_arma = new Arma("nueva_arma", potencia_valida);
-        inventario->alta(nueva_arma);
+        Arma nueva_arma = Arma("nueva_arma", potencia_valida);
+        inventario.alta(nueva_arma);
+        tiene_arma = true;
     }
 }
 
@@ -264,19 +268,29 @@ void Personaje::interaccion_personaje(size_t opcion, Interfaz &interfaz)
 void Personaje::generar_placa()
 {
     int id;
+    Placa nueva_placa;
     do
     {
         id = generar_numero_aleatorio(ID);
-    } while (id == -1);
+        nueva_placa = Placa("nombre", "leyenda", id);
+    } while (id == -1 && arbol_placas.consulta(nueva_placa));
 
-    int id_valido = id;
+    //int id_valido = id;
     
-    Placa nueva_placa = Placa("nombre", "leyenda", id_valido);
+//    Placa nueva_placa = Placa("nombre", "leyenda", id_valido);
+//
+//    if (arbol_placas.consulta(&nueva_placa))
+//    {
+//        generar_placa();
+//    }
 
-    if (arbol_placas.consulta(&nueva_placa))
-    {
-        generar_placa();
-    }
+    arbol_placas.alta(nueva_placa);
+}
 
-    arbol_placas.alta(&nueva_placa);
+size_t Personaje::get_altura() {
+    return arbol_placas.calcular_altura();
+}
+
+bool Personaje::get_tiene_arma() {
+    return tiene_arma;
 }

@@ -22,6 +22,7 @@ Grafo::Grafo(size_t cantidad_vertices) {
 
 void Grafo::agrandar_matriz_adyacencia() {
     matriz_adyacencia.expandir();
+    vertices ++;
     for (size_t i = 0; i < vertices - 1; i++) {
         matriz_adyacencia.elemento(vertices - 1, i) = INFINITO;
         matriz_adyacencia.elemento(i, vertices - 1) = INFINITO;
@@ -40,7 +41,6 @@ int Grafo::obtener_peso_camino(std::vector<size_t> camino) {
 
 void Grafo::agregar_vertice() {
     agrandar_matriz_adyacencia();
-    vertices++;
     hay_cambios = true;
 }
 

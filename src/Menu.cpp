@@ -11,12 +11,15 @@ void Menu::imprimir_opciones()
     cout << "6. Salir." << endl;
 }
 
+
+
 void Menu::flujo_juego()
 {
     char opcion;
-    size_t altura_arbol = arbol_placas.calcular_altura();
-    // imprimir_opciones();
+
+    size_t altura_arbol = personaje.get_altura();
     interfaz.inicializar_tablero(altura_arbol);
+    // imprimir_opciones();
 
     while (opcion != '6' && interfaz.estado_juego() == 0) // interfaz.estado_juego() == 0
     {
@@ -34,6 +37,11 @@ void Menu::flujo_juego()
 
             if (personaje.nivel_terminado(interfaz))
             {
+                altura_arbol = personaje.get_altura();
+                if(altura_arbol == 0)
+                {
+                    altura_arbol ++;
+                }
                 interfaz.inicializar_tablero(altura_arbol);
                         }
             break;
@@ -45,8 +53,8 @@ void Menu::flujo_juego()
             // recorrer mejor camino
             break;
         case '4':
-            // manejo armas
-            // personaje.interaccion_personaje(manejo_armas, interfaz);
+            bool tiene_arma = personaje.get_tiene_arma();
+
             break;
         case '5':
             // interfaz.mostrar_puntaje();

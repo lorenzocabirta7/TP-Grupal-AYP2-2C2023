@@ -20,9 +20,9 @@ private:
     Personaje personaje;
     Recorrido recorrido;
 
-    ABB<Placa *, Placa::menor, Placa::igual> arbol_placas;
 
     void imprimir_opciones();
+
 
 public:
     // Pre:

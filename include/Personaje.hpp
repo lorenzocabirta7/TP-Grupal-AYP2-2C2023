@@ -24,10 +24,10 @@ const size_t MOVER_PERSONAJE = 1;
 class Personaje
 {
 private:
-    Inventario *inventario;
+    Inventario inventario;
     bool tiene_arma = false;
     bool arma_equipada = false;
-    ABB<Placa *, Placa::menor, Placa::igual> arbol_placas;
+    ABB<Placa , Placa::menor, Placa::igual> arbol_placas;
 
     // Pre:
     // Post: Se equipa el arma mas fuerte.
@@ -55,7 +55,7 @@ private:
 
     // Pre: Debe tener un arma equipada.
     // Post: Elimina el arma del inventario y la desequipa.
-    void romper_arma();
+    void usar_arma();
 
     // Pre: El movimiento debe ser valido.
     // Post: Realiza el movimiento elegido.
@@ -76,7 +76,7 @@ private:
     void generar_placa();
 
 public:
-    Personaje(Inventario *inventario);
+
     Personaje();
 
     // Pre:
@@ -90,6 +90,10 @@ public:
     // Pre:
     // Post: Devuelve true si el nivel esta terminado
     bool nivel_terminado(Interfaz &interfaz);
+
+    size_t get_altura();
+
+    bool get_tiene_arma();
 };
 
 #endif
