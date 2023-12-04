@@ -30,7 +30,7 @@ void Recorrido::acutalizar_posicion_james(std::vector<size_t> posicion) {
     posicion_james = posicion;
 }
 
-size_t Recorrido::encontrar_arista_james() {
+size_t Recorrido::encontrar_vertice_james() {
     bool coordenada_encontrada = false;
     size_t vertice = 0;
     std::vector<std::vector<size_t>> coordenadas = COORDENADAS_LAYOUT2;
@@ -55,18 +55,114 @@ void Recorrido::cargar_aristas() {
     }
 }
 
-std::vector<std::vector<size_t>> Recorrido::encontrar_camino_minimo() {
+void Recorrido::descifrar_tipo_layout(size_t altura_arbol) {
+    if(altura_arbol % 2 == 0){
+        layout_actual = COORDENADAS_LAYOUT1;
+    } else {
+        layout_actual = COORDENADAS_LAYOUT2;
+    }
+}
+
+//std::vector<std::vector<size_t>> Recorrido::asignar_tipo_layout() {
+//    std::vector<std::vector<size_t>> coordenadas;
+//    if (tipo_layout_actual == 1) {
+//        coordenadas = COORDENADAS_LAYOUT1;
+//    } else {
+//        coordenadas = COORDENADAS_LAYOUT2;
+//    }
+//    return coordenadas;
+//}
+
+Grafo Recorrido::asignar_grafo_correspondiente() {
+    if (layout_actual == COORDENADAS_LAYOUT1){
+        return grafo_layout1;
+    } else {
+        return grafo_layout2;
+    }
+}
+
+void Recorrido::modificar_posicion_personajes(std::vector<size_t> posicion_actual_james, std::vector<std::vector<size_t>> posiciones_pyramidheads) {
+    acutalizar_posicion_james(posicion_actual_james);
+
+    if (posiciones_pyramidheads[0].empty()) {
+        posicion_pyramid1.clear();
+    } else {
+        posicion_pyramid1 = posiciones_pyramidheads[0];
+    }
+
+    if (posiciones_pyramidheads[1].empty()) {
+        posicion_pyramid1.clear();
+    } else {
+        posicion_pyramid1 = posiciones_pyramidheads[0];
+    }
+}
+
+size_t Recorrido::encontrar_vertice_pyramid(int numero_pyramid) {
+    bool coordenada_encontrada = false;
+    size_t vertice = 0;
+    //std::vector<std::vector<size_t>> layout_actual = tipo_layout_actual % 2 == 0 ? COORDENADAS_LAYOUT1 : COORDENADAS_LAYOUT2;
+    std::vector<size_t> pyramidhead = numero_pyramid == 1 ? posicion_pyramid1 : posicion_pyramid2;
+    size_t tamano_vector = layout_actual.size();
+
+    while (!coordenada_encontrada && vertice < tamano_vector) {
+        if (layout_actual[vertice][0] == pyramidhead[0] && layout_actual[vertice][1] == pyramidhead[1]) {
+            coordenada_encontrada = true;
+        } else {
+            vertice ++;
+        }
+    }
+
+    return vertice;
+}
+
+void Recorrido::actualizar_valor_arista_pyramidhead(Grafo &grafo_a_utilizar,size_t vertice_pyramid) {
+    if(layout_actual == COORDENADAS_LAYOUT1) {
+        std::vector<size_t> coordenada_pyramid = VERTICES_LAYOUT1[vertice_pyramid];
+        for (size_t i = 0; i < coordenada_pyramid.size(); ++i) {
+            grafo_a_utilizar.cambiar_arista(coordenada_pyramid[0], coordenada_pyramid[i], PESO_ARISTA_PYRAMID);
+        }
+    }
+    else{
+        std::vector<size_t> coordenada_pyramid = VERTICES_LAYOUT2[vertice_pyramid];
+        for (size_t i = 0; i < coordenada_pyramid.size(); ++i) {
+            grafo_a_utilizar.cambiar_arista(coordenada_pyramid[0], coordenada_pyramid[i], PESO_ARISTA_PYRAMID);
+        }
+    }
+}
+
+void Recorrido::modificar_aristas_pyramidheads(Grafo &grafo_a_utilizar) {
+    if(posicion_pyramid1.empty() && posicion_pyramid2.empty()){
+        return;
+    }
+    else if(!posicion_pyramid1.empty()){
+        size_t vertice_pyramid1 = encontrar_vertice_pyramid(1);
+        actualizar_valor_arista_pyramidhead(grafo_a_utilizar, vertice_pyramid1);
+    }
+    else if(!posicion_pyramid2.empty()){
+        size_t vertice_pyramid2 = encontrar_vertice_pyramid(2);
+        actualizar_valor_arista_pyramidhead(grafo_a_utilizar, vertice_pyramid2);
+    }
+}
+
+std::vector<std::vector<size_t>> Recorrido::encontrar_camino_minimo(std::vector<size_t> posicion_actual_james, std::vector<std::vector<size_t>> posiciones_pyramidheads,size_t altura_arbol) {
     cargar_aristas();
-    std::vector<std::vector<size_t>> coordenadas = COORDENADAS_LAYOUT2;
+    descifrar_tipo_layout(altura_arbol);
+    modificar_posicion_personajes(posicion_actual_james, posiciones_pyramidheads);
+
+    //std::vector<std::vector<size_t>> coordenadas = asignar_tipo_layout();
+    Grafo grafo_a_utilizar = asignar_grafo_correspondiente();
+
+    modificar_aristas_pyramidheads(grafo_a_utilizar);
+
     std::pair<std::vector<size_t>, int> resultado;
-    grafo_layout2.usar_dijkstra();
-    resultado = grafo_layout2.obtener_camino_minimo(encontrar_arista_james(), 55);
+    grafo_a_utilizar.usar_dijkstra();
+    resultado = grafo_a_utilizar.obtener_camino_minimo(encontrar_vertice_james(), 55);
 
     std::vector<std::vector<size_t>> coordenadas_camino_minimo;
 
     std::cout << "Camino mínimo: ";
     for (size_t i = 0; i < resultado.first.size(); ++i) {
-        coordenadas_camino_minimo.push_back(coordenadas[resultado.first[i]]);
+        coordenadas_camino_minimo.push_back(layout_actual[resultado.first[i]]);
     }
     //std::cout << "\nDistancia mínima: " << resultado.second << std::endl;
 

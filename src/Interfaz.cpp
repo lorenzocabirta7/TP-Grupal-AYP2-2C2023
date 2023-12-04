@@ -124,17 +124,17 @@ void Interfaz::recorrer_mejor_camino()
 
 // ** MOVIMIENTOS **
 
-size_t Interfaz::estado_juego(bool tiene_arma)
+size_t Interfaz::estado_juego() //bool tiene_arma
 {
     if (niveles_completados == 5)
     {
         return 1;
     }
 
-    else if(!tiene_arma)
-    {
-        return 2;
-    }
+//    else if(!tiene_arma)
+//    {
+//        return 2;
+//    }
 
     return 0;
 }
@@ -172,3 +172,4 @@ bool Interfaz::hay_pared(size_t filas, size_t columnas)
 void Interfaz::aumentar_niveles_completados(){
     niveles_completados++;
 }
+

@@ -10,15 +10,18 @@ const std::vector<std::vector<size_t>> COORDENADAS_LAYOUT1 = {{8,0},{8,1},{8,2},
 const std::vector<std::vector<size_t>> COORDENADAS_LAYOUT2 = {{8,0},{8,1},{8,2},{8,4},{8,5},{8,6},{8,7},{8,8},{7,0},{7,2},{7,4},{7,5},{6,0},{6,1},{6,2},{6,3},{6,4},{6,6},{6,7},{6,8},{5,0},{5,4},{5,6},{5,8},{4,0},{4,1},{4,2},{4,3},{4,4},{4,5},{4,6},{4,8},{3,2},{3,6},{3,7},{3,8},{2,0},{2,1},{2,2},{2,3},{2,4},{2,5},{2,6},{2,8},{1,0},{1,6},{1,8},{0,0},{0,1},{0,2},{0,3},{0,4},{0,5},{0,6},{0,7},{0,8}};
 
 const int PESO_ARISTA = 10;
+const int PESO_ARISTA_PYRAMID = 50;
 
 class Recorrido {
 private:
     Grafo grafo_layout1;
     Grafo grafo_layout2;
-
     std::vector<size_t> posicion_james;
-
+    std::vector<size_t> posicion_pyramid1;
+    std::vector<size_t> posicion_pyramid2;
     bool aristas_cargadas;
+    std::vector<std::vector<size_t>> layout_actual;
+
 
     //pre: -
     //post: agrega las aristas al grafo del layout 1
@@ -29,10 +32,36 @@ private:
     void agregar_artistas_layout2();
 
     //pre: -
-    //post: retorna el numero de arista donde se encuentra james basado en su posicion
-    size_t encontrar_arista_james();
+    //post: retorna el numero de vertice donde se encuentra james basado en su posicion
+    size_t encontrar_vertice_james();
 
+    //pre: -
+    //post: carga las aristas de los grafos
     void cargar_aristas();
+
+    //pre: -
+    //post: descifra si el layout actual es el 1 o el 2
+    void descifrar_tipo_layout(size_t altura_arbol);
+
+    //pre: -
+    //post: asigna el grafo correspondiente dependiendo el tipo de layout
+    Grafo asignar_grafo_correspondiente();
+
+    //pre: -
+    //post: modifica las coordenadas de James y los pyramidhead
+    void modificar_posicion_personajes(std::vector<size_t> posicion_actual_james, std::vector<std::vector<size_t>> posiciones_pyramidheads);
+
+    //pre: -
+    //post: Encuentra el numero de vertice donde esta situado un pyramidhead
+    size_t encontrar_vertice_pyramid(int numero_pyramid);
+
+    //pre: -
+    //post: actualiza las aristas de los pyramidhead
+    void modificar_aristas_pyramidheads(Grafo &grafo_a_utilizar);
+
+    //pre: -
+    //post: Modifica el peso de las aristas de los vertices adyacentes a los que se encuentra un pyramdidhead
+    void actualizar_valor_arista_pyramidhead(Grafo &grafo_a_utilizar, size_t vertice_pyramid);
 
 public:
     //Constructor
@@ -44,8 +73,7 @@ public:
 
     //pre: -
     //post: Encuentra el camino minimo del grafo
-    //NOTA: No funciona bien. devuelve que el peso total del recorrido es 66666(Infinito). Solucionar mas tarde
-    std::vector<std::vector<size_t>> encontrar_camino_minimo();
+    std::vector<std::vector<size_t>> encontrar_camino_minimo(std::vector<size_t> posicion_actual_james, std::vector<std::vector<size_t>> posiciones_pyramidheads, size_t altura_arbol);
 
 };
 

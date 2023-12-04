@@ -94,6 +94,8 @@ public:
     size_t get_altura();
 
     bool get_tiene_arma();
+
+    std::vector<std::vector<size_t>> obtener_posicion_pyramidhead(Interfaz &interfaz);
 };
 
 #endif

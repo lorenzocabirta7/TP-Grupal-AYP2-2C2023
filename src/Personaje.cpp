@@ -294,3 +294,44 @@ size_t Personaje::get_altura() {
 bool Personaje::get_tiene_arma() {
     return tiene_arma;
 }
+
+std::vector<std::vector<size_t>> Personaje::obtener_posicion_pyramidhead(Interfaz &interfaz) {
+    int cantidad_pyramidheads = 0;
+    size_t fila = 0;
+    size_t columna = 0;
+
+    std::vector<size_t> posicion_pyramidhead1;
+    std::vector<size_t> posicion_pyramidhead2;
+
+    while (fila < CANTIDAD_FILAS && cantidad_pyramidheads < 2)
+    {
+        while (columna < CANTIDAD_COLUMNAS && cantidad_pyramidheads < 2)
+        {
+            if (interfaz.esta_ocupado(fila, columna, PYRAMID_HEAD))
+            {
+                cantidad_pyramidheads++;
+                if (cantidad_pyramidheads == 1)
+                {
+                    posicion_pyramidhead1 = {fila, columna};
+                }
+                else
+                {
+                    posicion_pyramidhead2 = {fila, columna};
+                }
+            }
+            else
+            {
+                columna++;
+            }
+        }
+        if (cantidad_pyramidheads < 2)
+        {
+            columna = 0;
+            fila++;
+        }
+    }
+
+    std::vector<std::vector<size_t>> posiciones_pyramidheads = {posicion_pyramidhead1, posicion_pyramidhead2};
+
+    return posiciones_pyramidheads;
+}
