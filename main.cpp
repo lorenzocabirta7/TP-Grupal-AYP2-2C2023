@@ -5,8 +5,8 @@
 #include <fstream>
 */
 #include "include/Inventario.hpp"
-#include <iostream>
-#include "Interfaz.hpp"
+//#include <iostream>
+//#include "Interfaz.hpp"
 #include "Menu.hpp"
 //#include "Personaje.hpp"
 

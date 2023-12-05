@@ -4,14 +4,14 @@ Trabajo Práctico Grupal de Algoritmos y Programación 2 2c2023.
 
 ### Integrantes del grupo NOMBRE_GRUPO:
 
-1. APELLIDO, Nombre - Padron - Mail_FIUBA
-2. APELLIDO, Nombre - Padron - Mail_FIUBA
-3. APELLIDO, Nombre - Padron - Mail_FIUBA
-4. APELLIDO, Nombre - Padron - Mail_FIUBA
+1. Balella, Juan - 110271 - jbalella@fi.uba.ar
+2. Malbran, Beltran - 110036 - bmalbran@fi.uba.ar
+3. Lorenzo, Cabirta - Padron - Mail_FIUBA
+4. Frattasi, Roman - 110229 - rfrattasi@fi.uba.ar
 
 ### Corrector asignado:
 
-CORRECTOR
+Andres Juarez
 
 ## Compilación:
 

@@ -16,11 +16,12 @@ class Recorrido {
 private:
     Grafo grafo_layout1;
     Grafo grafo_layout2;
-    std::vector<size_t> posicion_james;
+    std::vector<size_t> posicion_james2;
     std::vector<size_t> posicion_pyramid1;
     std::vector<size_t> posicion_pyramid2;
     bool aristas_cargadas;
     std::vector<std::vector<size_t>> layout_actual;
+    int numero_layout;
 
 
     //pre: -
@@ -49,7 +50,7 @@ private:
 
     //pre: -
     //post: modifica las coordenadas de James y los pyramidhead
-    void modificar_posicion_personajes(std::vector<size_t> posicion_actual_james, std::vector<std::vector<size_t>> posiciones_pyramidheads);
+    void modificar_posicion_personajes(std::vector<size_t> &posicion_actual_james, std::vector<std::vector<size_t>> posiciones_pyramidheads);
 
     //pre: -
     //post: Encuentra el numero de vertice donde esta situado un pyramidhead

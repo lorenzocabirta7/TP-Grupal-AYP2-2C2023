@@ -62,7 +62,7 @@ void Interfaz::inicializar_tablero(size_t tipo_layout)
 
 void Interfaz::inicializar_personajes()
 {
-    actualizar_tablero(1, 8, JAMES);
+    actualizar_tablero(FILA_ORIGEN, COLUMNA_ORIGEN, JAMES);
     //actualizar_tablero(FILA_ORIGEN, COLUMNA_ORIGEN, JAMES);
     size_t cantidad_de_pyramid_head = 0;
 

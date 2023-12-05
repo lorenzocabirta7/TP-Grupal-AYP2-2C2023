@@ -20,7 +20,7 @@ void Menu::flujo_juego()
     size_t altura_arbol = personaje.get_altura();
     interfaz.inicializar_tablero(altura_arbol);
     // imprimir_opciones();
-    vector<size_t> posicion_james;
+    vector<size_t> posicion_james1;
     vector<vector<size_t>> posicion_pyramidheads;
 
     while (opcion != '6' && interfaz.estado_juego() == 0) // interfaz.estado_juego() == 0
@@ -48,9 +48,9 @@ void Menu::flujo_juego()
                         }
             break;
         case '2':
-            posicion_james = personaje.obtener_posicion_james(interfaz);
+            posicion_james1 = personaje.obtener_posicion_james(interfaz);
             posicion_pyramidheads = personaje.obtener_posicion_pyramidhead(interfaz);
-            recorrido.encontrar_camino_minimo(posicion_james, posicion_pyramidheads, altura_arbol);
+            recorrido.encontrar_camino_minimo(posicion_james1, posicion_pyramidheads, altura_arbol);
             break;
         case '3':
             // recorrer mejor camino

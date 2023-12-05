@@ -191,8 +191,8 @@ void Personaje::realizar_movimiento(char movimiento, Interfaz &interfaz)
 {
     vector<size_t> posicion_james = obtener_posicion_james(interfaz);
 
-    // int fila_james = static_cast<int>(posicion_james[0]);
-    // int columna_james = static_cast<int>(posicion_james[1]);
+    // int fila_james = static_cast<int>(posicion_james2[0]);
+    // int columna_james = static_cast<int>(posicion_james2[1]);
 
     size_t fila_james = posicion_james[0];
     size_t columna_james = posicion_james[1];
@@ -313,6 +313,7 @@ std::vector<std::vector<size_t>> Personaje::obtener_posicion_pyramidhead(Interfa
                 if (cantidad_pyramidheads == 1)
                 {
                     posicion_pyramidhead1 = {fila, columna};
+                    fila++;
                 }
                 else
                 {
