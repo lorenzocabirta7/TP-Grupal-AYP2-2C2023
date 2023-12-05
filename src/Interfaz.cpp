@@ -124,17 +124,19 @@ void Interfaz::recorrer_mejor_camino()
 
 // ** MOVIMIENTOS **
 
-size_t Interfaz::estado_juego() //bool tiene_arma
+size_t Interfaz::estado_juego(size_t altura_arbol, bool tiene_arma) 
 {
+    
     if (niveles_completados == 5)
     {
         return 1;
+    }else if(!tiene_arma){
+        if(altura_arbol % 2 == 0 && (esta_ocupado(1, 8, PYRAMID_HEAD) || esta_ocupado(2, 8, PYRAMID_HEAD))){
+            return 2;
+        }else if(altura_arbol % 2 != 0 && ((esta_ocupado(1, 8, PYRAMID_HEAD) || esta_ocupado(2, 8, PYRAMID_HEAD) || esta_ocupado(3, 8, PYRAMID_HEAD)) && (esta_ocupado(0, 7, PYRAMID_HEAD) || esta_ocupado(0, 6, PYRAMID_HEAD)))){
+            return 2;
+        }
     }
-
-//    else if(!tiene_arma)
-//    {
-//        return 2;
-//    }
 
     return 0;
 }

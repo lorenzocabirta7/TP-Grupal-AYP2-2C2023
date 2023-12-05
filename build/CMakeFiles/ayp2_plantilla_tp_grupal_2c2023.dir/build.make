@@ -44,10 +44,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/cmake/1345/bin/cmake
+CMAKE_COMMAND = /snap/cmake/1356/bin/cmake
 
 # The command to remove a file.
-RM = /snap/cmake/1345/bin/cmake -E rm -f
+RM = /snap/cmake/1356/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -223,6 +223,48 @@ CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/main.cpp -o CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/main.cpp.s
 
+CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Menu.cpp.o: CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/flags.make
+CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Menu.cpp.o: /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/src/Menu.cpp
+CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Menu.cpp.o: CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Menu.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Menu.cpp.o -MF CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Menu.cpp.o.d -o CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Menu.cpp.o -c /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/src/Menu.cpp
+
+CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Menu.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Menu.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/src/Menu.cpp > CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Menu.cpp.i
+
+CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Menu.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Menu.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/src/Menu.cpp -o CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Menu.cpp.s
+
+CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Personaje.cpp.o: CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/flags.make
+CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Personaje.cpp.o: /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/src/Personaje.cpp
+CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Personaje.cpp.o: CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Personaje.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Personaje.cpp.o -MF CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Personaje.cpp.o.d -o CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Personaje.cpp.o -c /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/src/Personaje.cpp
+
+CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Personaje.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Personaje.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/src/Personaje.cpp > CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Personaje.cpp.i
+
+CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Personaje.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Personaje.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/src/Personaje.cpp -o CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Personaje.cpp.s
+
+CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Recorrido.cpp.o: CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/flags.make
+CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Recorrido.cpp.o: /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/src/Recorrido.cpp
+CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Recorrido.cpp.o: CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Recorrido.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Recorrido.cpp.o -MF CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Recorrido.cpp.o.d -o CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Recorrido.cpp.o -c /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/src/Recorrido.cpp
+
+CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Recorrido.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Recorrido.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/src/Recorrido.cpp > CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Recorrido.cpp.i
+
+CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Recorrido.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Recorrido.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/src/Recorrido.cpp -o CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Recorrido.cpp.s
+
 # Object files for target ayp2_plantilla_tp_grupal_2c2023
 ayp2_plantilla_tp_grupal_2c2023_OBJECTS = \
 "CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Inventario.cpp.o" \
@@ -235,7 +277,10 @@ ayp2_plantilla_tp_grupal_2c2023_OBJECTS = \
 "CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Interfaz.cpp.o" \
 "CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/bGVjdG9y/bGVjdG9y.cpp.o" \
 "CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/bGVjdG9y/ZGVjb2Rl.cpp.o" \
-"CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/main.cpp.o"
+"CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/main.cpp.o" \
+"CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Menu.cpp.o" \
+"CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Personaje.cpp.o" \
+"CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Recorrido.cpp.o"
 
 # External object files for target ayp2_plantilla_tp_grupal_2c2023
 ayp2_plantilla_tp_grupal_2c2023_EXTERNAL_OBJECTS =
@@ -251,9 +296,12 @@ ayp2_plantilla_tp_grupal_2c2023_EXTERNAL_OBJECTS =
 /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/main: CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/bGVjdG9y/bGVjdG9y.cpp.o
 /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/main: CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/bGVjdG9y/ZGVjb2Rl.cpp.o
 /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/main: CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/main.cpp.o
+/home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/main: CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Menu.cpp.o
+/home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/main: CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Personaje.cpp.o
+/home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/main: CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Recorrido.cpp.o
 /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/main: CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/build.make
 /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/main: CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

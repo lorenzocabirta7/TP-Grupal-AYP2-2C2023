@@ -24,7 +24,7 @@ void Menu::flujo_juego()
     vector<vector<size_t>> posicion_pyramidheads;
     bool tiene_arma;
 
-    while (opcion != '6' && interfaz.estado_juego() == 0) // interfaz.estado_juego() == 0
+    while (opcion != '6' && interfaz.estado_juego(altura_arbol, tiene_arma) == 0) // interfaz.estado_juego() == 0
     {
         imprimir_opciones();
         cout << "Ingrese una opcion: ";
@@ -35,7 +35,7 @@ void Menu::flujo_juego()
         case '1':
             // mover personaje
             interfaz.imprimir_tablero(); // adentro de mover personaje
-            personaje.interaccion_personaje(MOVER_PERSONAJE, interfaz);
+            personaje.interaccion_personaje(MOVER_JUGADOR, interfaz);
 
 
             if (personaje.nivel_terminado(interfaz))
@@ -58,7 +58,8 @@ void Menu::flujo_juego()
             // recorrer mejor camino
             break;
         case '4':
-            //bool tiene_arma = personaje.get_tiene_arma();
+            tiene_arma = personaje.get_tiene_arma();
+            personaje.interaccion_personaje(MANEJO_ARMAS, interfaz);
 
             break;
         case '5':
@@ -72,43 +73,4 @@ void Menu::flujo_juego()
             break;
         }
     }
-
-    /*
-    switch (opcion)
-    {
-    case '1':
-    case '4':
-        // mover personaje
-        personaje.interaccion_personaje(opcion, interfaz);
-        interfaz.imprimir_tablero(); // adentro de mover personaje
-
-        if (personaje.nivel_terminado(interfaz))
-        {
-            interfaz.inicializar_tablero(altura_arbol);
-        }
-        break;
-    }
-    case '2':
-    case '3':
-        interaccion_grafo(opcion)
-
-    {
-    case '5':
-        interfaz.mostrar_puntaje();
-        break;
-    default:
-        salir
-    */
-
-    //    if (interfaz.estado_juego() == 1)
-    //    {
-    //        cout << "Ganaste!" << endl;
-    //        //interfaz.mostrar_puntaje();
-    //    }
-    //    else
-    //    {
-    //        cout << "Perdiste!" << endl;
-    //    }
-
-    // arma ya planteada
 }

@@ -95,6 +95,8 @@ public:
 
     bool get_tiene_arma();
 
+    bool get_arma_equipada();
+
     std::vector<std::vector<size_t>> obtener_posicion_pyramidhead(Interfaz &interfaz);
 };
 

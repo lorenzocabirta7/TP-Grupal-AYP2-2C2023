@@ -79,7 +79,7 @@ public:
 
     // Pre:
     // Post: Devuelve 0 si se esta jugando, 1 si el jugador gano y 2 si perdio.
-    size_t estado_juego(); //bool tiene_arma
+    size_t estado_juego(size_t altura_arbol, bool tiene_arma); 
 
     // Pre:
     // Post: Se muestra el mejor camino o se lo recorre segun corresponda.

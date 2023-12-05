@@ -48,10 +48,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/cmake/1345/bin/cmake
+CMAKE_COMMAND = /snap/cmake/1356/bin/cmake
 
 # The command to remove a file.
-RM = /snap/cmake/1345/bin/cmake -E rm -f
+RM = /snap/cmake/1356/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -78,7 +78,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	/snap/cmake/1345/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/cmake/1356/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -369,6 +369,54 @@ src/Matriz.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/build.make CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Matriz.cpp.s
 .PHONY : src/Matriz.cpp.s
 
+src/Menu.o: src/Menu.cpp.o
+.PHONY : src/Menu.o
+
+# target to build an object file
+src/Menu.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/build.make CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Menu.cpp.o
+.PHONY : src/Menu.cpp.o
+
+src/Menu.i: src/Menu.cpp.i
+.PHONY : src/Menu.i
+
+# target to preprocess a source file
+src/Menu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/build.make CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Menu.cpp.i
+.PHONY : src/Menu.cpp.i
+
+src/Menu.s: src/Menu.cpp.s
+.PHONY : src/Menu.s
+
+# target to generate assembly for a file
+src/Menu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/build.make CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Menu.cpp.s
+.PHONY : src/Menu.cpp.s
+
+src/Personaje.o: src/Personaje.cpp.o
+.PHONY : src/Personaje.o
+
+# target to build an object file
+src/Personaje.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/build.make CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Personaje.cpp.o
+.PHONY : src/Personaje.cpp.o
+
+src/Personaje.i: src/Personaje.cpp.i
+.PHONY : src/Personaje.i
+
+# target to preprocess a source file
+src/Personaje.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/build.make CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Personaje.cpp.i
+.PHONY : src/Personaje.cpp.i
+
+src/Personaje.s: src/Personaje.cpp.s
+.PHONY : src/Personaje.s
+
+# target to generate assembly for a file
+src/Personaje.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/build.make CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Personaje.cpp.s
+.PHONY : src/Personaje.cpp.s
+
 src/Placa.o: src/Placa.cpp.o
 .PHONY : src/Placa.o
 
@@ -392,6 +440,30 @@ src/Placa.s: src/Placa.cpp.s
 src/Placa.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/build.make CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Placa.cpp.s
 .PHONY : src/Placa.cpp.s
+
+src/Recorrido.o: src/Recorrido.cpp.o
+.PHONY : src/Recorrido.o
+
+# target to build an object file
+src/Recorrido.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/build.make CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Recorrido.cpp.o
+.PHONY : src/Recorrido.cpp.o
+
+src/Recorrido.i: src/Recorrido.cpp.i
+.PHONY : src/Recorrido.i
+
+# target to preprocess a source file
+src/Recorrido.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/build.make CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Recorrido.cpp.i
+.PHONY : src/Recorrido.cpp.i
+
+src/Recorrido.s: src/Recorrido.cpp.s
+.PHONY : src/Recorrido.s
+
+# target to generate assembly for a file
+src/Recorrido.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/build.make CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Recorrido.cpp.s
+.PHONY : src/Recorrido.cpp.s
 
 # Help Target
 help:
@@ -432,9 +504,18 @@ help:
 	@echo "... src/Matriz.o"
 	@echo "... src/Matriz.i"
 	@echo "... src/Matriz.s"
+	@echo "... src/Menu.o"
+	@echo "... src/Menu.i"
+	@echo "... src/Menu.s"
+	@echo "... src/Personaje.o"
+	@echo "... src/Personaje.i"
+	@echo "... src/Personaje.s"
 	@echo "... src/Placa.o"
 	@echo "... src/Placa.i"
 	@echo "... src/Placa.s"
+	@echo "... src/Recorrido.o"
+	@echo "... src/Recorrido.i"
+	@echo "... src/Recorrido.s"
 .PHONY : help
 
 

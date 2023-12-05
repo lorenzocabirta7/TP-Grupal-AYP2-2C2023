@@ -64,5 +64,23 @@
   "command": "/usr/bin/c++  -I/home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/include -I/home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/src -I/home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/bGVjdG9y -Wall -Werror -Wconversion -g -Wall -Werror -Wconversion -o CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/main.cpp.o -c /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/main.cpp",
   "file": "/home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/main.cpp",
   "output": "CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/main.cpp.o"
+},
+{
+  "directory": "/home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/build",
+  "command": "/usr/bin/c++  -I/home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/include -I/home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/src -I/home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/bGVjdG9y -Wall -Werror -Wconversion -g -Wall -Werror -Wconversion -o CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Menu.cpp.o -c /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/src/Menu.cpp",
+  "file": "/home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/src/Menu.cpp",
+  "output": "CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Menu.cpp.o"
+},
+{
+  "directory": "/home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/build",
+  "command": "/usr/bin/c++  -I/home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/include -I/home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/src -I/home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/bGVjdG9y -Wall -Werror -Wconversion -g -Wall -Werror -Wconversion -o CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Personaje.cpp.o -c /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/src/Personaje.cpp",
+  "file": "/home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/src/Personaje.cpp",
+  "output": "CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Personaje.cpp.o"
+},
+{
+  "directory": "/home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/build",
+  "command": "/usr/bin/c++  -I/home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/include -I/home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/src -I/home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/bGVjdG9y -Wall -Werror -Wconversion -g -Wall -Werror -Wconversion -o CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Recorrido.cpp.o -c /home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/src/Recorrido.cpp",
+  "file": "/home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/src/Recorrido.cpp",
+  "output": "CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Recorrido.cpp.o"
 }
 ]

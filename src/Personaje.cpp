@@ -110,24 +110,6 @@ void Personaje::generar_arma(Interfaz &interfaz)
 
 vector<size_t> Personaje::obtener_posicion_james(Interfaz &interfaz)
 {
-//    int fila = -1;
-//    int columna = -1;
-//    bool encontrado = false;
-//    do
-//    {
-//        fila++;
-//        columna++;
-//        if (interfaz.esta_ocupado(static_cast<size_t>(fila), static_cast<size_t>(columna), JAMES))
-//        {
-//            encontrado = true;
-//        }
-//
-//    } while (fila < static_cast<int>(CANTIDAD_FILAS) && columna < static_cast<int>(CANTIDAD_COLUMNAS) && !encontrado);
-//
-//    size_t fila_james = size_t(fila);
-//    size_t columna_james = size_t(columna);
-//    vector<size_t> posicion = {fila_james, columna_james};
-
     bool james_encontrado = false;
     size_t fila = 0;
     size_t columna = 0;
@@ -190,9 +172,6 @@ bool Personaje::casilla_valida(size_t fila, size_t columna, Interfaz &interfaz)
 void Personaje::realizar_movimiento(char movimiento, Interfaz &interfaz)
 {
     vector<size_t> posicion_james = obtener_posicion_james(interfaz);
-
-    // int fila_james = static_cast<int>(posicion_james2[0]);
-    // int columna_james = static_cast<int>(posicion_james2[1]);
 
     size_t fila_james = posicion_james[0];
     size_t columna_james = posicion_james[1];
@@ -275,15 +254,6 @@ void Personaje::generar_placa()
         nueva_placa = Placa("nombre", "leyenda", id);
     } while (id == -1 && arbol_placas.consulta(nueva_placa));
 
-    //int id_valido = id;
-    
-//    Placa nueva_placa = Placa("nombre", "leyenda", id_valido);
-//
-//    if (arbol_placas.consulta(&nueva_placa))
-//    {
-//        generar_placa();
-//    }
-
     arbol_placas.alta(nueva_placa);
 }
 
@@ -335,4 +305,8 @@ std::vector<std::vector<size_t>> Personaje::obtener_posicion_pyramidhead(Interfa
     std::vector<std::vector<size_t>> posiciones_pyramidheads = {posicion_pyramidhead1, posicion_pyramidhead2};
 
     return posiciones_pyramidheads;
+}
+
+bool Personaje::get_arma_equipada() {
+    return arma_equipada;
 }

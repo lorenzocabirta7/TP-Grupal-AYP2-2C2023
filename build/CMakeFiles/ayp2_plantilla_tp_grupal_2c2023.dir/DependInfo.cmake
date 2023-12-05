@@ -18,7 +18,10 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/src/Interfaz.cpp" "CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Interfaz.cpp.o" "gcc" "CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Interfaz.cpp.o.d"
   "/home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/src/Inventario.cpp" "CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Inventario.cpp.o" "gcc" "CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Inventario.cpp.o.d"
   "/home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/src/Matriz.cpp" "CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Matriz.cpp.o" "gcc" "CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Matriz.cpp.o.d"
+  "/home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/src/Menu.cpp" "CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Menu.cpp.o" "gcc" "CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Menu.cpp.o.d"
+  "/home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/src/Personaje.cpp" "CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Personaje.cpp.o" "gcc" "CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Personaje.cpp.o.d"
   "/home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/src/Placa.cpp" "CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Placa.cpp.o" "gcc" "CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Placa.cpp.o.d"
+  "/home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/src/Recorrido.cpp" "CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Recorrido.cpp.o" "gcc" "CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/src/Recorrido.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
