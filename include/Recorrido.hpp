@@ -16,6 +16,7 @@ class Recorrido {
 private:
     Grafo grafo_layout1;
     Grafo grafo_layout2;
+    Grafo grafo_a_utilizar;
     std::vector<size_t> posicion_james2;
     std::vector<size_t> posicion_pyramid1;
     std::vector<size_t> posicion_pyramid2;
@@ -46,7 +47,7 @@ private:
 
     //pre: -
     //post: asigna el grafo correspondiente dependiendo el tipo de layout
-    Grafo asignar_grafo_correspondiente();
+    void asignar_grafo_correspondiente();
 
     //pre: -
     //post: modifica las coordenadas de James y los pyramidhead
@@ -58,11 +59,11 @@ private:
 
     //pre: -
     //post: actualiza las aristas de los pyramidhead
-    void modificar_aristas_pyramidheads(Grafo &grafo_a_utilizar);
+    void modificar_aristas_pyramidheads();
 
     //pre: -
     //post: Modifica el peso de las aristas de los vertices adyacentes a los que se encuentra un pyramdidhead
-    void actualizar_valor_arista_pyramidhead(Grafo &grafo_a_utilizar, size_t vertice_pyramid);
+    void actualizar_valor_arista_pyramidhead(size_t vertice_pyramid);
 
 public:
     //Constructor
@@ -74,7 +75,7 @@ public:
 
     //pre: -
     //post: Encuentra el camino minimo del grafo
-    std::vector<std::vector<size_t>> encontrar_camino_minimo(std::vector<size_t> posicion_actual_james, std::vector<std::vector<size_t>> posiciones_pyramidheads, size_t altura_arbol);
+    std::vector<std::vector<size_t>> encontrar_camino_minimo(std::vector<size_t> posicion_actual_james, std::vector<std::vector<size_t>> posiciones_pyramidheads, size_t altura_arbol, bool tiene_arma);
 
 };
 

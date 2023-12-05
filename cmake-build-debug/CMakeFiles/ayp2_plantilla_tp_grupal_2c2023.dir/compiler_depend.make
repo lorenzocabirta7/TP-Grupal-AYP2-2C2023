@@ -577,6 +577,7 @@ CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/main.cpp.o: ../main.cpp \
   /usr/include/c++/11/bits/charconv.h \
   /usr/include/c++/11/bits/basic_string.tcc \
   /usr/include/c++/11/cstddef \
+  ../include/Menu.hpp \
   /usr/include/c++/11/iostream \
   /usr/include/c++/11/ostream \
   /usr/include/c++/11/ios \
@@ -616,8 +617,6 @@ CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/main.cpp.o: ../main.cpp \
   /usr/include/c++/11/bits/uses_allocator.h \
   ../include/Placa.hpp \
   ../include/Inventario.hpp \
-  ../include/Menu.hpp \
-  ../include/Interfaz.hpp \
   ../include/Personaje.hpp \
   ../include/Recorrido.hpp \
   ../include/Grafo.hpp

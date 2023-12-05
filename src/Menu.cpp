@@ -22,6 +22,7 @@ void Menu::flujo_juego()
     // imprimir_opciones();
     vector<size_t> posicion_james1;
     vector<vector<size_t>> posicion_pyramidheads;
+    bool tiene_arma;
 
     while (opcion != '6' && interfaz.estado_juego() == 0) // interfaz.estado_juego() == 0
     {
@@ -50,7 +51,8 @@ void Menu::flujo_juego()
         case '2':
             posicion_james1 = personaje.obtener_posicion_james(interfaz);
             posicion_pyramidheads = personaje.obtener_posicion_pyramidhead(interfaz);
-            recorrido.encontrar_camino_minimo(posicion_james1, posicion_pyramidheads, altura_arbol);
+            tiene_arma = personaje.get_tiene_arma();
+            recorrido.encontrar_camino_minimo(posicion_james1, posicion_pyramidheads, altura_arbol, tiene_arma);
             break;
         case '3':
             // recorrer mejor camino

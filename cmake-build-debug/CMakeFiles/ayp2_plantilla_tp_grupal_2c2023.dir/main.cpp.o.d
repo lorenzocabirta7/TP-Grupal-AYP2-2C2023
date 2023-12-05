@@ -138,6 +138,7 @@ CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/11/bits/charconv.h \
  /usr/include/c++/11/bits/basic_string.tcc /usr/include/c++/11/cstddef \
+ /mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/include/Menu.hpp \
  /usr/include/c++/11/iostream /usr/include/c++/11/ostream \
  /usr/include/c++/11/ios /usr/include/c++/11/bits/ios_base.h \
  /usr/include/c++/11/bits/locale_classes.h \
@@ -168,8 +169,6 @@ CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir/main.cpp.o: \
  /usr/include/c++/11/bits/uses_allocator.h \
  /mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/include/Placa.hpp \
  /mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/include/Inventario.hpp \
- /mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/include/Menu.hpp \
- /mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/include/Interfaz.hpp \
  /mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/include/Personaje.hpp \
  /mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/include/Recorrido.hpp \
  /mnt/c/Users/Roman/Documents/TP-Grupal-AYP2-2C2023/include/Grafo.hpp

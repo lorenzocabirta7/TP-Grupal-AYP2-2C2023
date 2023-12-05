@@ -300,8 +300,8 @@ std::vector<std::vector<size_t>> Personaje::obtener_posicion_pyramidhead(Interfa
     size_t fila = 0;
     size_t columna = 0;
 
-    std::vector<size_t> posicion_pyramidhead1;
-    std::vector<size_t> posicion_pyramidhead2;
+    std::vector<size_t> posicion_pyramidhead1 = {10,10};
+    std::vector<size_t> posicion_pyramidhead2 = {10,10};
 
     while (fila < CANTIDAD_FILAS && cantidad_pyramidheads < 2)
     {
