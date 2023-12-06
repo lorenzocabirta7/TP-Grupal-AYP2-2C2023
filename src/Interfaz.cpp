@@ -168,6 +168,6 @@ void Interfaz::mostrar_coordenadas_camino_minimo(std::vector<std::vector<size_t>
 
 void Interfaz::cambiar_posicion_james(vector<size_t> posicion_james){
     actualizar_tablero(posicion_james[0], posicion_james[1], ESPACIO_LIBRE);
-    actualizar_tablero(1, 8, JAMES);
+    actualizar_tablero(FILA_DESTINO, COLUMNA_DESTINO, JAMES);
 }
 
