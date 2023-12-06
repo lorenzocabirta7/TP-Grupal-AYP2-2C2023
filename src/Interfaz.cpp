@@ -47,7 +47,6 @@ void Interfaz::inicializar_tablero(size_t tipo_layout)
 {
     for (size_t fila = 0; fila < CANTIDAD_FILAS; fila++)
     {
-
         for (size_t columna = 0; columna < CANTIDAD_COLUMNAS; columna++)
         {
             actualizar_tablero(fila, columna, ESPACIO_LIBRE);
@@ -63,7 +62,6 @@ void Interfaz::inicializar_tablero(size_t tipo_layout)
 void Interfaz::inicializar_personajes()
 {
     actualizar_tablero(FILA_ORIGEN, COLUMNA_ORIGEN, JAMES);
-    //actualizar_tablero(FILA_ORIGEN, COLUMNA_ORIGEN, JAMES);
     size_t cantidad_de_pyramid_head = 0;
 
     for (int i = 0; i < 2; i++)
@@ -74,7 +72,6 @@ void Interfaz::inicializar_personajes()
             cantidad_de_pyramid_head++;
         }
     }
-
     for (size_t i = 0; i < cantidad_de_pyramid_head; i++)
     {
 
@@ -106,11 +103,6 @@ void Interfaz::imprimir_tablero()
     }
 }
 
-void Interfaz::mostrar_puntaje()
-{
-    cout << "Puntaje total utilizado: " << puntaje << endl;
-}
-
 void Interfaz::mostrar_mejor_recorrido()
 {
     // grafo -> mejor_recorrido();
@@ -121,19 +113,23 @@ void Interfaz::recorrer_mejor_camino()
     // grafo -> recorrer_mejor_camino();
 }
 
-
 // ** MOVIMIENTOS **
 
-size_t Interfaz::estado_juego(size_t altura_arbol, bool tiene_arma) 
+size_t Interfaz::estado_juego(size_t altura_arbol, bool tiene_arma)
 {
-    
+
     if (niveles_completados == 5)
     {
         return 1;
-    }else if(!tiene_arma){
-        if(altura_arbol % 2 == 0 && (esta_ocupado(1, 8, PYRAMID_HEAD) || esta_ocupado(2, 8, PYRAMID_HEAD))){
+    }
+    else if (!tiene_arma)
+    {
+        if (altura_arbol % 2 == 0 && (esta_ocupado(1, 8, PYRAMID_HEAD) || esta_ocupado(2, 8, PYRAMID_HEAD)))
+        {
             return 2;
-        }else if(altura_arbol % 2 != 0 && ((esta_ocupado(1, 8, PYRAMID_HEAD) || esta_ocupado(2, 8, PYRAMID_HEAD) || esta_ocupado(3, 8, PYRAMID_HEAD)) && (esta_ocupado(0, 7, PYRAMID_HEAD) || esta_ocupado(0, 6, PYRAMID_HEAD)))){
+        }
+        else if (altura_arbol % 2 != 0 && ((esta_ocupado(1, 8, PYRAMID_HEAD) || esta_ocupado(2, 8, PYRAMID_HEAD) || esta_ocupado(3, 8, PYRAMID_HEAD)) && (esta_ocupado(0, 7, PYRAMID_HEAD) || esta_ocupado(0, 6, PYRAMID_HEAD))))
+        {
             return 2;
         }
     }
@@ -170,8 +166,7 @@ bool Interfaz::hay_pared(size_t filas, size_t columnas)
     return tablero[filas][columnas] == PARED;
 }
 
-
-void Interfaz::aumentar_niveles_completados(){
+void Interfaz::aumentar_niveles_completados()
+{
     niveles_completados++;
 }
-

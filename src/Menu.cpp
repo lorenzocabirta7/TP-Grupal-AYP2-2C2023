@@ -11,8 +11,6 @@ void Menu::imprimir_opciones()
     cout << "6. Salir." << endl;
 }
 
-
-
 void Menu::flujo_juego()
 {
     char opcion;
@@ -37,33 +35,41 @@ void Menu::flujo_juego()
             interfaz.imprimir_tablero(); // adentro de mover personaje
             personaje.interaccion_personaje(MOVER_JUGADOR, interfaz);
 
-
             if (personaje.nivel_terminado(interfaz))
             {
                 altura_arbol = personaje.get_altura();
-                if(altura_arbol == 0)
+                if (altura_arbol == 0)
                 {
-                    altura_arbol ++;
+                    altura_arbol++;
                 }
                 interfaz.inicializar_tablero(altura_arbol);
-                        }
+            }
+
+            if (personaje.eliminar_pyramid_head(interfaz))
+            {
+
+                posicion_pyramidheads = personaje.obtener_posicion_pyramidhead(interfaz);
+                interfaz.actualizar_tablero(posicion_pyramidheads[0][0], posicion_pyramidheads[0][1], ESPACIO_LIBRE);
+                interfaz.actualizar_tablero(posicion_pyramidheads[1][0], posicion_pyramidheads[1][1], ESPACIO_LIBRE);
+            }
+
             break;
         case '2':
             posicion_james1 = personaje.obtener_posicion_james(interfaz);
             posicion_pyramidheads = personaje.obtener_posicion_pyramidhead(interfaz);
-            tiene_arma = personaje.get_tiene_arma();
+            tiene_arma = false; // personaje.get_tiene_arma();
             recorrido.encontrar_camino_minimo(posicion_james1, posicion_pyramidheads, altura_arbol, tiene_arma);
             break;
         case '3':
             // recorrer mejor camino
             break;
         case '4':
-            tiene_arma = personaje.get_tiene_arma();
             personaje.interaccion_personaje(MANEJO_ARMAS, interfaz);
+            tiene_arma = personaje.get_tiene_arma();
 
             break;
         case '5':
-            // interfaz.mostrar_puntaje();
+            personaje.obtener_puntaje_total(recorrido);
             break;
         case '6':
             cout << "Gracias por jugar!" << endl;
@@ -72,5 +78,13 @@ void Menu::flujo_juego()
             cout << "La opcion ingresada no es valida." << endl;
             break;
         }
+    }
+    if (interfaz.estado_juego(altura_arbol, tiene_arma) == 1)
+    {
+        cout << "Ganaste!" << endl;
+    }
+    else
+    {
+        cout << "Perdiste!" << endl;
     }
 }

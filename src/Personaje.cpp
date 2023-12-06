@@ -2,7 +2,6 @@
 
 using namespace std;
 
-
 Personaje::Personaje()
 {
 }
@@ -39,7 +38,6 @@ void Personaje::usar_arma()
     }
     desequipar_arma();
     Arma arma_borrar = inventario.baja();
-
 }
 
 void Personaje::equipar_arma()
@@ -54,7 +52,6 @@ void Personaje::equipar_arma()
     {
         cout << "No hay armas en el inventario." << endl;
         tiene_arma = false;
-
     }
 }
 
@@ -136,7 +133,6 @@ vector<size_t> Personaje::obtener_posicion_james(Interfaz &interfaz)
 
     vector<size_t> posicion = {fila, columna};
 
-
     return posicion;
 }
 
@@ -183,6 +179,7 @@ void Personaje::realizar_movimiento(char movimiento, Interfaz &interfaz)
             interfaz.actualizar_tablero(fila_james, columna_james, ESPACIO_LIBRE);
             fila_james++;
             interfaz.actualizar_tablero(fila_james, columna_james, JAMES);
+            actualizar_puntaje(interfaz);
         }
     }
     else if (movimiento == ARRIBA)
@@ -192,6 +189,7 @@ void Personaje::realizar_movimiento(char movimiento, Interfaz &interfaz)
             interfaz.actualizar_tablero(fila_james, columna_james, ESPACIO_LIBRE);
             fila_james--;
             interfaz.actualizar_tablero(fila_james, columna_james, JAMES);
+            actualizar_puntaje(interfaz);
         }
     }
     else if (movimiento == DERECHA)
@@ -201,6 +199,7 @@ void Personaje::realizar_movimiento(char movimiento, Interfaz &interfaz)
             interfaz.actualizar_tablero(fila_james, columna_james, ESPACIO_LIBRE);
             columna_james++;
             interfaz.actualizar_tablero(fila_james, columna_james, JAMES);
+            actualizar_puntaje(interfaz);
         }
     }
     else if (movimiento == IZQUIERDA)
@@ -210,6 +209,7 @@ void Personaje::realizar_movimiento(char movimiento, Interfaz &interfaz)
             interfaz.actualizar_tablero(fila_james, columna_james, ESPACIO_LIBRE);
             columna_james--;
             interfaz.actualizar_tablero(fila_james, columna_james, JAMES);
+            actualizar_puntaje(interfaz);
         }
     }
     else
@@ -257,21 +257,24 @@ void Personaje::generar_placa()
     arbol_placas.alta(nueva_placa);
 }
 
-size_t Personaje::get_altura() {
+size_t Personaje::get_altura()
+{
     return arbol_placas.calcular_altura();
 }
 
-bool Personaje::get_tiene_arma() {
+bool Personaje::get_tiene_arma()
+{
     return tiene_arma;
 }
 
-std::vector<std::vector<size_t>> Personaje::obtener_posicion_pyramidhead(Interfaz &interfaz) {
+vector<vector<size_t>> Personaje::obtener_posicion_pyramidhead(Interfaz &interfaz)
+{
     int cantidad_pyramidheads = 0;
     size_t fila = 0;
     size_t columna = 0;
 
-    std::vector<size_t> posicion_pyramidhead1 = {10,10};
-    std::vector<size_t> posicion_pyramidhead2 = {10,10};
+    std::vector<size_t> posicion_pyramidhead1 = {10, 10};
+    std::vector<size_t> posicion_pyramidhead2 = {10, 10};
 
     while (fila < CANTIDAD_FILAS && cantidad_pyramidheads < 2)
     {
@@ -283,7 +286,10 @@ std::vector<std::vector<size_t>> Personaje::obtener_posicion_pyramidhead(Interfa
                 if (cantidad_pyramidheads == 1)
                 {
                     posicion_pyramidhead1 = {fila, columna};
-                    fila++;
+                    if (fila < 8)
+                    {
+                        fila++;
+                    }
                 }
                 else
                 {
@@ -302,11 +308,105 @@ std::vector<std::vector<size_t>> Personaje::obtener_posicion_pyramidhead(Interfa
         }
     }
 
-    std::vector<std::vector<size_t>> posiciones_pyramidheads = {posicion_pyramidhead1, posicion_pyramidhead2};
+    vector<vector<size_t>> posiciones_pyramidheads = {posicion_pyramidhead1, posicion_pyramidhead2};
 
     return posiciones_pyramidheads;
 }
 
-bool Personaje::get_arma_equipada() {
+bool Personaje::get_arma_equipada()
+{
     return arma_equipada;
+}
+
+bool Personaje::eliminar_pyramid_head(Interfaz &interfaz)
+{
+    vector<vector<size_t>> posiciones_pyramid_heads = obtener_posicion_pyramidhead(interfaz);
+    if (posiciones_pyramid_heads[0][0] == 10)
+    {
+        return false;
+    }
+    vector<size_t> posicion_pyramid_head1 = posiciones_pyramid_heads[0];
+    if (posiciones_pyramid_heads[1][0] == 10)
+    {
+    }
+    vector<size_t> posicion_james = obtener_posicion_james(interfaz);
+    vector<size_t> posicion_pyramid_head2 = posiciones_pyramid_heads[1];
+
+    if (arma_equipada)
+    {
+
+        if (pyramid_head_cercano(posicion_pyramid_head1, posicion_james))
+        {
+            return true;
+        }
+        else if (posicion_pyramid_head2[0] != 10)
+        {
+            if (pyramid_head_cercano(posicion_pyramid_head2, posicion_james))
+            {
+                return true;
+            }
+        }
+    }
+    return false;
+}
+
+void Personaje::obtener_puntaje_total(Recorrido &recorrido)
+{
+    puntaje_total += recorrido.obtener_puntaje();
+    cout << "Puntaje: " << puntaje_total << endl;
+}
+
+bool Personaje::pyramid_head_cercano(std::vector<size_t> posicion_pyramid_head, std::vector<size_t> posicion_james)
+{
+    if (posicion_pyramid_head[0] == 10)
+    {
+        return false;
+    }
+    if (distancia_manhattan(posicion_pyramid_head[0], posicion_james[0], posicion_pyramid_head[1], posicion_james[1]) == 1)
+    {
+
+        return true;
+    }
+
+    return false;
+}
+
+void Personaje::actualizar_puntaje(Interfaz &interfaz)
+{
+    vector<size_t> posicion_james = obtener_posicion_james(interfaz);
+    vector<vector<size_t>> posicion_pyramid_heads = obtener_posicion_pyramidhead(interfaz);
+    if (pyramid_head_cercano(posicion_pyramid_heads[0], posicion_james) && !arma_equipada)
+    {
+        puntaje_total += PESO_ARISTA_PYRAMID;
+    }
+    else if (posicion_pyramid_heads[1][0] != 10 && pyramid_head_cercano(posicion_pyramid_heads[1], posicion_james) && !arma_equipada)
+    {
+        puntaje_total += PESO_ARISTA_PYRAMID;
+    }
+    else
+    {
+        puntaje_total += 10;
+    }
+}
+size_t Personaje::distancia_manhattan(size_t fila1, size_t fila2, size_t columna1, size_t columna2)
+{
+    int fila11 = (int)fila1;
+    int fila22 = (int)fila2;
+    int columna11 = (int)columna1;
+    int columna22 = (int)columna2;
+
+    int coordenada_en_x, coordenada_en_y, resultado;
+    coordenada_en_x = (fila11 - fila22);       // 7 - 8 == -11
+    coordenada_en_y = (columna11 - columna22); // 11 - 0 == 1
+
+    if (coordenada_en_x < 0)
+    {
+        coordenada_en_x *= -1; // -1 -> 1
+    }
+    if (coordenada_en_y < 0)
+    {
+        coordenada_en_y *= -1;
+    }
+    resultado = coordenada_en_x + coordenada_en_y;
+    return (size_t)resultado;
 }

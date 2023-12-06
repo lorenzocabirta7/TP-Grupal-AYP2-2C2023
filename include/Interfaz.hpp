@@ -33,8 +33,6 @@ class Interfaz
 private:
     std::vector<std::vector<char>> tablero;
     size_t niveles_completados = 0;
-    size_t puntaje = 0;
-
 
     // Pre:
     // Post: Genera una coordenada aleatoria.
@@ -74,12 +72,8 @@ public:
     void imprimir_tablero();
 
     // Pre:
-    // Post: Se imprime el puntaje.
-    void mostrar_puntaje();
-
-    // Pre:
     // Post: Devuelve 0 si se esta jugando, 1 si el jugador gano y 2 si perdio.
-    size_t estado_juego(size_t altura_arbol, bool tiene_arma); 
+    size_t estado_juego(size_t altura_arbol, bool tiene_arma);
 
     // Pre:
     // Post: Se muestra el mejor camino o se lo recorre segun corresponda.
@@ -102,8 +96,6 @@ public:
     void aumentar_niveles_completados();
 
     // ~Interfaz();
-
-
 };
 
 #endif
