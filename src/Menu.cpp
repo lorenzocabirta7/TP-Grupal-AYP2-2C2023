@@ -17,12 +17,14 @@ void Menu::flujo_juego()
 
     size_t altura_arbol = personaje.get_altura();
     interfaz.inicializar_tablero(altura_arbol);
-    // imprimir_opciones();
     vector<size_t> posicion_james1;
     vector<vector<size_t>> posicion_pyramidheads;
     bool tiene_arma;
-
-    while (opcion != '6' && interfaz.estado_juego(altura_arbol, tiene_arma) == 0) // interfaz.estado_juego() == 0
+    vector<vector<size_t>> coordenadas_camino_minimo;
+    size_t puntaje_camino_minimo = 0;
+    size_t puntaje_james = 0;
+    size_t puntaje_total = 0;
+    while (opcion != '6' && interfaz.estado_juego(altura_arbol, tiene_arma) == 0)
     {
         imprimir_opciones();
         cout << "Ingrese una opcion: ";
@@ -32,7 +34,7 @@ void Menu::flujo_juego()
         {
         case '1':
             // mover personaje
-            interfaz.imprimir_tablero(); // adentro de mover personaje
+            interfaz.imprimir_tablero(TABLERO_1); // adentro de mover personaje
             personaje.interaccion_personaje(MOVER_JUGADOR, interfaz);
 
             if (personaje.nivel_terminado(interfaz))
@@ -58,18 +60,26 @@ void Menu::flujo_juego()
             posicion_james1 = personaje.obtener_posicion_james(interfaz);
             posicion_pyramidheads = personaje.obtener_posicion_pyramidhead(interfaz);
             tiene_arma = false; // personaje.get_tiene_arma();
-            recorrido.encontrar_camino_minimo(posicion_james1, posicion_pyramidheads, altura_arbol, tiene_arma);
+            coordenadas_camino_minimo = recorrido.encontrar_camino_minimo(posicion_james1, posicion_pyramidheads, altura_arbol, tiene_arma).first;
+            interfaz.mostrar_coordenadas_camino_minimo(coordenadas_camino_minimo);
+
             break;
         case '3':
-            // recorrer mejor camino
-            break;
+             posicion_james1 = personaje.obtener_posicion_james(interfaz);
+             posicion_pyramidheads = personaje.obtener_posicion_pyramidhead(interfaz);
+             puntaje_camino_minimo = recorrido.encontrar_camino_minimo(posicion_james1, posicion_pyramidheads, altura_arbol, tiene_arma).second;
+             puntaje_james = personaje.obtener_puntaje_total();
+             puntaje_total = puntaje_camino_minimo + puntaje_james;
+             interfaz.cambiar_posicion_james(posicion_james1);
+             break;
         case '4':
             personaje.interaccion_personaje(MANEJO_ARMAS, interfaz);
             tiene_arma = personaje.get_tiene_arma();
-
             break;
         case '5':
-            personaje.obtener_puntaje_total(recorrido);
+            puntaje_james = personaje.obtener_puntaje_total();
+            puntaje_total = puntaje_camino_minimo + puntaje_james;
+            cout << "El puntaje actual es " << puntaje_total << endl;
             break;
         case '6':
             cout << "Gracias por jugar!" << endl;

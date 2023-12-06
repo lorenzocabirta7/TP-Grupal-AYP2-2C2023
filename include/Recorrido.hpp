@@ -84,7 +84,9 @@ public:
 
     // pre: -
     // post: Encuentra el camino minimo del grafo
-    std::vector<std::vector<size_t>> encontrar_camino_minimo(std::vector<size_t> posicion_actual_james, std::vector<std::vector<size_t>> posiciones_pyramidheads, size_t altura_arbol, bool tiene_arma);
+    std::pair<std::vector<std::vector<size_t>>, size_t> encontrar_camino_minimo(std::vector<size_t> posicion_actual_james, std::vector<std::vector<size_t>> posiciones_pyramidheads, size_t altura_arbol, bool tiene_arma);
 };
+
+
 
 #endif

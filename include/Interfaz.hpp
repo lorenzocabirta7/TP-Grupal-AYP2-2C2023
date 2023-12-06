@@ -17,6 +17,8 @@ const char ESPACIO_LIBRE = '-';
 const size_t CANTIDAD_FILAS = 9;
 const size_t CANTIDAD_COLUMNAS = 9;
 const size_t COSTO_MOVIMIENTO = 10;
+const size_t TABLERO_1 = 1;
+const size_t TABLERO_2 = 2;
 
 const char PARED = '#';
 const char PYRAMID_HEAD = 'P';
@@ -32,6 +34,8 @@ class Interfaz
 {
 private:
     std::vector<std::vector<char>> tablero;
+    std::vector<std::vector<char>> tablero2;
+
     size_t niveles_completados = 0;
 
     // Pre:
@@ -49,15 +53,6 @@ private:
     // Pre: El tipo de layout debe ser valido.
     // Post: Asigna posiciones a las paredes segun el tipo de layout.
     void inicializar_paredes(size_t tipo_layout);
-
-    // Pre:
-    // Post: Muestra el recorrido con menor coste.
-    void mostrar_mejor_recorrido();
-
-    // Pre:
-    // Post: Realiza el recorrido con menor coste.
-    void recorrer_mejor_camino();
-
 public:
     Interfaz();
 
@@ -69,15 +64,11 @@ public:
 
     // Pre:
     // Post: Imprime el tablero.
-    void imprimir_tablero();
+    void imprimir_tablero(size_t tipo_tablero);
 
     // Pre:
     // Post: Devuelve 0 si se esta jugando, 1 si el jugador gano y 2 si perdio.
     size_t estado_juego(size_t altura_arbol, bool tiene_arma);
-
-    // Pre:
-    // Post: Se muestra el mejor camino o se lo recorre segun corresponda.
-    void interaccion_grafo(size_t opcion);
 
     // Pre:
     // Post: Se modifica el tablero en la posicion pasada por parametro
@@ -94,6 +85,12 @@ public:
     // Pre:
     // post: aumenta la cantidad de niveles completados
     void aumentar_niveles_completados();
+
+    void mostrar_coordenadas_camino_minimo(std::vector<std::vector<size_t>> coordenadas);
+
+
+    void cambiar_posicion_james(std::vector<size_t> posicion_james);
+
 
     // ~Interfaz();
 };

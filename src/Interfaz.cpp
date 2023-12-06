@@ -90,27 +90,21 @@ void Interfaz::inicializar_personajes()
 }
 
 // ** IMPRIMIR **
-void Interfaz::imprimir_tablero()
+void Interfaz::imprimir_tablero(size_t tipo_tablero)
 {
     for (size_t fila = 0; fila < CANTIDAD_FILAS; fila++)
     {
 
         for (size_t columna = 0; columna < CANTIDAD_COLUMNAS; columna++)
         {
-            cout << tablero[fila][columna];
+            if(tipo_tablero == TABLERO_2){
+                cout << tablero2[fila][columna];
+            }else{
+                cout << tablero[fila][columna];
+            }
         }
         cout << endl;
     }
-}
-
-void Interfaz::mostrar_mejor_recorrido()
-{
-    // grafo -> mejor_recorrido();
-}
-
-void Interfaz::recorrer_mejor_camino()
-{
-    // grafo -> recorrer_mejor_camino();
 }
 
 // ** MOVIMIENTOS **
@@ -137,19 +131,6 @@ size_t Interfaz::estado_juego(size_t altura_arbol, bool tiene_arma)
     return 0;
 }
 
-/*
-void Interfaz::interaccion_grafo(size_t opcion)
-{
-    if (opcion == MOSTRAR_MEJOR_RECORRIDO)
-    {
-        mostrar_mejor_recorrido();
-    }
-    else
-    {
-        recorrer_mejor_camino();
-    }
-}
-*/
 
 void Interfaz::actualizar_tablero(size_t fila, size_t columna, char personaje)
 {
@@ -170,3 +151,23 @@ void Interfaz::aumentar_niveles_completados()
 {
     niveles_completados++;
 }
+
+
+void Interfaz::mostrar_coordenadas_camino_minimo(std::vector<std::vector<size_t>> coordenadas_camino_minimo)
+{
+    tablero2 = tablero;
+    for(size_t i = 0; i < coordenadas_camino_minimo.size(); ++i)
+    {
+        for(size_t j = 0; j < coordenadas_camino_minimo[i].size(); ++j)
+        {
+            tablero2[coordenadas_camino_minimo[i][0]][coordenadas_camino_minimo[i][1]] = '^';
+        }
+    }
+    imprimir_tablero(TABLERO_2);
+}
+
+void Interfaz::cambiar_posicion_james(vector<size_t> posicion_james){
+    actualizar_tablero(posicion_james[0], posicion_james[1], ESPACIO_LIBRE);
+    actualizar_tablero(1, 8, JAMES);
+}
+

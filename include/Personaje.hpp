@@ -112,7 +112,8 @@ public:
 
     bool eliminar_pyramid_head(Interfaz &interfaz);
 
-    void obtener_puntaje_total(Recorrido &recorrido);
+    size_t obtener_puntaje_total();
+
 };
 
 #endif

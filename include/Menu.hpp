@@ -23,7 +23,6 @@ private:
 
     void imprimir_opciones();
 
-
 public:
     // Pre:
     // Post: Muestra las opciones del juego y las ejecuta.

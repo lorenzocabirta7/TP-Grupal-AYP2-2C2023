@@ -83,16 +83,6 @@ void Recorrido::descifrar_tipo_layout(size_t altura_arbol)
     }
 }
 
-// std::vector<std::vector<size_t>> Recorrido::asignar_tipo_layout() {
-//     std::vector<std::vector<size_t>> coordenadas;
-//     if (tipo_layout_actual == 1) {
-//         coordenadas = COORDENADAS_LAYOUT1;
-//     } else {
-//         coordenadas = COORDENADAS_LAYOUT2;
-//     }
-//     return coordenadas;
-// }
-
 void Recorrido::asignar_grafo_correspondiente()
 {
     if (numero_layout == 1)
@@ -196,8 +186,10 @@ void Recorrido::modificar_aristas_pyramidheads()
     }
 }
 
-std::vector<std::vector<size_t>> Recorrido::encontrar_camino_minimo(std::vector<size_t> posicion_actual_james, std::vector<std::vector<size_t>> posiciones_pyramidheads, size_t altura_arbol, bool tiene_arma)
+std::pair<std::vector<std::vector<size_t>>, size_t> Recorrido::encontrar_camino_minimo(std::vector<size_t> posicion_actual_james, std::vector<std::vector<size_t>> posiciones_pyramidheads, size_t altura_arbol, bool tiene_arma)
 {
+    std::pair<std::vector<std::vector<size_t>>, size_t> coordenadas_y_puntaje;
+    puntaje = 0;
     cargar_aristas();
     descifrar_tipo_layout(altura_arbol);
     modificar_posicion_personajes(posicion_actual_james, posiciones_pyramidheads);
@@ -221,20 +213,11 @@ std::vector<std::vector<size_t>> Recorrido::encontrar_camino_minimo(std::vector<
     {
         coordenadas_camino_minimo.push_back(layout_actual[resultado.first[i]]);
     }
-    std::cout << "\nDistancia mínima: " << resultado.second << std::endl;
-    puntaje += resultado.second;
-    std::cout << "Camino mínimo: ";
-    for (size_t i = 0; i < coordenadas_camino_minimo.size(); ++i)
-    {
-        std::cout << "Vector " << i << ": ";
-        for (size_t j = 0; j < coordenadas_camino_minimo[i].size(); ++j)
-        {
-            std::cout << coordenadas_camino_minimo[i][j] << " ";
-        }
-        std::cout << std::endl;
-    }
 
-    return coordenadas_camino_minimo;
+    puntaje = size_t(resultado.second);
+    coordenadas_y_puntaje.first = coordenadas_camino_minimo;
+    coordenadas_y_puntaje.second = puntaje;
+    return coordenadas_y_puntaje;
 }
 
 size_t Recorrido::obtener_puntaje()

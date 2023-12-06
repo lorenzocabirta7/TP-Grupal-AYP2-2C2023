@@ -350,10 +350,9 @@ bool Personaje::eliminar_pyramid_head(Interfaz &interfaz)
     return false;
 }
 
-void Personaje::obtener_puntaje_total(Recorrido &recorrido)
+size_t Personaje::obtener_puntaje_total()
 {
-    puntaje_total += recorrido.obtener_puntaje();
-    cout << "Puntaje: " << puntaje_total << endl;
+    return puntaje_total;
 }
 
 bool Personaje::pyramid_head_cercano(std::vector<size_t> posicion_pyramid_head, std::vector<size_t> posicion_james)
@@ -410,3 +409,4 @@ size_t Personaje::distancia_manhattan(size_t fila1, size_t fila2, size_t columna
     resultado = coordenada_en_x + coordenada_en_y;
     return (size_t)resultado;
 }
+
