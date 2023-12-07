@@ -152,14 +152,15 @@ bool Personaje::nivel_terminado(Interfaz &interfaz)
 
 bool Personaje::casilla_valida(size_t fila, size_t columna, Interfaz &interfaz)
 {
-    if (interfaz.esta_ocupado(fila, columna, PARED))
-    {
-        cout << "No se puede realizar el movimiento porque hay una pared." << endl;
-        return false;
-    }
     if (fila < 0 || columna > 8 || fila > 8 || columna < 0)
     {
         cout << "No se puede realizar el movimiento porque se sale del tablero." << endl;
+        return false;
+    }
+
+    if (interfaz.esta_ocupado(fila, columna, PARED))
+    {
+        cout << "No se puede realizar el movimiento porque hay una pared." << endl;
         return false;
     }
     return true;
@@ -395,12 +396,12 @@ size_t Personaje::distancia_manhattan(size_t fila1, size_t fila2, size_t columna
     int columna22 = (int)columna2;
 
     int coordenada_en_x, coordenada_en_y, resultado;
-    coordenada_en_x = (fila11 - fila22);       // 7 - 8 == -11
-    coordenada_en_y = (columna11 - columna22); // 11 - 0 == 1
+    coordenada_en_x = (fila11 - fila22);       
+    coordenada_en_y = (columna11 - columna22);
 
     if (coordenada_en_x < 0)
     {
-        coordenada_en_x *= -1; // -1 -> 1
+        coordenada_en_x *= -1;
     }
     if (coordenada_en_y < 0)
     {
