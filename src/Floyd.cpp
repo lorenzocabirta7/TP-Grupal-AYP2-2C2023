@@ -15,19 +15,13 @@ void Floyd::inicializar_matrices() {
 
 std::vector<size_t> Floyd::obtener_camino(size_t origen, size_t destino) {
     std::vector<size_t> camino;
-    
-
-
     size_t vertice_actual=origen;
     while (vertice_actual != destino)
     {
        camino.push_back(vertice_actual);
        vertice_actual=matriz_caminos.elemento(vertice_actual,destino);
-       
     }
     camino.push_back(destino);
-
-
     return camino;
 }
 
@@ -51,9 +45,6 @@ Floyd::calcular_camino_minimo(Matriz adyacencia, size_t vertices, size_t origen,
         
         }
     }
-
-    
-
     return obtener_camino(origen, destino);
 }
 

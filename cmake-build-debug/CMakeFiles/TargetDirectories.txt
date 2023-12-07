@@ -1,3 +1,3 @@
-/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/cmake-build-debug/CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir
-/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/parallels/Desktop/Parallels Shared Folders/Home/Desktop/Universidad/Algo2/tps/tp3/TP-Grupal-AYP2-2C2023/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/cmake-build-debug/CMakeFiles/ayp2_plantilla_tp_grupal_2c2023.dir
+/home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/lorenzocabirta/Facultad/TP-Grupal-AYP2-2C2023/ayp2_plantilla_tp_grupal_2c2023/cmake-build-debug/CMakeFiles/rebuild_cache.dir

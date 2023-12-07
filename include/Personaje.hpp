@@ -1,15 +1,12 @@
 #ifndef __PERSONAJE_H_
 #define __PERSONAJE_H_
 
-#include <iostream>
 #include "Recorrido.hpp"
 #include "ABB.hpp"
 #include "Placa.hpp"
 #include "Arma.hpp"
 #include "Inventario.hpp"
 #include "Interfaz.hpp"
-#include <string>
-#include <cstdlib>
 const std::string ID = "ID";
 const std::string POTENCIA = "Potencia";
 const int ID_PLACA_MINIMO = 100;
@@ -102,18 +99,25 @@ public:
     // Post: Devuelve true si el nivel esta terminado
     bool nivel_terminado(Interfaz &interfaz);
 
+    // Pre:
+    // Post: Devuelve la altura del arbol.
     size_t get_altura();
 
+    // Pre:
+    // Post: Devuelve true si el personaje tiene un arma.
     bool get_tiene_arma();
 
-    bool get_arma_equipada();
-
+    // Pre: -
+    // Post: Devuelve un vector con la posicion de los pyramid_head, si no estan devuelve [10, 10].
     std::vector<std::vector<size_t>> obtener_posicion_pyramidhead(Interfaz &interfaz);
 
+    // Pre: -
+    // Post: Devuelve true si hay un pyramidhead en una casilla contigua.
     bool eliminar_pyramid_head(Interfaz &interfaz);
 
+    // Pre: -
+    // Post: Devuelve el puntaje total.
     size_t obtener_puntaje_total();
-
 };
 
 #endif

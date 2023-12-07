@@ -197,7 +197,6 @@ size_t ABB<T, menor, igual>::calcular_altura()
     if (raiz == nullptr)
     {
         return 0;
-//        return raiz->calcular_altura();
     }
     return raiz->calcular_altura();
 }

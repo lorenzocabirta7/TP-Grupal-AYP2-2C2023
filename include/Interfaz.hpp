@@ -29,6 +29,7 @@ const size_t FILA_DESTINO = 0;
 const size_t COLUMNA_DESTINO = 8;
 const char ORIGEN = 'O';
 const char DESTINO = 'D';
+const char CASILLA_CAMINO_MINIMO = '^';
 
 class Interfaz
 {
@@ -53,9 +54,12 @@ private:
     // Pre: El tipo de layout debe ser valido.
     // Post: Asigna posiciones a las paredes segun el tipo de layout.
     void inicializar_paredes(size_t tipo_layout);
+
 public:
     Interfaz();
 
+    // Pre:
+    // Post: Devuelve un numero aleatorio entre 1 y el largo pasado por parametro.
     int calcular_numero_aleatorio(int largo);
 
     // Pre:
@@ -79,20 +83,16 @@ public:
     bool esta_ocupado(size_t filas, size_t columnas, char objeto);
 
     // Pre:
-    // Post: Devuelve true si hay una pared en la posicion pasada por parametro
-    bool hay_pared(size_t filas, size_t columnas);
-
-    // Pre:
     // post: aumenta la cantidad de niveles completados
     void aumentar_niveles_completados();
 
+    // Pre: El vector de vectores debe tener al menos un elemento.
+    // Post: Muestra las coordenadas del camino minimo.
     void mostrar_coordenadas_camino_minimo(std::vector<std::vector<size_t>> coordenadas);
 
-
-    void cambiar_posicion_james(std::vector<size_t> posicion_james);
-
-
-    // ~Interfaz();
+    // Pre: La posicion debe ser valida.
+    // Post: Cambia la posicion de james en el tablero al casillero de salida.
+    void terminar_nivel_automaticamente(std::vector<size_t> posicion_james);
 };
 
 #endif

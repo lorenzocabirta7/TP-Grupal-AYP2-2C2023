@@ -11,6 +11,7 @@ const std::vector<std::vector<size_t>> COORDENADAS_LAYOUT2 = {{8, 0}, {8, 1}, {8
 
 const int PESO_ARISTA = 10;
 const int PESO_ARISTA_PYRAMID = 50;
+const size_t POSICION_INVALIDA = 10;
 
 class Recorrido
 {
@@ -18,7 +19,7 @@ private:
     Grafo grafo_layout1;
     Grafo grafo_layout2;
     Grafo grafo_a_utilizar;
-    std::vector<size_t> posicion_james2;
+    std::vector<size_t> posicion_james;
     std::vector<size_t> posicion_pyramid1;
     std::vector<size_t> posicion_pyramid2;
     bool aristas_cargadas;
@@ -77,10 +78,6 @@ public:
     // pre: -
     // post: Actualiza la posicion de james
     void acutalizar_posicion_james(std::vector<size_t> posicion);
-
-    // Pre:
-    // Post: Se devuelve el puntaje.
-    size_t obtener_puntaje();
 
     // pre: -
     // post: Encuentra el camino minimo del grafo

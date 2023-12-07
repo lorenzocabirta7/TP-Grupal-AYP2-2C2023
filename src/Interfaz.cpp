@@ -12,8 +12,6 @@ Interfaz::Interfaz()
     tablero = std::vector<std::vector<char>>(CANTIDAD_FILAS, std::vector<char>(CANTIDAD_COLUMNAS, ESPACIO_LIBRE));
 }
 
-// ** INICIALIZACION **
-
 size_t Interfaz::generar_coordenada_aleatoria()
 {
     return size_t(static_cast<size_t>(rand()) % CANTIDAD_FILAS);
@@ -89,7 +87,6 @@ void Interfaz::inicializar_personajes()
     }
 }
 
-// ** IMPRIMIR **
 void Interfaz::imprimir_tablero(size_t tipo_tablero)
 {
     for (size_t fila = 0; fila < CANTIDAD_FILAS; fila++)
@@ -97,9 +94,12 @@ void Interfaz::imprimir_tablero(size_t tipo_tablero)
 
         for (size_t columna = 0; columna < CANTIDAD_COLUMNAS; columna++)
         {
-            if(tipo_tablero == TABLERO_2){
+            if (tipo_tablero == TABLERO_2)
+            {
                 cout << tablero2[fila][columna];
-            }else{
+            }
+            else
+            {
                 cout << tablero[fila][columna];
             }
         }
@@ -107,11 +107,8 @@ void Interfaz::imprimir_tablero(size_t tipo_tablero)
     }
 }
 
-// ** MOVIMIENTOS **
-
 size_t Interfaz::estado_juego(size_t altura_arbol, bool tiene_arma)
 {
-
     if (niveles_completados == 5)
     {
         return 1;
@@ -127,10 +124,8 @@ size_t Interfaz::estado_juego(size_t altura_arbol, bool tiene_arma)
             return 2;
         }
     }
-
     return 0;
 }
-
 
 void Interfaz::actualizar_tablero(size_t fila, size_t columna, char personaje)
 {
@@ -142,32 +137,26 @@ bool Interfaz::esta_ocupado(size_t fila, size_t columna, char objeto)
     return tablero[fila][columna] == objeto;
 }
 
-bool Interfaz::hay_pared(size_t filas, size_t columnas)
-{
-    return tablero[filas][columnas] == PARED;
-}
-
 void Interfaz::aumentar_niveles_completados()
 {
     niveles_completados++;
 }
 
-
 void Interfaz::mostrar_coordenadas_camino_minimo(std::vector<std::vector<size_t>> coordenadas_camino_minimo)
 {
     tablero2 = tablero;
-    for(size_t i = 0; i < coordenadas_camino_minimo.size(); ++i)
+    for (size_t i = 0; i < coordenadas_camino_minimo.size(); ++i)
     {
-        for(size_t j = 0; j < coordenadas_camino_minimo[i].size(); ++j)
+        for (size_t j = 0; j < coordenadas_camino_minimo[i].size(); ++j)
         {
-            tablero2[coordenadas_camino_minimo[i][0]][coordenadas_camino_minimo[i][1]] = '^';
+            tablero2[coordenadas_camino_minimo[i][0]][coordenadas_camino_minimo[i][1]] = CASILLA_CAMINO_MINIMO;
         }
     }
     imprimir_tablero(TABLERO_2);
 }
 
-void Interfaz::cambiar_posicion_james(vector<size_t> posicion_james){
+void Interfaz::terminar_nivel_automaticamente(vector<size_t> posicion_james)
+{
     actualizar_tablero(posicion_james[0], posicion_james[1], ESPACIO_LIBRE);
     actualizar_tablero(FILA_DESTINO, COLUMNA_DESTINO, JAMES);
 }
-

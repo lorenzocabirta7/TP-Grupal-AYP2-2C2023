@@ -31,8 +31,7 @@ public:
     Dijkstra();
 
     std::vector<size_t>
-    calcular_camino_minimo(Matriz adyacencia, size_t vertices, size_t origen, size_t destino,
-                           bool hay_cambios) override;
+    calcular_camino_minimo(Matriz adyacencia, size_t vertices, size_t origen, size_t destino, bool hay_cambios) override;
 
     ~Dijkstra() override;
 };

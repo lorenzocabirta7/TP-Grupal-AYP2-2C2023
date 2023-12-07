@@ -4,6 +4,7 @@
 Inventario::Inventario()
 {
 }
+
 void Inventario::alta(Arma arma)
 {
     armas.alta(arma);
@@ -23,5 +24,3 @@ bool Inventario::vacio()
 {
     return armas.vacio();
 }
-
-

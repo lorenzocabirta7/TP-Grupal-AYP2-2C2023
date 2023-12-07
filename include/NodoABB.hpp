@@ -111,7 +111,7 @@ void NodoABB<T, menor, igual>::reemplazar_nodos(NodoABB *nodo, T dato_bajar)
 {
     if (padre->hijo_derecho->dato == dato_bajar) // somos el hijo derecho de nuestro padre
     {
-        padre->hijo_derecho = nodo; // nuestro padre tiene un nuevoi hijo
+        padre->hijo_derecho = nodo; // nuestro padre tiene un nuevo hijo
     }
     else // somos el hijo izquierdo
     {
@@ -292,7 +292,6 @@ NodoABB<T, menor, igual>::~NodoABB()
 {
     delete hijo_izquierdo;
     delete hijo_derecho;
-    // No es necesario eliminar el padre, ya que no es el propietario del padre.
 }
 
 #endif

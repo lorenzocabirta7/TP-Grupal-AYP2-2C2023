@@ -24,9 +24,9 @@ public:
     // Post: Muestra el arma mas poderosa
     void consulta();
 
+    // Pre: -
+    // Post: Devuelve true si el inventario esta vacio.
     bool vacio();
-
-
 };
 
 #endif // INVENTARIO_H

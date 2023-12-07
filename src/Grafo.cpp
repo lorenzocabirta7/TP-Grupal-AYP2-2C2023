@@ -73,8 +73,7 @@ std::pair<std::vector<size_t>, int> Grafo::obtener_camino_minimo(size_t origen, 
     std::pair<std::vector<size_t>, int> camino;
     if (algoritmo_camino_minimo) {
         if (origen < vertices && destino < vertices) {
-            camino.first = algoritmo_camino_minimo->calcular_camino_minimo(matriz_adyacencia, vertices, origen,
-                                                                           destino, hay_cambios);
+            camino.first = algoritmo_camino_minimo->calcular_camino_minimo(matriz_adyacencia, vertices, origen, destino, hay_cambios);
             camino.second = obtener_peso_camino(camino.first);
             hay_cambios = false;
         } else {

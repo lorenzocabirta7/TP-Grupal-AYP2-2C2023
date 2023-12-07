@@ -31,11 +31,6 @@ char Personaje::pedir_movimiento()
 
 void Personaje::usar_arma()
 {
-    if (!arma_equipada)
-    {
-        cout << "No hay un arma equipada." << endl;
-        return;
-    }
     desequipar_arma();
     Arma arma_borrar = inventario.baja();
 }
@@ -163,6 +158,12 @@ bool Personaje::casilla_valida(size_t fila, size_t columna, Interfaz &interfaz)
         cout << "No se puede realizar el movimiento porque hay una pared." << endl;
         return false;
     }
+
+    if (interfaz.esta_ocupado(fila, columna, PYRAMID_HEAD))
+    {
+        cout << "No se puede realizar el movimiento porque hay un Pyramid Head." << endl;
+        return false;
+    }
     return true;
 }
 
@@ -274,8 +275,8 @@ vector<vector<size_t>> Personaje::obtener_posicion_pyramidhead(Interfaz &interfa
     size_t fila = 0;
     size_t columna = 0;
 
-    std::vector<size_t> posicion_pyramidhead1 = {10, 10};
-    std::vector<size_t> posicion_pyramidhead2 = {10, 10};
+    std::vector<size_t> posicion_pyramidhead1 = {POSICION_INVALIDA, POSICION_INVALIDA};
+    std::vector<size_t> posicion_pyramidhead2 = {POSICION_INVALIDA, POSICION_INVALIDA};
 
     while (fila < CANTIDAD_FILAS && cantidad_pyramidheads < 2)
     {
@@ -287,7 +288,7 @@ vector<vector<size_t>> Personaje::obtener_posicion_pyramidhead(Interfaz &interfa
                 if (cantidad_pyramidheads == 1)
                 {
                     posicion_pyramidhead1 = {fila, columna};
-                    if (fila < 8)
+                    if (fila < (CANTIDAD_FILAS - 1))
                     {
                         fila++;
                     }
@@ -314,22 +315,14 @@ vector<vector<size_t>> Personaje::obtener_posicion_pyramidhead(Interfaz &interfa
     return posiciones_pyramidheads;
 }
 
-bool Personaje::get_arma_equipada()
-{
-    return arma_equipada;
-}
-
 bool Personaje::eliminar_pyramid_head(Interfaz &interfaz)
 {
     vector<vector<size_t>> posiciones_pyramid_heads = obtener_posicion_pyramidhead(interfaz);
-    if (posiciones_pyramid_heads[0][0] == 10)
+    if (posiciones_pyramid_heads[0][0] == POSICION_INVALIDA)
     {
         return false;
     }
     vector<size_t> posicion_pyramid_head1 = posiciones_pyramid_heads[0];
-    if (posiciones_pyramid_heads[1][0] == 10)
-    {
-    }
     vector<size_t> posicion_james = obtener_posicion_james(interfaz);
     vector<size_t> posicion_pyramid_head2 = posiciones_pyramid_heads[1];
 
@@ -338,12 +331,14 @@ bool Personaje::eliminar_pyramid_head(Interfaz &interfaz)
 
         if (pyramid_head_cercano(posicion_pyramid_head1, posicion_james))
         {
+            usar_arma();
             return true;
         }
-        else if (posicion_pyramid_head2[0] != 10)
+        else if (posicion_pyramid_head2[0] != POSICION_INVALIDA)
         {
             if (pyramid_head_cercano(posicion_pyramid_head2, posicion_james))
             {
+                usar_arma();
                 return true;
             }
         }
@@ -358,7 +353,7 @@ size_t Personaje::obtener_puntaje_total()
 
 bool Personaje::pyramid_head_cercano(std::vector<size_t> posicion_pyramid_head, std::vector<size_t> posicion_james)
 {
-    if (posicion_pyramid_head[0] == 10)
+    if (posicion_pyramid_head[0] == POSICION_INVALIDA)
     {
         return false;
     }
@@ -379,15 +374,16 @@ void Personaje::actualizar_puntaje(Interfaz &interfaz)
     {
         puntaje_total += PESO_ARISTA_PYRAMID;
     }
-    else if (posicion_pyramid_heads[1][0] != 10 && pyramid_head_cercano(posicion_pyramid_heads[1], posicion_james) && !arma_equipada)
+    else if (posicion_pyramid_heads[1][0] != POSICION_INVALIDA && pyramid_head_cercano(posicion_pyramid_heads[1], posicion_james) && !arma_equipada)
     {
         puntaje_total += PESO_ARISTA_PYRAMID;
     }
     else
     {
-        puntaje_total += 10;
+        puntaje_total += PESO_ARISTA;
     }
 }
+
 size_t Personaje::distancia_manhattan(size_t fila1, size_t fila2, size_t columna1, size_t columna2)
 {
     int fila11 = (int)fila1;

@@ -1,8 +1,6 @@
 #include "Recorrido.hpp"
 #include <vector>
 
-#include <iostream>
-
 Recorrido::Recorrido()
 {
     grafo_layout1 = Grafo(54);
@@ -34,7 +32,7 @@ void Recorrido::agregar_artistas_layout2()
 
 void Recorrido::acutalizar_posicion_james(std::vector<size_t> posicion)
 {
-    posicion_james2 = posicion;
+    posicion_james = posicion;
 }
 
 size_t Recorrido::encontrar_vertice_james()
@@ -46,7 +44,7 @@ size_t Recorrido::encontrar_vertice_james()
 
     while (!coordenada_encontrada && vertice < tamano_vector)
     {
-        if (coordenadas[vertice][0] == posicion_james2[0] && coordenadas[vertice][1] == posicion_james2[1])
+        if (coordenadas[vertice][0] == posicion_james[0] && coordenadas[vertice][1] == posicion_james[1])
         {
             coordenada_encontrada = true;
         }
@@ -99,18 +97,18 @@ void Recorrido::modificar_posicion_personajes(std::vector<size_t> &posicion_actu
 {
     acutalizar_posicion_james(posicion_actual_james);
 
-    if (posiciones_pyramidheads[0][0] == 10)
+    if (posiciones_pyramidheads[0][0] == POSICION_INVALIDA)
     {
-        posicion_pyramid1 = {10, 10};
+        posicion_pyramid1 = {POSICION_INVALIDA, POSICION_INVALIDA};
     }
     else
     {
         posicion_pyramid1 = posiciones_pyramidheads[0];
     }
 
-    if (posiciones_pyramidheads[1][0] == 10)
+    if (posiciones_pyramidheads[1][0] == POSICION_INVALIDA)
     {
-        posicion_pyramid2 = {10, 10};
+        posicion_pyramid2 = {POSICION_INVALIDA, POSICION_INVALIDA};
     }
     else
     {
@@ -149,9 +147,9 @@ void Recorrido::reasignar_peso(size_t vertice_pyramid, std::vector<std::vector<s
     for (size_t i = 0; i < adyacentes.size(); ++i)
     {
         vertice_a_usar = layout[adyacentes[i]];
-        for (size_t i = 0; i < vertice_a_usar.size(); ++i)
+        for (size_t j = 0; j < vertice_a_usar.size(); ++j)
         {
-            grafo_a_utilizar.cambiar_arista(vertice_a_usar[i], vertice_a_usar[0], PESO_ARISTA_PYRAMID);
+            grafo_a_utilizar.cambiar_arista(vertice_a_usar[j], vertice_a_usar[0], PESO_ARISTA_PYRAMID);
         }
     }
 }
@@ -170,16 +168,16 @@ void Recorrido::actualizar_valor_arista_pyramidhead(size_t vertice_pyramid)
 
 void Recorrido::modificar_aristas_pyramidheads()
 {
-    if (posicion_pyramid1[0] == 10 && posicion_pyramid2[0] == 10)
+    if (posicion_pyramid1[0] == POSICION_INVALIDA && posicion_pyramid2[0] == POSICION_INVALIDA)
     {
         return;
     }
-    if (posicion_pyramid1[0] != 10)
+    if (posicion_pyramid1[0] != POSICION_INVALIDA)
     {
         size_t vertice_pyramid1 = encontrar_vertice_pyramid(1);
         actualizar_valor_arista_pyramidhead(vertice_pyramid1);
     }
-    if (posicion_pyramid2[0] != 10)
+    if (posicion_pyramid2[0] != POSICION_INVALIDA)
     {
         size_t vertice_pyramid2 = encontrar_vertice_pyramid(2);
         actualizar_valor_arista_pyramidhead(vertice_pyramid2);
@@ -220,7 +218,3 @@ std::pair<std::vector<std::vector<size_t>>, size_t> Recorrido::encontrar_camino_
     return coordenadas_y_puntaje;
 }
 
-size_t Recorrido::obtener_puntaje()
-{
-    return puntaje;
-}
