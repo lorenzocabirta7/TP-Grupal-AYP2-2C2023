@@ -55,6 +55,8 @@ void Menu::flujo_juego()
                 interfaz.actualizar_tablero(posicion_pyramidheads[0][0], posicion_pyramidheads[0][1], ESPACIO_LIBRE);
                 interfaz.actualizar_tablero(posicion_pyramidheads[1][0], posicion_pyramidheads[1][1], ESPACIO_LIBRE);
             }
+            puntaje_james = personaje.obtener_puntaje_total();
+            puntaje_total += puntaje_james;
             break;
 
         case MOSTRAR_MEJOR_RECORRIDO:
@@ -81,8 +83,6 @@ void Menu::flujo_juego()
             break;
 
         case MOSTRAR_PUNTAJE:
-            puntaje_james = personaje.obtener_puntaje_total();
-            puntaje_total += puntaje_james;
             cout << "El puntaje actual es " << puntaje_total << endl;
             break;
 
